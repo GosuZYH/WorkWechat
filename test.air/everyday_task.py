@@ -8,11 +8,12 @@ import pytesseract
 from PIL import Image
 from baidu_OCR import CodeDemo
 from init_airtest import AirConn
+from photos.base import Base
 from airtest.aircv import *
 from airtest.core.api import Template, exists, touch, auto_setup, connect_device,snapshot
 
 
-class EveryDayTask():
+class EveryDayTask(Base):
     def __init__(self):
         conn = AirConn()
         conn.connect_to_workwechat()
@@ -30,8 +31,14 @@ class EveryDayTask():
         '''
         search the luoshu SMR in chat-list.
         '''
-        touch(Template(r'photos\\搜索框.png'))
+        if exists(Template(r"photos\\清空.png")):
+            touch(Template(r'photos\\清空.png'))
+        sleep(0.2)
+        if exists(Template(r"photos\\搜索框.png")):
+            touch(Template(r'photos\\搜索框.png'))
 
+        self.send_keys('洛书SMR')
 
 task = EveryDayTask()
+task.find_the_chat()
 task.search_the_SMR()
