@@ -25,10 +25,10 @@ class EveryDayTask(Base):
         '''
         turn to the chat panel.
         '''
-        if not exists_ui('消息'):
-            print('already in 消息')
+        if exists_ui('消息1'):
+            return
         else:
-            touch_ui('消息')
+            touch_ui('消息2')
 
     def search_the_SMR(self):
         '''
@@ -73,7 +73,7 @@ class EveryDayTask(Base):
     def run_task(self):
         '''
         '''
-        # self.find_the_chat()
+        self.find_the_chat()
         # self.search_the_SMR()
         # self.back_to_latest_position()
         # self.receipt_the_custom_sop()
