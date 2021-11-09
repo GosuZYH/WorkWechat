@@ -15,22 +15,22 @@ class AirConn():
     '''
     find the workwechat app and let airtest connect to the windows.
     '''
-    def __init__(self):
+    def __init__(self,title):
         self.target_handlers = None
+        self.title = title
 
-    def get_target_handlers(self,title='企业微信'): 
+    def get_target_handlers(self): 
         handlers = []
         time.sleep(0.1)
         win32gui.EnumWindows(lambda handle, param: param.append(handle), handlers)
         time.sleep(0.1)
         for handler in handlers:
-            if win32gui.GetWindowText(handler) == title:
+            if win32gui.GetWindowText(handler) == self.title:
                 self.target_handlers = handler
                 break
 
-    def connect_to_workwechat(self):
-        windowtitle = '企业微信'
-        win_dlg = pywinauto.Desktop()[windowtitle]
+    def connect_to_target_window(self):
+        win_dlg = pywinauto.Desktop()[self.title]
         win_dlg.set_focus()
         self.get_target_handlers()
         if not cli_setup():

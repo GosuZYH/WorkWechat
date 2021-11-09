@@ -70,6 +70,3 @@ def exists_ui(photo_name=''):
     judge if the ui exists.
     '''
     exists(Template('photos\%s.png' %photo_name))
-# generate html report
-# from airtest.report.report import simple_report
-# simple_report(__file__, logpath=True)

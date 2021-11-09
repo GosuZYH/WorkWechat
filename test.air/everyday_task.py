@@ -17,8 +17,8 @@ from airtest.core.api import Template, exists, touch, auto_setup, connect_device
 logger = logging.getLogger(__name__)
 class EveryDayTask(Base):
     def __init__(self):
-        conn = AirConn()
-        conn.connect_to_workwechat()
+        conn = AirConn(title='企业微信')
+        conn.connect_to_target_window()
         self.end_flag = False
 
     def find_the_chat(self):
@@ -64,11 +64,21 @@ class EveryDayTask(Base):
         receipt the 1v1 custom sop everyday.
         '''
         pass
+
+    def connect_to_sop_chat(self):
+        '''
+        connect to the sop chat panel.
+        '''
+        conn = AirConn(title='SOP消息')
+        conn.connect_to_target_window()
+        
     
     def test(self):
         '''
         test
         '''
+        sleep(2)
+        self.send_keys('5')
 
     def run_task(self):
         '''
@@ -77,10 +87,7 @@ class EveryDayTask(Base):
         # self.search_the_SMR()
         # self.back_to_latest_position()
         # self.receipt_the_custom_sop()
-        self.test()
-
-        
-
+        self.connect_to_sop_chat()
 
 task = EveryDayTask()
 task.run_task()
