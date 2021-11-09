@@ -1,6 +1,7 @@
 # -*- encoding=utf8 -*-
 __author__ = "26579"
 
+from abc import ABC
 import time
 import win32gui
 import pywinauto
@@ -12,7 +13,7 @@ from airtest.cli.parser import cli_setup
 # if not cli_setup():
 #     auto_setup(__file__, logdir=True, devices=["Windows:///67706",])
 
-class Base():
+class Base(ABC):
     '''
     base operation in workwechat.
     '''
@@ -58,6 +59,17 @@ class Base():
         return ''.join(str)
 
 
+def touch_ui(photo_name=''):
+    '''
+    touch the ui in photo.
+    '''
+    touch(Template('photos\%s.png' %photo_name))
+
+def exists_ui(photo_name=''):
+    '''
+    judge if the ui exists.
+    '''
+    exists(Template('photos\%s.png' %photo_name))
 # generate html report
 # from airtest.report.report import simple_report
 # simple_report(__file__, logpath=True)
