@@ -3,7 +3,7 @@ from airtest.core.api import *
 import logging
 from PIL import Image
 from init_airtest import AirConn
-from photos import Base,exists_ui,touch_ui,find_all_ui
+from photos import Base,exists_ui,touch_ui,find_ui
 from airtest.aircv import *
 from airtest.core.api import Template, exists, touch, auto_setup, connect_device,snapshot
 
@@ -152,13 +152,26 @@ class EveryDayTask(Base):
         '''
         search target customer tag from the list.
         '''
-        pass
+        self.connect_to_select_custom_panel()
+        self.connect_to_desktop()
+        try:
+            #此处写寻找标签逻辑
+            touch_ui('确定')
+            self.connect_to_select_custom_panel()
+            sleep(0.5)
+            touch_ui('全选客户',x=-25)
+            sleep(0.5)
+            touch_ui('确定')
+        except Exception as e:
+            logger.error(f'—— some error occured when selected the customer,detil error info: ——\n\t {e}')
 
     def test(self):
         '''
         test
         '''
-        sleep(2)
+        self.connect_to_select_custom_panel()
+        self.connect_to_desktop()
+        touch_ui('全选客户',x=-25)
 
     def run_task(self):
         '''
