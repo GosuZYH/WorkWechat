@@ -2,6 +2,7 @@
 __author__ = "26579"
 
 from abc import ABC
+import logging
 import time
 import win32gui
 import pywinauto
@@ -10,8 +11,12 @@ from PIL import Image
 from airtest.core.api import *
 from airtest.cli.parser import cli_setup
 
-# if not cli_setup():
-#     auto_setup(__file__, logdir=True, devices=["Windows:///67706",])
+from init_airtest import AirConn
+
+
+
+logger = logging.getLogger(__name__)
+
 
 class Base(ABC):
     '''
@@ -26,6 +31,50 @@ class Base(ABC):
         search the luoshu SMR in chat-list.
         '''
         touch(Template(r'photos\\搜索框.png'))
+
+    def connect_to_workwechat(self):
+        '''
+        connect to the workwechat main window.
+        '''
+        conn = AirConn(title='企业微信')
+        try:
+            conn.connect_to_target_window()
+        except Exception as e:
+            logger.error(f'—— can not connect to the workwechat,detil error info: ——\n\t {e}')
+        sleep(0.2)
+
+    def connect_to_sop_chat(self):
+        '''
+        connect to the sop chat panel.
+        '''
+        conn = AirConn(title='SOP消息')
+        try:
+            conn.connect_to_target_window()
+        except Exception as e:
+            logger.error(f'—— can not connect to the sop-chat panel,detil error info: ——\n\t {e}')
+        sleep(0.2)
+
+    def connect_to_sending_helper(self):
+        '''
+        connect to the sending-msg-to-my-customer panel.
+        '''
+        conn = AirConn(title='向我的客户发消息')
+        try:
+            conn.connect_to_target_window()
+        except Exception as e:
+            logger.error(f'—— can not connect to the sending-panel,detil error info: ——\n\t {e}')
+        sleep(0.2)
+
+    def connect_to_select_custom_panel(self):
+        '''
+        connect to the workwechat main window.
+        '''
+        conn = AirConn(title='选择客户')
+        try:
+            conn.connect_to_target_window()
+        except Exception as e:
+            logger.error(f'—— can not connect to the workwechat,detil error info: ——\n\t {e}')
+        sleep(0.2)
 
     def send_keys(self, keys):
         """

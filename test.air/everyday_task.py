@@ -1,14 +1,7 @@
 # -*- encoding=utf8 -*-
 from airtest.core.api import *
-from airtest.cli.parser import cli_setup
-import time
-import win32gui
-import pywinauto
-from pywinauto import keyboard
-import pytesseract
 import logging
 from PIL import Image
-from baidu_OCR import CodeDemo
 from init_airtest import AirConn
 from photos import Base,exists_ui,touch_ui,find_all_ui
 from airtest.aircv import *
@@ -18,9 +11,8 @@ from airtest.core.api import Template, exists, touch, auto_setup, connect_device
 logger = logging.getLogger(__name__)
 class EveryDayTask(Base):
     def __init__(self):
-        conn = AirConn(title='企业微信')
-        conn.connect_to_target_window()
         self.end_flag = False
+        self.connect_to_workwechat()
 
     def find_the_chat(self):
         '''
@@ -96,20 +88,77 @@ class EveryDayTask(Base):
 
         pass
 
-    def connect_to_sop_chat(self):
+    def open_sending_helper(self):
         '''
-        connect to the sop chat panel.
+        every day 1V1 sending.
         '''
-        conn = AirConn(title='SOP消息')
-        conn.connect_to_target_window()
-        
-    
+        self.connect_to_sop_chat()
+        sleep_time = 0
+        while True:
+            if exists_ui('跳转到群发助手') or sleep_time > 5:
+                sleep(0.2)
+                break
+            else:
+                self.connect_to_sop_chat()
+                logger.info('can not find sending button,time sleep 1s..')
+                sleep_time += 1
+                sleep(1)
+        try:
+            touch_ui('跳转到群发助手')
+        except:
+            logger.info('can not find sending button')
+
+    def select_the_customer(self):
+        '''
+        after open the sending helper,select the customer tag.
+        '''
+        self.connect_to_sending_helper()
+        sleep_time = 0
+        while True:
+            if exists_ui('选择客户') or sleep_time > 5:
+                sleep(0.2)
+                break
+            else:
+                self.connect_to_sending_helper()
+                logger.info('can not find select customer button,time sleep 1s..')
+                sleep_time += 1
+                sleep(1)
+        try:
+            touch_ui('选择客户')
+        except:
+            logger.info('can not find select customer button')
+
+    def select_customer_tag(self):
+        '''
+        select the customer tags.
+        '''
+        self.connect_to_select_custom_panel()
+        sleep_time = 0
+        while True:
+            if exists_ui('选择客户标签') or sleep_time > 5:
+                sleep(0.2)
+                break
+            else:
+                self.connect_to_select_custom_panel()
+                logger.info('can not find select tag mini-menu,time sleep 1s..')
+                sleep_time += 1
+                sleep(1)
+        try:
+            touch_ui('选择客户标签')
+        except:
+            logger.info('can not find select tag mini-menu')
+
+    def search_target_tag(self):
+        '''
+        search target customer tag from the list.
+        '''
+        pass
+
     def test(self):
         '''
         test
         '''
         sleep(2)
-        self.send_keys('5')
 
     def run_task(self):
         '''
@@ -118,6 +167,9 @@ class EveryDayTask(Base):
         # self.search_the_SMR()
         # self.back_to_latest_position()
         # self.receipt_the_custom_sop()
+        self.open_sending_helper()
+        self.select_the_customer()
+        self.select_customer_tag()
         #self.connect_to_sop_chat()
         a = self.find_sop_task()
         print(a)
