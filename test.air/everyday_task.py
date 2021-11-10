@@ -105,7 +105,7 @@ class EveryDayTask(Base):
         self.connect_to_select_custom_panel()
         sleep_time = 0
         while True:
-            if exists_ui('选择客户标签') or sleep_time > 5:
+            if exists_ui('不限标签') or sleep_time > 5:
                 sleep(0.2)
                 break
             else:
@@ -114,7 +114,7 @@ class EveryDayTask(Base):
                 sleep_time += 1
                 sleep(1)
         try:
-            touch_ui('选择客户标签')
+            touch_ui('不限标签')
         except:
             logger.info('can not find select tag mini-menu')
 
@@ -126,6 +126,8 @@ class EveryDayTask(Base):
         self.connect_to_desktop()
         try:
             #此处写寻找标签逻辑
+            touch_ui('选择标签男')
+
             touch_ui('确定')
             self.connect_to_select_custom_panel()
             sleep(0.5)
@@ -134,6 +136,21 @@ class EveryDayTask(Base):
             touch_ui('确定')
         except Exception as e:
             logger.error(f'—— some error occured when selected the customer,detil error info: ——\n\t {e}')
+
+    def send_message_to_customer(self):
+        '''
+        send message to my customer.
+        '''
+        self.connect_to_sending_helper()
+        try:
+            touch_ui('发送')
+        except Exception as e:
+            logger.error(f'—— some error occured when send msg to customer step1,detil error info: ——\n\t {e}')
+        self.connect_to_msg_sending_confirm()
+        try:
+            touch_ui('确认发送')
+        except:
+            logger.error(f'—— some error occured when send msg to customer,step2,detil error info: ——\n\t {e}')
 
     def test(self):
         '''
@@ -146,17 +163,18 @@ class EveryDayTask(Base):
     def run_task(self):
         '''
         '''
-        self.find_the_chat()
+        # self.find_the_chat()
         # self.search_the_SMR()
         # self.back_to_latest_position()
         # self.receipt_the_custom_sop()
 
-        # self.open_sending_helper()
-        # self.select_the_customer()
-        # self.select_customer_tag()
+        self.open_sending_helper()
+        self.select_the_customer()
+        self.select_customer_tag()
+        self.search_target_tag()
+        self.send_message_to_customer()
 
-        # self.search_target_tag()
-        self.test()
+        # self.test()
 
 task = EveryDayTask()
 task.run_task()

@@ -82,6 +82,17 @@ class Base(ABC):
         except Exception as e:
             logger.error(f'—— can not connect to the workwechat,detil error info: ——\n\t {e}')
         sleep(0.2)
+    
+    def connect_to_msg_sending_confirm(self):
+        '''
+        connect to the message-sending-confirm panel.
+        '''
+        conn = AirConn(title='消息发送确认')
+        try:
+            conn.connect_to_target_window()
+        except Exception as e:
+            logger.error(f'—— can not connect to the workwechat,detil error info: ——\n\t {e}')
+        sleep(0.2)
 
     def send_keys(self, keys):
         """
