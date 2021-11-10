@@ -69,4 +69,15 @@ def exists_ui(photo_name=''):
     '''
     judge if the ui exists.
     '''
-    exists(Template('photos\%s.png' %photo_name))
+    return exists(Template('photos\%s.png' %photo_name))
+
+def find_all_ui(photo_name=''):
+    '''
+    judge if the ui find_all.
+    :return 所有的匹配到的元素坐标-->list[(x1, y1),(x2, y2)...(xn, yn)]
+    '''
+    list = []
+    result = find_all(Template('photos\%s.png' %photo_name))
+    for i in result:
+        list.append(i.get('result'))
+    return list
