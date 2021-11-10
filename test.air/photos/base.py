@@ -1,5 +1,5 @@
 # -*- encoding=utf8 -*-
-__author__ = "26579"
+__author__ = "zyh"
 
 from abc import ABC
 import logging
@@ -31,6 +31,13 @@ class Base(ABC):
         search the luoshu SMR in chat-list.
         '''
         touch(Template(r'photos\\搜索框.png'))
+
+    def connect_to_desktop(self):
+        '''
+        connect to the windows desktop
+        '''
+        if not cli_setup():
+            auto_setup(__file__,logdir=True,devices=["Windows:///",])
 
     def connect_to_workwechat(self):
         '''
@@ -107,15 +114,31 @@ class Base(ABC):
 
         return ''.join(str)
 
-
-def touch_ui(photo_name=''):
+def touch_ui(photo_name='',**kwargs):
     '''
     touch the ui in photo.
+    * if have kwargs: will touch the central point coordinate offset.
     '''
-    touch(Template('photos\%s.png' %photo_name))
+    if kwargs:
+        pos = find_all(Template('photos\%s.png' %photo_name))
+        if pos is not None:
+            offset_x = 0 if kwargs.get('x') is None else kwargs.get('x')
+            offset_y = 0 if kwargs.get('y') is None else kwargs.get('y')
+            pos_x = int(pos[0].get('result')[0]) + offset_x
+            pos_y = int(pos[0].get('result')[1]) + offset_y
+            print(pos_x,pos_y)
+            touch((pos_x,pos_y))
+    else:
+        touch(Template('photos\%s.png' %photo_name))
 
 def exists_ui(photo_name=''):
     '''
     judge if the ui exists.
     '''
     return exists(Template('photos\%s.png' %photo_name))
+
+def find_ui(photo_name=''):
+    '''
+    find all exists ui in panel.
+    '''
+    return find_all(Template('photos\%s.png' %photo_name))

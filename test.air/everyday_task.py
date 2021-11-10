@@ -3,7 +3,7 @@ from airtest.core.api import *
 import logging
 from PIL import Image
 from init_airtest import AirConn
-from photos import Base,exists_ui,touch_ui
+from photos import Base,exists_ui,touch_ui,find_ui
 from airtest.aircv import *
 from airtest.core.api import Template, exists, touch, auto_setup, connect_device,snapshot
 
@@ -32,16 +32,16 @@ class EveryDayTask(Base):
         sleep(0.2)
         if exists_ui('搜索框'):
             touch_ui('搜索框')
-
-        self.send_keys('洛书SMR')
+        text('洛书SMR')
+        sleep(1)
         touch_ui('洛书SMR1')
         # if exists_ui('应用与小程序'):
-        #     if exists_ui('洛书SMR1'):
-        #         touch_ui('洛书SMR1')
-        #     elif exists_ui('洛书SMR2'):
-        #         touch_ui('洛书SMR2')
-        #     else:
-        #         logger.error('can not find the LuoShu-SMR mini-program')
+            # if exists_ui('洛书SMR1'):
+            #     touch_ui('洛书SMR1')
+            # elif exists_ui('洛书SMR2'):
+            #     touch_ui('洛书SMR2')
+            # else:
+            #     logger.error('can not find the LuoShu-SMR mini-program')
         # else:
         #     logger.error('can not find app and mini-program')
 
@@ -122,13 +122,26 @@ class EveryDayTask(Base):
         '''
         search target customer tag from the list.
         '''
-        pass
+        self.connect_to_select_custom_panel()
+        self.connect_to_desktop()
+        try:
+            #此处写寻找标签逻辑
+            touch_ui('确定')
+            self.connect_to_select_custom_panel()
+            sleep(0.5)
+            touch_ui('全选客户',x=-25)
+            sleep(0.5)
+            touch_ui('确定')
+        except Exception as e:
+            logger.error(f'—— some error occured when selected the customer,detil error info: ——\n\t {e}')
 
     def test(self):
         '''
         test
         '''
-        sleep(2)
+        self.connect_to_select_custom_panel()
+        self.connect_to_desktop()
+        touch_ui('全选客户',x=-25)
 
     def run_task(self):
         '''
@@ -137,9 +150,13 @@ class EveryDayTask(Base):
         # self.search_the_SMR()
         # self.back_to_latest_position()
         # self.receipt_the_custom_sop()
-        self.open_sending_helper()
-        self.select_the_customer()
-        self.select_customer_tag()
+
+        # self.open_sending_helper()
+        # self.select_the_customer()
+        # self.select_customer_tag()
+
+        # self.search_target_tag()
+        self.test()
 
 task = EveryDayTask()
 task.run_task()
