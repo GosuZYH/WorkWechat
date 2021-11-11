@@ -41,4 +41,4 @@ class AirConn():
 # if not exists(Template(r'photos\\消息.png')):
 #     print('already in 消息')
 # else:
-#     touch(Template(r'photos\\消息.png'))
+    # touch(Template(r'photos\\消息.png'))

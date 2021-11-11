@@ -10,20 +10,18 @@ import pytesseract
 from PIL import Image
 from airtest.core.api import *
 from airtest.cli.parser import cli_setup
+from .setup_log import Logger
 
 from init_airtest import AirConn
-
-
-
-logger = logging.getLogger(__name__)
 
 
 class Base(ABC):
     '''
     base operation in workwechat.
     '''
-    def __init__(self) -> None:
-        pass
+    def __init__(self):
+        log = Logger(level='debug')
+        self.log = log.logger
 
     # example
     def click_search_frame(self):
@@ -47,7 +45,7 @@ class Base(ABC):
         try:
             conn.connect_to_target_window()
         except Exception as e:
-            logger.error(f'—— can not connect to the workwechat,detil error info: ——\n\t {e}')
+            self.log.error(f'\n\t —— can not connect to the workwechat,detil error info: ——\n\t {e}')
         sleep(0.2)
 
     def connect_to_sop_chat(self):
@@ -58,7 +56,7 @@ class Base(ABC):
         try:
             conn.connect_to_target_window()
         except Exception as e:
-            logger.error(f'—— can not connect to the sop-chat panel,detil error info: ——\n\t {e}')
+            self.log.error(f'\n\t —— can not connect to the sop-chat panel,detil error info: ——\n\t {e}')
         sleep(0.2)
 
     def connect_to_sending_helper(self):
@@ -69,7 +67,7 @@ class Base(ABC):
         try:
             conn.connect_to_target_window()
         except Exception as e:
-            logger.error(f'—— can not connect to the sending-panel,detil error info: ——\n\t {e}')
+            self.log.error(f'\n\t —— can not connect to the sending-panel,detil error info: ——\n\t {e}')
         sleep(0.2)
     
     def connect_to_select_custom_panel(self):
@@ -80,7 +78,7 @@ class Base(ABC):
         try:
             conn.connect_to_target_window()
         except Exception as e:
-            logger.error(f'—— can not connect to the workwechat,detil error info: ——\n\t {e}')
+            self.log.error(f'\n\t —— can not connect to the workwechat,detil error info: ——\n\t {e}')
         sleep(0.2)
     
     def connect_to_msg_sending_confirm(self):
@@ -91,7 +89,18 @@ class Base(ABC):
         try:
             conn.connect_to_target_window()
         except Exception as e:
-            logger.error(f'—— can not connect to the workwechat,detil error info: ——\n\t {e}')
+            self.log.error(f'\n\t —— can not connect to the workwechat,detil error info: ——\n\t {e}')
+        sleep(0.2)
+
+    def connect_to_text(self):
+        '''
+        connect to the message-sending-confirm panel.
+        '''
+        conn = AirConn(title='123.txt - 记事本')
+        try:
+            conn.connect_to_target_window()
+        except Exception as e:
+            self.log.error(f'\n\t —— can not connect to the workwechat,detil error info: ——\n\t {e}')
         sleep(0.2)
 
     def send_keys(self, keys):
@@ -101,7 +110,8 @@ class Base(ABC):
         if keys in ('\n',):
             pywinauto.keyboard.SendKeys('\n', with_newlines=True)
             return
-        parsed_keys = self.parse_key(keys)
+        # parsed_keys = self.parse_key(keys)
+        parsed_keys = keys
         pywinauto.keyboard.SendKeys(parsed_keys, with_spaces=True)
         return False if parsed_keys == keys else True
 
@@ -139,17 +149,26 @@ def touch_ui(photo_name='',**kwargs):
             pos_y = int(pos[0].get('result')[1]) + offset_y
             print(pos_x,pos_y)
             touch((pos_x,pos_y))
+        else:
+            return False
     else:
-        touch(Template('photos\%s.png' %photo_name))
+        result = touch(Template('photos\%s.png' %photo_name))
+        print(result)
 
 def exists_ui(photo_name=''):
     '''
     judge if the ui exists.
     '''
-    return exists(Template('photos\%s.png' %photo_name))
+    try:
+        return exists(Template('photos\%s.png' %photo_name))
+    except:
+        sleep(0.2)
 
 def find_ui(photo_name=''):
     '''
     find all exists ui in panel.
     '''
     return find_all(Template('photos\%s.png' %photo_name))
+
+def shot(photo_name=''):
+    snapshot(filename = '..\\photos\\%s.png' % photo_name,quality=99,max_size=1200)

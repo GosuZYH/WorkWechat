@@ -1,18 +1,15 @@
 # -*- encoding=utf8 -*-
 from airtest.core.api import *
-import logging
 from PIL import Image
-from init_airtest import AirConn
-from photos import Base,exists_ui,touch_ui,find_ui
+from photos import Base,exists_ui,touch_ui,find_ui,shot
 from airtest.aircv import *
-from airtest.core.api import Template, exists, touch, auto_setup, connect_device,snapshot
+from airtest.core.api import Template, exists, touch, auto_setup, connect_device,snapshot,assert_equal
 
 
-logger = logging.getLogger(__name__)
 class EveryDayTask(Base):
     def __init__(self):
-        self.end_flag = False
-        self.connect_to_workwechat()
+        super().__init__()
+        # self.connect_to_workwechat()
 
     def find_the_chat(self):
         '''
@@ -61,62 +58,71 @@ class EveryDayTask(Base):
     def open_sending_helper(self):
         '''
         every day 1V1 sending.
+        * base on having openned the customer-sop.
         '''
         self.connect_to_sop_chat()
-        sleep_time = 0
+        try_times = 0
         while True:
-            if exists_ui('跳转到群发助手') or sleep_time > 5:
+            if try_times > 3:
+                return False
+            if exists_ui('跳转到群发助手'):
+                self.log.info('\n\t —— find the group sending helper! ——')
                 sleep(0.2)
                 break
             else:
                 self.connect_to_sop_chat()
-                logger.info('can not find sending button,time sleep 1s..')
-                sleep_time += 1
-                sleep(1)
+                try_times += 1
+                sleep(3)
         try:
             touch_ui('跳转到群发助手')
+            self.log.info('\n\t —— touch the button ——')
+            return True
         except:
-            logger.info('can not find sending button')
+            self.log.error('\n\t —— can not find sending button——')
 
     def select_the_customer(self):
         '''
         after open the sending helper,select the customer tag.
         '''
         self.connect_to_sending_helper()
-        sleep_time = 0
+        try_times = 0
         while True:
-            if exists_ui('选择客户') or sleep_time > 5:
+            if try_times > 3:
+                return False
+            if exists_ui('选择客户'):
                 sleep(0.2)
                 break
             else:
                 self.connect_to_sending_helper()
-                logger.info('can not find select customer button,time sleep 1s..')
-                sleep_time += 1
-                sleep(1)
+                try_times += 1
+                sleep(3)
         try:
             touch_ui('选择客户')
+            return True
         except:
-            logger.info('can not find select customer button')
+            self.log.error('\n\t —— can not find select customer button——')
 
     def select_customer_tag(self):
         '''
         select the customer tags.
         '''
         self.connect_to_select_custom_panel()
-        sleep_time = 0
+        try_times = 0
         while True:
-            if exists_ui('不限标签') or sleep_time > 5:
+            if try_times > 3:
+                return False
+            if exists_ui('不限标签'):
                 sleep(0.2)
                 break
             else:
                 self.connect_to_select_custom_panel()
-                logger.info('can not find select tag mini-menu,time sleep 1s..')
-                sleep_time += 1
-                sleep(1)
+                try_times += 1
+                sleep(3)
         try:
             touch_ui('不限标签')
+            return True
         except:
-            logger.info('can not find select tag mini-menu')
+            self.log.error('\n\t —— can not find select tag mini-menu ——')
 
     def search_target_tag(self):
         '''
@@ -135,7 +141,7 @@ class EveryDayTask(Base):
             sleep(0.5)
             touch_ui('确定')
         except Exception as e:
-            logger.error(f'—— some error occured when selected the customer,detil error info: ——\n\t {e}')
+            self.log.error(f'\n\t —— some error occured when selected the customer,detil error info: ——\n\t {e}')
 
     def send_message_to_customer(self):
         '''
@@ -145,20 +151,25 @@ class EveryDayTask(Base):
         try:
             touch_ui('发送')
         except Exception as e:
-            logger.error(f'—— some error occured when send msg to customer step1,detil error info: ——\n\t {e}')
+            self.log.error(f'\n\t —— some error occured when send msg to customer step1,detil error info: ——\n\t {e}')
         self.connect_to_msg_sending_confirm()
         try:
             touch_ui('确认发送')
         except:
-            logger.error(f'—— some error occured when send msg to customer,step2,detil error info: ——\n\t {e}')
+            self.log.error(f'\n\t —— some error occured when send msg to customer,step2,detil error info: ——\n\t {e}')
 
     def test(self):
         '''
         test
         '''
-        self.connect_to_select_custom_panel()
-        self.connect_to_desktop()
-        touch_ui('全选客户',x=-25)
+        # self.connect_to_select_custom_panel()
+        # self.connect_to_desktop()
+        # touch_ui('全选客户',x=-25)
+        self.connect_to_text()
+        # touch_ui('记事本')
+        # self.send_keys('{PGUP 10}')
+        # shot('当前截屏')
+        
 
     def run_task(self):
         '''
@@ -169,10 +180,10 @@ class EveryDayTask(Base):
         # self.receipt_the_custom_sop()
 
         self.open_sending_helper()
-        self.select_the_customer()
-        self.select_customer_tag()
-        self.search_target_tag()
-        self.send_message_to_customer()
+        # self.select_the_customer()
+        # self.select_customer_tag()
+        # self.search_target_tag()
+        # self.send_message_to_customer()
 
         # self.test()
 
