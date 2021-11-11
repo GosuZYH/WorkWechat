@@ -2,17 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1a7ae64-ca19-4062-a958-4ea143973c21" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task.log" beforeDir="false" afterPath="$PROJECT_DIR$/task.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workwechat/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workwechat/everyday_task.py" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/everyday_task.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workwechat/log/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/log/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workwechat/photos/当前截屏.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/当前截屏.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workwechat/photos/选择标签男.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workwechat/task.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="develop" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -136,6 +139,14 @@
       <option name="presentableId" value="Default" />
       <updated>1636602968767</updated>
     </task>
+    <task id="LOCAL-00001" summary="fix:optimize some logic.">
+      <created>1636618498546</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1636618498546</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,5 +159,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix:optimize some logic." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:optimize some logic." />
   </component>
 </project>

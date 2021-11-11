@@ -48,6 +48,7 @@ class Base(ABC):
         '''
         if not cli_setup():
             auto_setup(__file__,logdir=True,devices=["Windows:///",])
+            return True
         else:
             self.log.error('\n\t ***can not connect to the windows desktop***.')
             return False
@@ -118,6 +119,12 @@ class Base(ABC):
     #     except Exception as e:
     #         self.log.error(f'\n\t —— can not connect to the workwechat,detil error info: ——\n\t {e}')
     #     sleep(0.2)
+
+    def mouse_scroll(self, x: int = None, y: int = None, wheel_dist: int = 1) -> None:
+        self.log.info(f"mouse scroll at ({x},{y}) with wheel dist {wheel_dist}")
+        if (x is None and y is None) or (x < 0 or y < 0):
+            raise ValueError(f"Can't click on given coordinates: ({x}, {y})")
+        pywinauto.mouse.scroll(coords=(x, y), wheel_dist=wheel_dist)
 
     def send_keys(self, keys):
         """

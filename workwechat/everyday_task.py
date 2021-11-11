@@ -141,6 +141,21 @@ class EveryDayTask(Base):
         self.log.error(f'\n\t *** some error occured when send msg to customer ***')
         return False
 
+    def scroll_the_tag_panel(self):
+        '''
+        scroll 1 page down in select tag panel.
+        '''
+        if not self.connect_to_desktop():
+            return False
+        if touch_ui('选择标签',y=35):
+            self.log.info('\n\t —— Touch the Select tag text. ——')
+            pos = find_ui('选择标签')[0]
+            print(pos)
+            for i in range(4):
+                self.mouse_scroll(x=pos.get('result')[0],y=pos.get('result')[1]+35,wheel_dist=-1)
+            return True
+            # self.mouse_scroll()
+
     def test(self):
         '''
         test
@@ -164,17 +179,19 @@ class EveryDayTask(Base):
         while not self.select_customer_tag():
             self.select_the_customer()
 
-        while not self.search_target_tag():
-            self.select_customer_tag()
+        print(self.scroll_the_tag_panel())
 
-        while not self.send_message_to_customer():
-            self.search_target_tag()
+        # while not self.search_target_tag():
+        #     self.select_customer_tag()
 
-        self.open_sending_helper()
-        self.select_the_customer()
-        self.select_customer_tag()
-        self.search_target_tag()
-        self.send_message_to_customer()
+        # while not self.send_message_to_customer():
+        #     self.search_target_tag()
+
+        # self.open_sending_helper()
+        # self.select_the_customer()
+        # self.select_customer_tag()
+        # self.search_target_tag()
+        # self.send_message_to_customer()
 
         # self.test()
 

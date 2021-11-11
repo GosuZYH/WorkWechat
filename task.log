@@ -251,3 +251,1028 @@
 	 *** can not find the group sending helper! ***
 2021-11-11 16:02:10,498 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
 	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 16:44:48,738 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 16:44:49,864 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 16:44:50,983 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 16:44:52,105 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 16:44:53,224 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:44:55,204 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 16:44:55,314 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:44:57,176 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 16:44:57,292 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:44:59,078 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:44:59,189 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:45:00,954 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:45:01,065 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:45:02,853 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:45:02,963 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:45:04,799 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:45:04,907 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:45:06,694 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:45:06,803 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:45:08,597 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:45:08,705 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:45:10,502 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:45:10,611 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:45:12,401 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:45:12,507 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:45:14,270 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:45:14,382 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:45:16,172 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:45:16,281 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:45:18,062 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:45:18,174 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:45:20,010 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:45:20,120 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:45:21,905 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:45:22,014 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:45:23,440 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:45:23,553 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:45:24,912 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:45:25,021 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:45:27,141 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:45:27,252 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:45:28,609 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:45:28,718 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:45:30,075 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:45:30,185 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:45:31,614 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:45:31,723 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:48:29,500 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 16:48:30,611 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 16:48:31,739 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 16:48:32,854 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 16:48:33,959 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:48:36,578 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 16:48:36,691 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:48:38,458 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 16:48:38,568 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:48:40,339 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:48:40,449 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:48:42,229 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:48:42,341 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:48:44,148 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:48:44,259 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:48:47,378 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:48:47,493 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:48:49,318 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:48:49,429 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:49,539 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:49,648 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:49,754 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:49,870 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:49,981 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:50,090 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:50,199 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:50,309 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:50,419 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:50,526 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:50,641 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:50,750 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:50,859 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:50,965 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:51,079 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:51,189 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:51,299 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:51,417 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:51,526 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:51,639 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:51,751 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:51,859 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:51,969 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:52,078 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:52,183 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:52,308 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:52,419 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:52,533 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:52,643 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:52,753 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:52,861 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:52,970 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:53,082 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:53,192 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:53,298 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:53,407 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:53,517 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:53,629 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:53,736 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:53,843 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:53,952 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:54,060 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:54,168 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:54,277 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:54,391 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:54,503 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:54,612 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:54,722 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:54,833 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:54,945 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:55,049 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:55,159 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:55,269 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:55,380 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:55,489 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:55,592 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:55,692 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:55,801 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:55,915 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:56,029 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:56,132 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:56,242 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:56,360 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:56,461 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:56,578 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:56,683 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:56,792 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:56,901 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:57,010 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:57,120 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:57,230 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:57,345 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:57,465 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:57,583 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:57,690 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:57,813 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:57,956 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:58,064 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:58,173 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:58,283 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:58,392 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:58,499 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:58,623 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:58,731 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:58,839 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:58,942 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:59,051 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:59,154 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:59,274 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:59,384 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:59,489 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:59,601 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:59,710 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:59,820 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:48:59,927 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:00,036 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:00,145 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:00,267 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:00,384 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:00,494 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:00,605 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:00,712 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:00,825 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:00,933 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:01,043 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:01,163 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:01,278 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:01,389 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:01,497 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:01,616 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:01,727 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:01,841 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:01,950 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:02,058 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:02,169 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:02,279 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:02,389 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:02,499 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:02,609 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:02,718 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:02,839 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:02,948 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:03,057 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:03,166 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:03,275 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:03,384 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:03,493 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:03,599 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:03,714 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:03,823 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:03,932 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:04,045 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:04,162 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:04,270 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:04,377 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:04,486 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:04,593 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:04,703 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:04,812 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:04,923 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:05,033 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:05,141 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:05,248 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:05,356 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:05,464 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:05,572 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:05,679 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:05,789 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:05,898 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:06,007 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:06,119 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:06,231 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:06,350 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:06,457 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:06,566 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:06,681 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:06,789 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:06,895 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:07,004 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:07,112 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:07,220 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:07,331 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:07,431 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:07,533 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:07,643 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:07,760 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:07,866 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:07,979 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:08,083 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:08,193 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:08,295 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:08,405 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:08,523 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:08,631 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:08,739 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:08,850 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:08,957 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:09,070 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:09,180 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:09,299 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:09,405 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:09,521 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:09,630 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:09,740 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:09,849 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:09,959 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:10,065 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:10,180 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:10,298 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:10,405 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:10,521 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:10,628 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:10,733 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:10,849 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:10,959 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:11,076 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:11,182 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:11,290 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:11,404 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:11,514 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:11,625 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:11,734 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:11,843 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:11,952 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:12,059 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:12,169 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:12,279 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:12,380 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:12,494 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:12,604 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:12,710 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:12,818 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:12,927 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:13,038 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:13,147 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:13,257 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:13,366 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:13,475 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:13,584 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:13,693 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:13,799 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:13,909 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:14,013 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:49:15,858 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:49:15,968 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:49:17,768 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:49:17,878 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:49:19,679 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:49:19,788 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:49:21,697 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:49:21,806 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:49:23,708 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 16:49:23,813 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:49:24,037 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:64] - ERROR: 
+	 *** can not connect to the workwechat,detil error info: ***
+	 invalid literal for int() with base 10: 'None'
+2021-11-11 16:49:24,147 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:24,260 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:24,378 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:24,487 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:24,595 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:24,705 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:24,809 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:24,919 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:25,030 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:25,143 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:25,250 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:25,355 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 16:49:25,476 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***选择客户 window not fount or don not exists! ***
+2021-11-11 17:05:06,669 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:05:08,823 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 17:05:08,933 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:05:10,978 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 17:05:11,087 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:05:12,833 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 17:05:17,859 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:05:19,955 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 17:05:20,066 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:05:21,750 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 17:05:21,862 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:05:23,744 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 17:06:49,478 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 17:06:50,598 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 17:06:51,721 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 17:06:52,841 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 17:06:53,964 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:07:02,713 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 17:07:03,848 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 17:07:04,966 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 17:07:06,085 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:07:11,527 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 17:07:11,637 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:07:13,438 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 17:07:13,548 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:07:15,351 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 17:07:53,632 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 17:07:54,755 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 17:07:55,877 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:08:01,145 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 17:08:01,254 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:08:03,058 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 17:08:03,169 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:08:04,989 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 17:08:06,232 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:151] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-11 17:08:55,735 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:08:57,947 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 17:08:58,058 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:08:59,754 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 17:08:59,864 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:09:01,641 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 17:09:02,855 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:151] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-11 17:09:03,701 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:09:05,889 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 17:09:05,999 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:09:08,003 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 17:09:08,116 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:09:10,092 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 17:10:27,429 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:10:29,557 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 17:10:29,665 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:10:31,288 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 17:10:31,394 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:10:32,823 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 17:10:34,078 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:151] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-11 17:11:10,738 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:11:12,947 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 17:11:13,059 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:11:14,865 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 17:11:14,978 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:11:16,764 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 17:11:18,006 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:151] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-11 17:11:34,769 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:11:36,926 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 17:11:37,040 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:11:38,880 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 17:11:38,989 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:11:40,780 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 17:11:42,012 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:151] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-11 17:13:46,464 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:13:48,628 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 17:13:48,739 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:13:50,531 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 17:13:50,642 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:13:52,422 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 17:13:53,658 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:151] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-11 17:14:37,634 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:14:39,795 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 17:14:39,907 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:14:41,743 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 17:14:41,855 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:14:43,646 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 17:14:44,873 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:151] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-11 17:15:08,980 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:15:11,159 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 17:15:11,272 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:15:13,093 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 17:15:13,203 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:15:14,980 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 17:15:16,211 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:151] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-11 17:15:16,343 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,380) with wheel dist 3
+2021-11-11 17:16:09,763 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:16:11,913 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 17:16:12,023 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:16:13,850 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 17:16:13,958 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:16:15,739 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 17:16:16,973 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:151] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-11 17:16:17,100 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,345) with wheel dist 5
+2021-11-11 17:16:33,755 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:16:35,922 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 17:16:36,031 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:16:37,867 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 17:16:37,976 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:16:39,782 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 17:16:41,014 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:151] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-11 17:16:41,141 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist 5
+2021-11-11 17:18:07,155 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:18:09,291 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 17:18:09,401 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:18:11,223 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 17:18:11,334 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:18:13,141 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 17:18:14,356 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:151] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-11 17:18:14,478 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -5
+2021-11-11 17:18:31,011 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:18:33,162 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 17:18:33,272 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:18:35,067 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 17:18:35,178 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:18:36,964 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 17:18:38,196 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:151] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-11 17:18:38,330 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -10
+2021-11-11 17:19:30,255 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:19:32,436 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 17:19:32,547 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:19:34,323 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 17:19:34,434 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:19:36,277 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 17:19:37,510 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:151] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-11 17:19:37,637 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -50
+2021-11-11 17:20:40,684 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:20:42,927 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 17:20:43,038 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:20:44,825 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 17:20:44,934 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:20:46,804 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 17:20:48,035 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:151] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-11 17:20:48,172 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 17:20:48,284 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 17:20:48,394 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 17:20:48,505 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 17:20:48,615 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 17:20:48,727 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 17:20:48,836 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 17:20:48,946 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 17:20:49,056 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 17:20:49,165 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 17:21:36,112 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:21:38,297 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 17:21:38,407 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:21:40,204 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 17:21:40,318 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 17:21:42,143 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 17:21:43,377 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:151] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-11 17:21:43,514 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 17:21:43,626 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 17:21:43,736 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 17:21:43,844 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 17:21:43,953 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 17:21:44,060 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 17:21:44,170 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 17:21:44,278 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 17:21:44,388 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 17:21:44,499 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:00:03,070 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 18:00:05,265 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 18:00:05,376 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 18:00:07,165 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 18:00:07,276 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 18:00:09,130 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 18:00:10,359 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:151] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-11 18:00:10,511 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:00:10,622 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:00:10,731 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:00:10,840 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:00:10,949 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:00:11,057 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:00:11,167 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:00:39,147 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 18:00:41,314 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 18:00:41,425 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 18:00:43,210 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 18:00:43,324 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 18:00:45,146 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 18:00:46,378 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:151] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-11 18:00:46,514 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:00:46,627 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:00:46,735 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:00:46,846 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:00:46,955 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:01:27,579 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 18:01:29,727 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 18:01:29,838 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 18:01:31,613 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 18:01:31,724 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 18:01:33,528 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 18:01:34,742 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:151] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-11 18:01:34,865 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:01:34,977 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:01:35,085 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:01:35,195 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:01:46,665 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 18:01:48,813 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 18:01:48,925 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 18:01:50,713 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 18:01:50,822 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 18:01:52,650 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 18:01:53,880 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:151] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-11 18:01:54,026 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:01:54,131 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:01:54,239 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:01:54,349 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:02:24,370 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 18:02:26,505 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 18:02:26,614 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:78] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 18:02:28,390 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:82] - INFO: 
+	 —— touch the select customer button ——
+2021-11-11 18:02:28,500 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:92] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 18:02:30,306 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:96] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-11 18:02:31,522 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:151] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-11 18:02:31,652 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:02:31,772 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:02:31,882 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-11 18:02:31,992 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
