@@ -154,20 +154,10 @@ class EveryDayTask(Base):
             for i in range(4):
                 self.mouse_scroll(x=pos.get('result')[0],y=pos.get('result')[1]+35,wheel_dist=-1)
             return True
-            # self.mouse_scroll()
 
     def test(self):
         '''
         test
-        '''
-        # touch_ui('全选客户',x=-25)
-        # print(self.check_window_exists(title='SOP消息'))
-        self.connect_to_special_panel(title='SOP消息')
-        print(find_ui('选择客户'))
-        # shot('当前截屏')
-
-    def run_task(self):
-        '''
         '''
         while not self.open_sending_helper():
             sleep(1)
@@ -179,21 +169,25 @@ class EveryDayTask(Base):
         while not self.select_customer_tag():
             self.select_the_customer()
 
-        print(self.scroll_the_tag_panel())
+        # print(self.scroll_the_tag_panel())
 
-        # while not self.search_target_tag():
-        #     self.select_customer_tag()
+        while not self.search_target_tag():
+            self.select_customer_tag()
 
-        # while not self.send_message_to_customer():
-        #     self.search_target_tag()
+        while not self.send_message_to_customer():
+            self.search_target_tag()
 
+    def run_task(self):
+        '''
+        '''
+        
         # self.open_sending_helper()
         # self.select_the_customer()
         # self.select_customer_tag()
         # self.search_target_tag()
         # self.send_message_to_customer()
 
-        # self.test()
+        self.test()
 
 task = EveryDayTask()
 task.run_task()
