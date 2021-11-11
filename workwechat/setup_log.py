@@ -15,7 +15,7 @@ class Logger(object):
 
     def __init__(self, level='info', when='D', backcount=3,
                  fmt='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'):
-        ROOT_DIR = os.path.expanduser("..\\WorkWechat")
+        ROOT_DIR = os.path.expanduser("..")
         filename = os.path.join(ROOT_DIR, 'task.log')
 
         self.logger = logging.getLogger(filename)

@@ -1,7 +1,7 @@
-# -*- encoding=utf8 -*-
+# -*- encoding=utf8 -*- 
 from airtest.core.api import *
 from PIL import Image
-from photos import Base,exists_ui,touch_ui,find_ui,shot
+from base import Base,exists_ui,touch_ui,find_ui,shot
 from airtest.aircv import *
 from airtest.core.api import Template, exists, touch, auto_setup, connect_device,snapshot,assert_equal
 
@@ -60,7 +60,7 @@ class EveryDayTask(Base):
         every day 1V1 sending.
         * base on having openned the customer-sop.
         '''
-        self.connect_to_sop_chat()
+        self.connect_to_special_panel(title='SOP消息')
         try_times = 0
         while True:
             if try_times > 3:
@@ -70,7 +70,8 @@ class EveryDayTask(Base):
                 sleep(0.2)
                 break
             else:
-                self.connect_to_sop_chat()
+                self.connect_to_special_panel(title='SOP消息')
+                self.log.info('\n\t —— can not find the group sending helper! ——')
                 try_times += 1
                 sleep(3)
         try:
@@ -84,7 +85,7 @@ class EveryDayTask(Base):
         '''
         after open the sending helper,select the customer tag.
         '''
-        self.connect_to_sending_helper()
+        self.connect_to_special_panel(title='向我的客户发消息')
         try_times = 0
         while True:
             if try_times > 3:
@@ -93,7 +94,7 @@ class EveryDayTask(Base):
                 sleep(0.2)
                 break
             else:
-                self.connect_to_sending_helper()
+                self.connect_to_special_panel(title='向我的客户发消息')
                 try_times += 1
                 sleep(3)
         try:
@@ -106,7 +107,7 @@ class EveryDayTask(Base):
         '''
         select the customer tags.
         '''
-        self.connect_to_select_custom_panel()
+        self.connect_to_special_panel(title='选择客户')
         try_times = 0
         while True:
             if try_times > 3:
@@ -115,7 +116,7 @@ class EveryDayTask(Base):
                 sleep(0.2)
                 break
             else:
-                self.connect_to_select_custom_panel()
+                self.connect_to_special_panel(title='选择客户')
                 try_times += 1
                 sleep(3)
         try:
@@ -128,14 +129,14 @@ class EveryDayTask(Base):
         '''
         search target customer tag from the list.
         '''
-        self.connect_to_select_custom_panel()
+        self.connect_to_special_panel(title='选择客户')
         self.connect_to_desktop()
         try:
             #此处写寻找标签逻辑
             touch_ui('选择标签男')
 
             touch_ui('确定')
-            self.connect_to_select_custom_panel()
+            self.connect_to_special_panel('选择客户')
             sleep(0.5)
             touch_ui('全选客户',x=-25)
             sleep(0.5)
@@ -147,12 +148,12 @@ class EveryDayTask(Base):
         '''
         send message to my customer.
         '''
-        self.connect_to_sending_helper()
+        self.connect_to_special_panel(title='向我的客户发消息')
         try:
             touch_ui('发送')
         except Exception as e:
             self.log.error(f'\n\t —— some error occured when send msg to customer step1,detil error info: ——\n\t {e}')
-        self.connect_to_msg_sending_confirm()
+        self.connect_to_special_panel(title='向我的客户发消息')
         try:
             touch_ui('确认发送')
         except:
@@ -165,9 +166,8 @@ class EveryDayTask(Base):
         # self.connect_to_select_custom_panel()
         # self.connect_to_desktop()
         # touch_ui('全选客户',x=-25)
-        self.connect_to_text()
-        # touch_ui('记事本')
-        # self.send_keys('{PGUP 10}')
+        print(self.check_window_exists(title='SOP消息'))
+        # self.connect_to_special_panel(title='SOP消息')
         # shot('当前截屏')
         
 
@@ -180,8 +180,8 @@ class EveryDayTask(Base):
         # self.receipt_the_custom_sop()
 
         self.open_sending_helper()
-        # self.select_the_customer()
-        # self.select_customer_tag()
+        self.select_the_customer()
+        self.select_customer_tag()
         # self.search_target_tag()
         # self.send_message_to_customer()
 

@@ -1,0 +1,12 @@
+{
+    "python.terminal.executeInFileDir": true,
+    "python.terminal.launchArgs": [
+
+    ],
+    "python.analysis.logLevel": "Information",
+    "python.autoComplete.extraPaths": [
+    
+    ],
+    "python.analysis.extraPaths": []
+    
+}

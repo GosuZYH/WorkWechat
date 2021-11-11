@@ -10,7 +10,7 @@ import pytesseract
 from PIL import Image
 from airtest.core.api import *
 from airtest.cli.parser import cli_setup
-from .setup_log import Logger
+from setup_log import Logger
 
 from init_airtest import AirConn
 
@@ -30,6 +30,18 @@ class Base(ABC):
         '''
         touch(Template(r'photos\\搜索框.png'))
 
+    def check_window_exists(self,title=''):
+        '''
+        check all exists windows the
+        '''
+        handlers = []
+        win32gui.EnumWindows(lambda handle, param: param.append(handle), handlers)
+        time.sleep(0.1)
+        for handler in handlers:
+            if win32gui.GetWindowText(handler) == title:
+                return True
+        return False
+
     def connect_to_desktop(self):
         '''
         connect to the windows desktop
@@ -37,71 +49,71 @@ class Base(ABC):
         if not cli_setup():
             auto_setup(__file__,logdir=True,devices=["Windows:///",])
 
-    def connect_to_workwechat(self):
+    def connect_to_special_panel(self,title=''):
         '''
         connect to the workwechat main window.
         '''
-        conn = AirConn(title='企业微信')
+        conn = AirConn(title=title)
         try:
             conn.connect_to_target_window()
         except Exception as e:
             self.log.error(f'\n\t —— can not connect to the workwechat,detil error info: ——\n\t {e}')
         sleep(0.2)
 
-    def connect_to_sop_chat(self):
-        '''
-        connect to the sop chat panel.
-        '''
-        conn = AirConn(title='SOP消息')
-        try:
-            conn.connect_to_target_window()
-        except Exception as e:
-            self.log.error(f'\n\t —— can not connect to the sop-chat panel,detil error info: ——\n\t {e}')
-        sleep(0.2)
+    # def connect_to_sop_chat(self):
+    #     '''
+    #     connect to the sop chat panel.
+    #     '''
+    #     conn = AirConn(title='SOP消息')
+    #     try:
+    #         conn.connect_to_target_window()
+    #     except Exception as e:
+    #         self.log.error(f'\n\t —— can not connect to the sop-chat panel,detil error info: ——\n\t {e}')
+    #     sleep(0.2)
 
-    def connect_to_sending_helper(self):
-        '''
-        connect to the sending-msg-to-my-customer panel.
-        '''
-        conn = AirConn(title='向我的客户发消息')
-        try:
-            conn.connect_to_target_window()
-        except Exception as e:
-            self.log.error(f'\n\t —— can not connect to the sending-panel,detil error info: ——\n\t {e}')
-        sleep(0.2)
+    # def connect_to_sending_helper(self):
+    #     '''
+    #     connect to the sending-msg-to-my-customer panel.
+    #     '''
+    #     conn = AirConn(title='向我的客户发消息')
+    #     try:
+    #         conn.connect_to_target_window()
+    #     except Exception as e:
+    #         self.log.error(f'\n\t —— can not connect to the sending-panel,detil error info: ——\n\t {e}')
+    #     sleep(0.2)
     
-    def connect_to_select_custom_panel(self):
-        '''
-        connect to the workwechat main window.
-        '''
-        conn = AirConn(title='选择客户')
-        try:
-            conn.connect_to_target_window()
-        except Exception as e:
-            self.log.error(f'\n\t —— can not connect to the workwechat,detil error info: ——\n\t {e}')
-        sleep(0.2)
+    # def connect_to_select_custom_panel(self):
+    #     '''
+    #     connect to the workwechat main window.
+    #     '''
+    #     conn = AirConn(title='选择客户')
+    #     try:
+    #         conn.connect_to_target_window()
+    #     except Exception as e:
+    #         self.log.error(f'\n\t —— can not connect to the workwechat,detil error info: ——\n\t {e}')
+    #     sleep(0.2)
     
-    def connect_to_msg_sending_confirm(self):
-        '''
-        connect to the message-sending-confirm panel.
-        '''
-        conn = AirConn(title='消息发送确认')
-        try:
-            conn.connect_to_target_window()
-        except Exception as e:
-            self.log.error(f'\n\t —— can not connect to the workwechat,detil error info: ——\n\t {e}')
-        sleep(0.2)
+    # def connect_to_msg_sending_confirm(self):
+    #     '''
+    #     connect to the message-sending-confirm panel.
+    #     '''
+    #     conn = AirConn(title='消息发送确认')
+    #     try:
+    #         conn.connect_to_target_window()
+    #     except Exception as e:
+    #         self.log.error(f'\n\t —— can not connect to the workwechat,detil error info: ——\n\t {e}')
+    #     sleep(0.2)
 
-    def connect_to_text(self):
-        '''
-        connect to the message-sending-confirm panel.
-        '''
-        conn = AirConn(title='123.txt - 记事本')
-        try:
-            conn.connect_to_target_window()
-        except Exception as e:
-            self.log.error(f'\n\t —— can not connect to the workwechat,detil error info: ——\n\t {e}')
-        sleep(0.2)
+    # def connect_to_text(self):
+    #     '''
+    #     connect to the message-sending-confirm panel.
+    #     '''
+    #     conn = AirConn(title='123.txt - 记事本')
+    #     try:
+    #         conn.connect_to_target_window()
+    #     except Exception as e:
+    #         self.log.error(f'\n\t —— can not connect to the workwechat,detil error info: ——\n\t {e}')
+    #     sleep(0.2)
 
     def send_keys(self, keys):
         """

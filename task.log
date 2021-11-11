@@ -1,0 +1,24 @@
+2021-11-11 13:09:50,613 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:60] - ERROR: 
+	 —— can not connect to the workwechat,detil error info: ——
+	 Could not find 'SOP消息' in 'dict_keys(['', 'ThumbnailDeviceHelperWnd', 'RPAShell_TrayWnd', 'Shell_TrayWnd', 'TXGuiFoundation', '小火箭通用加速TXGuiFoundation', '小火箭通用加速', 'RPASunAwtFrame', 'SunAwtFrame', 'RPA', 'CabinetWClass', 'workwechatCabinetWClass', 'workwechat', '0', '1', '2', 'Windows.UI.Core.CoreWindow', 'ApplicationFrameWindow', '设置', '设置ApplicationFrameWindow', 'Windows 输入体验Windows.UI.Core.CoreWindow', 'Windows.UI.Core.CoreWindow0', 'Windows.UI.Core.CoreWindow1', 'Windows.UI.Core.CoreWindow2', 'Windows 输入体验', '3', 'DummyDWMListenerWindow', '4', 'EdgeUiInputTopWndClass', '5', 'DummyDWMListenerWindow0', 'DummyDWMListenerWindow1', 'DummyDWMListenerWindow2', '6', 'DummyDWMListenerWindow3', '7', 'DummyDWMListenerWindow4', '8', 'DummyDWMListenerWindow5', '微信', '微信WeChatMainWndForPC', 'WeChatMainWndForPC', '(14条消息) VSCODE python无法引入自定义的包_apacheuk的博客-CSDN博客 - Gosu的浏览器SE_SogouExplorerFrame', 'SE_SogouExplorerFrame', '(14条消息) VSCODE python无法引入自定义的包_apacheuk的博客-CSDN博客 - Gosu的浏览器', '企业微信', 'WeWorkWindow', '企业微信WeWorkWindow', 'everyday_task.py - RPA - Visual Studio Code', 'Chrome_WidgetWin_1', 'everyday_task.py - RPA - Visual Studio CodeChrome_WidgetWin_1', '9', 'WorkerW', '10', 'WorkerW0', 'WorkerW1', 'WorkerW2', 'Program ManagerProgman', 'Program Manager', 'Progman'])'
+2021-11-11 13:09:55,396 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:74] - INFO: 
+	 —— can not find the group sending helper! ——
+2021-11-11 13:09:59,064 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:74] - INFO: 
+	 —— can not find the group sending helper! ——
+2021-11-11 13:10:02,736 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:74] - INFO: 
+	 —— can not find the group sending helper! ——
+2021-11-11 13:11:03,555 - E:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:74] - INFO: 
+	 —— can not find the group sending helper! ——
+2021-11-11 13:11:48,280 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:69] - INFO: 
+	 —— find the group sending helper! ——
+2021-11-11 13:11:49,613 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:79] - INFO: 
+	 —— touch the button ——
+2021-11-11 13:12:03,857 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:60] - ERROR: 
+	 —— can not connect to the workwechat,detil error info: ——
+	 Could not find 'SOP消息' in 'dict_keys(['', 'ThumbnailDeviceHelperWnd', 'everyday_task.py - RPA - Visual Studio CodeShell_TrayWnd', 'Shell_TrayWnd', '小火箭通用加速', 'TXGuiFoundation', '小火箭通用加速TXGuiFoundation', '企业微信WeWorkWindow', '企业微信', 'WeWorkWindow', '企业微信PerryShadowWnd', 'PerryShadowWnd', 'everyday_task.py - RPA - Visual Studio CodeChrome_WidgetWin_1', 'Chrome_WidgetWin_1', 'everyday_task.py - RPA - Visual Studio Code', 'workwechat', 'workwechatCabinetWClass', 'CabinetWClass', 'Windows.UI.Core.CoreWindow', '0', '1', '2', 'ApplicationFrameWindow', '设置', '设置ApplicationFrameWindow', 'Windows.UI.Core.CoreWindow0', 'Windows.UI.Core.CoreWindow1', 'Windows.UI.Core.CoreWindow2', 'Windows 输入体验', 'Windows 输入体验Windows.UI.Core.CoreWindow', '3', 'DummyDWMListenerWindow', '4', 'EdgeUiInputTopWndClass', '5', 'DummyDWMListenerWindow0', 'DummyDWMListenerWindow1', 'DummyDWMListenerWindow2', '6', 'DummyDWMListenerWindow3', '7', 'DummyDWMListenerWindow4', '8', 'DummyDWMListenerWindow5', '微信WeChatMainWndForPC', '微信', 'WeChatMainWndForPC', 'SE_SogouExplorerFrame', '(14条消息) VSCODE python无法引入自定义的包_apacheuk的博客-CSDN博客 - Gosu的浏览器SE_SogouExplorerFrame', '(14条消息) VSCODE python无法引入自定义的包_apacheuk的博客-CSDN博客 - Gosu的浏览器', 'SunAwtFrame', 'RPA – everyday_task.pySunAwtFrame', 'RPA – everyday_task.py', '9', 'WorkerW', '10', 'WorkerW0', 'WorkerW1', 'WorkerW2', 'Progman', 'Program ManagerProgman', 'Program Manager'])'
+2021-11-11 13:12:07,997 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:74] - INFO: 
+	 —— can not find the group sending helper! ——
+2021-11-11 13:12:11,129 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:69] - INFO: 
+	 —— find the group sending helper! ——
+2021-11-11 13:12:12,453 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:79] - INFO: 
+	 —— touch the button ——

@@ -6,7 +6,7 @@ import win32gui
 import pywinauto
 import pytesseract
 from PIL import Image
-from baidu_OCR import CodeDemo
+# from baidu_OCR import CodeDemo
 from airtest.aircv import *
 from airtest.core.api import Template, exists, touch, auto_setup, connect_device,snapshot
 
