@@ -2,49 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1a7ae64-ca19-4062-a958-4ea143973c21" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workwechat/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workwechat/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workwechat/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workwechat/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workwechat/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workwechat/.idea/workwechat.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workwechat/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workwechat/log/log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workwechat/photos/当前截屏.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workwechat/photos/记事本.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workwechat/task.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/WorkWechat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WorkWechat.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/baidu_OCR.py" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/baidu_OCR.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/everyday_task.py" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/everyday_task.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/init_airtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/init_airtest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/photos/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/photos/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/photos/setup_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/setup_log.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/photos/不限标签.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/不限标签.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/photos/全选客户.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/全选客户.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/photos/发送.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/发送.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/photos/回到最新位置.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/回到最新位置.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/photos/应用与小程序.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/应用与小程序.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/photos/当前截屏.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/photos/搜索框.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/搜索框.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/photos/洛书SMR1.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/洛书SMR1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/photos/消息1.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/消息1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/photos/消息2.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/消息2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/photos/清空.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/清空.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/photos/确定.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/确定.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/photos/确认发送.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/确认发送.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/photos/跳转到群发助手.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/跳转到群发助手.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/photos/选择客户.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/选择客户.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/photos/选择标签男.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/选择标签男.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/test_copy.py" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/test_copy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/test_windowhandle.py" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/test_windowhandle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.air/test_work_wechat.py" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/test_work_wechat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task.log" beforeDir="false" afterPath="$PROJECT_DIR$/task.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workwechat/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workwechat/everyday_task.py" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/everyday_task.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workwechat/log/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/log/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workwechat/photos/当前截屏.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/当前截屏.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +15,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="zyh" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="20kydiPjEyURwGb73q4ICQtewJ5" />
@@ -169,5 +137,16 @@
       <updated>1636602968767</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -22,3 +22,232 @@
 	 —— find the group sending helper! ——
 2021-11-11 13:12:12,453 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:79] - INFO: 
 	 —— touch the button ——
+2021-11-11 13:37:27,530 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:61] - ERROR: 
+	 —— can not connect to the workwechat,detil error info: ——
+	 Could not find 'SOP消息' in 'dict_keys(['ThumbnailDeviceHelperWnd', '', 'everyday_task.py - RPA - Visual Studio CodeShell_TrayWnd', 'Shell_TrayWnd', '小火箭通用加速', 'TXGuiFoundation', '小火箭通用加速TXGuiFoundation', 'Chrome_WidgetWin_1', 'everyday_task.py - RPA - Visual Studio Code', 'everyday_task.py - RPA - Visual Studio CodeChrome_WidgetWin_1', 'popupshadow', '微信popupshadow', '微信WeChatMainWndForPC', '微信', 'WeChatMainWndForPC', 'workwechat', 'CabinetWClass', 'workwechatCabinetWClass', '0', '1', '2', 'Windows.UI.Core.CoreWindow', 'ApplicationFrameWindow', '设置ApplicationFrameWindow', '设置', 'Windows.UI.Core.CoreWindow0', 'Windows.UI.Core.CoreWindow1', 'Windows.UI.Core.CoreWindow2', 'Windows 输入体验', 'Windows 输入体验Windows.UI.Core.CoreWindow', '3', 'DummyDWMListenerWindow', '4', 'EdgeUiInputTopWndClass', '5', 'DummyDWMListenerWindow0', 'DummyDWMListenerWindow1', 'DummyDWMListenerWindow2', '6', 'DummyDWMListenerWindow3', '7', 'DummyDWMListenerWindow4', '8', 'DummyDWMListenerWindow5', 'WeWorkWindow', '企业微信WeWorkWindow', '企业微信', '张 宇航 - 首页 - Daqinjia: Git with a cup of tea - Gosu的浏览器SE_SogouExplorerFrame', '张 宇航 - 首页 - Daqinjia: Git with a cup of tea - Gosu的浏览器', 'SE_SogouExplorerFrame', 'RPA – everyday_task.py', 'RPA – everyday_task.pySunAwtFrame', 'SunAwtFrame', '9', 'WorkerW', '10', 'WorkerW0', 'WorkerW1', 'WorkerW2', 'Program Manager', 'Program ManagerProgman', 'Progman'])'
+2021-11-11 14:59:08,209 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:66] - INFO: 
+	 —— find the group sending helper! ——
+2021-11-11 14:59:09,624 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 14:59:45,429 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:66] - INFO: 
+	 —— find the group sending helper! ——
+2021-11-11 14:59:46,547 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:68] - INFO: 
+	 —— touch the sending helper button ——
+2021-11-11 15:00:16,674 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:73] - INFO: 
+	 —— can not find the group sending helper! ——
+2021-11-11 15:00:30,444 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:66] - INFO: 
+	 —— find the group sending helper! ——
+2021-11-11 15:00:50,951 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:71] - ERROR: 
+	 —— can not find sending button——
+2021-11-11 15:45:14,896 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:16,020 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:17,141 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:18,257 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:19,383 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:20,506 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:21,630 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:22,752 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:23,873 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:24,994 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:26,113 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:27,238 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:28,362 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:29,488 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:30,617 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:31,733 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:32,856 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:33,982 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:35,103 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:36,226 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:37,349 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:38,472 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:39,590 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 15:45:43,125 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:69] - ERROR: 
+	 *** can not find the group sending helper! ***
+2021-11-11 15:45:44,245 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:45,365 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 15:45:46,892 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:69] - ERROR: 
+	 *** can not find the group sending helper! ***
+2021-11-11 15:45:48,018 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:49,142 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:50,260 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 15:45:52,366 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:69] - ERROR: 
+	 *** can not find the group sending helper! ***
+2021-11-11 15:45:53,492 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:54,618 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:55,739 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:56,860 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:45:57,980 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 15:46:00,116 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:69] - ERROR: 
+	 *** can not find the group sending helper! ***
+2021-11-11 15:46:01,233 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:02,353 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:03,477 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:04,596 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:05,719 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:06,838 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:07,960 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 15:46:11,382 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:69] - ERROR: 
+	 *** can not find the group sending helper! ***
+2021-11-11 15:46:12,503 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:13,622 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:14,745 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:15,866 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:16,987 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:18,113 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:19,234 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:20,354 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:21,481 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:22,600 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:23,724 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:24,847 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:25,974 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:27,091 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:28,212 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:29,333 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:30,453 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:31,573 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:32,695 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:33,819 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:34,939 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:36,059 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:37,180 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:38,300 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:39,422 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:40,545 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:41,664 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:42,786 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:43,906 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:45,032 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:46,152 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:47,274 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:48,398 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:49,516 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:50,642 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 15:46:53,404 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:69] - ERROR: 
+	 *** can not find the group sending helper! ***
+2021-11-11 15:46:54,528 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:55,645 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:56,772 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:57,899 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:46:59,022 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:47:00,145 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:47:01,268 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:48:27,604 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:48:28,730 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:48:29,852 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:48:30,976 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:48:32,097 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:48:33,222 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:48:34,343 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:48:35,463 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 15:48:36,612 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 16:02:00,407 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 16:02:01,533 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 16:02:02,659 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 16:02:03,778 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 16:02:04,901 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 16:02:06,027 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-11 16:02:07,146 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:64] - INFO: 
+	 —— Target panel exists. ——
+2021-11-11 16:02:09,376 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:70] - ERROR: 
+	 *** can not find the group sending helper! ***
+2021-11-11 16:02:10,498 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:42] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***

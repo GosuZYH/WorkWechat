@@ -2,7 +2,6 @@
 __author__ = "zyh"
 
 from abc import ABC
-import logging
 import time
 import win32gui
 import pywinauto
@@ -40,6 +39,7 @@ class Base(ABC):
         for handler in handlers:
             if win32gui.GetWindowText(handler) == title:
                 return True
+        self.log.error(f'\n\t ***{title} window not fount or don not exists! ***')
         return False
 
     def connect_to_desktop(self):
@@ -48,6 +48,9 @@ class Base(ABC):
         '''
         if not cli_setup():
             auto_setup(__file__,logdir=True,devices=["Windows:///",])
+        else:
+            self.log.error('\n\t ***can not connect to the windows desktop***.')
+            return False
 
     def connect_to_special_panel(self,title=''):
         '''
@@ -56,9 +59,10 @@ class Base(ABC):
         conn = AirConn(title=title)
         try:
             conn.connect_to_target_window()
+            return True
         except Exception as e:
-            self.log.error(f'\n\t —— can not connect to the workwechat,detil error info: ——\n\t {e}')
-        sleep(0.2)
+            self.log.error(f'\n\t *** can not connect to the workwechat,detil error info: ***\n\t {e}')
+            return False
 
     # def connect_to_sop_chat(self):
     #     '''
@@ -153,34 +157,51 @@ def touch_ui(photo_name='',**kwargs):
     * if have kwargs: will touch the central point coordinate offset.
     '''
     if kwargs:
-        pos = find_all(Template('photos\%s.png' %photo_name))
-        if pos is not None:
-            offset_x = 0 if kwargs.get('x') is None else kwargs.get('x')
-            offset_y = 0 if kwargs.get('y') is None else kwargs.get('y')
-            pos_x = int(pos[0].get('result')[0]) + offset_x
-            pos_y = int(pos[0].get('result')[1]) + offset_y
-            print(pos_x,pos_y)
-            touch((pos_x,pos_y))
-        else:
+        try:
+            pos = find_all(Template('photos\%s.png' %photo_name))
+            if pos is not None:
+                offset_x = 0 if kwargs.get('x') is None else kwargs.get('x')
+                offset_y = 0 if kwargs.get('y') is None else kwargs.get('y')
+                pos_x = int(pos[0].get('result')[0]) + offset_x
+                pos_y = int(pos[0].get('result')[1]) + offset_y
+                touch((pos_x,pos_y))
+                return True
+            else:
+                return False
+        except Exception as e:
+            print(f'\n\t ***some error occured when touch target ui:{e}***')
             return False
     else:
-        result = touch(Template('photos\%s.png' %photo_name))
-        print(result)
+        try:
+            touch(Template('photos\%s.png' %photo_name))
+            return True
+        except Exception as e:
+            print(f'\n\t ***some error occured when touch target ui:{e}***')
+            return False
 
 def exists_ui(photo_name=''):
     '''
     judge if the ui exists.
     '''
     try:
-        return exists(Template('photos\%s.png' %photo_name))
-    except:
-        sleep(0.2)
+        res = exists(Template('photos\%s.png' %photo_name))
+        if res:
+            return True
+        else:
+            return False
+    except Exception as e:
+            print(f'\n\t ***some error occured when judge target ui exists:{e}***')
+            return False
 
 def find_ui(photo_name=''):
     '''
     find all exists ui in panel.
     '''
-    return find_all(Template('photos\%s.png' %photo_name))
+    res = find_all(Template('photos\%s.png' %photo_name))
+    if res is not None:
+        return res
+    else:
+        return False
 
 def shot(photo_name=''):
     snapshot(filename = '..\\photos\\%s.png' % photo_name,quality=99,max_size=1200)
