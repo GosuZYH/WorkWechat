@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1a7ae64-ca19-4062-a958-4ea143973c21" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/task.log" beforeDir="false" afterPath="$PROJECT_DIR$/task.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workwechat/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workwechat/everyday_task.py" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/everyday_task.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workwechat/log/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/log/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workwechat/photos/photo.py" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/photo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workwechat/photos/tpl1636618032406.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workwechat/photos/tpl1636619069985.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workwechat/photos/tpl1636619146759.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

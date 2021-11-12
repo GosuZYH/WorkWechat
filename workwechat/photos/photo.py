@@ -10,7 +10,6 @@ if not cli_setup():
 
 # script content
 print("start...")
-touch(Template(r"tpl1636621188099.png", record_pos=(0.189, -0.097), resolution=(1920, 1080)))
 
 
 # generate html report

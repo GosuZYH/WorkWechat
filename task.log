@@ -1276,3 +1276,788 @@
 2021-11-11 18:02:31,772 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
 2021-11-11 18:02:31,882 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
 2021-11-11 18:02:31,992 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:124] - INFO: mouse scroll at (712,415) with wheel dist -1
+2021-11-12 09:46:02,143 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 09:46:03,266 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 09:46:04,383 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 09:46:05,504 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 09:46:06,627 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 09:46:07,750 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 09:46:08,863 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 09:46:09,974 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 09:46:11,083 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 09:46:12,194 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:65] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 09:46:33,250 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:75] - ERROR: 
+	 *** can not find the click-copy button! ***
+2021-11-12 09:46:34,367 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:65] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 09:46:55,144 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:75] - ERROR: 
+	 *** can not find the click-copy button! ***
+2021-11-12 09:46:56,251 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:65] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 09:47:28,875 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:65] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 09:49:26,246 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:65] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 09:49:28,666 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:83] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 09:49:30,064 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:86] - INFO: 
+	 —— touch the sending-helper button ——
+2021-11-12 09:49:30,484 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:97] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 09:49:32,282 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:101] - INFO: 
+	 —— touch the select customer button ——
+2021-11-12 09:49:32,392 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:111] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 09:49:34,199 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:115] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-12 09:49:34,263 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:143] - ERROR: 
+	 *** some error occured when selected the customer ***
+2021-11-12 09:49:34,372 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:111] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 09:49:36,164 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:115] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-12 09:49:36,219 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:143] - ERROR: 
+	 *** some error occured when selected the customer ***
+2021-11-12 09:49:36,321 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:111] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 09:49:38,104 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:115] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-12 09:49:38,166 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:143] - ERROR: 
+	 *** some error occured when selected the customer ***
+2021-11-12 09:49:38,270 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:111] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 09:49:40,047 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:115] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-12 09:49:40,103 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:143] - ERROR: 
+	 *** some error occured when selected the customer ***
+2021-11-12 09:49:40,209 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:111] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 09:49:42,023 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:115] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-12 09:49:42,081 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:143] - ERROR: 
+	 *** some error occured when selected the customer ***
+2021-11-12 09:49:42,183 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:111] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 09:49:43,973 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:115] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-12 09:49:44,030 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:143] - ERROR: 
+	 *** some error occured when selected the customer ***
+2021-11-12 09:49:44,145 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:111] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 10:06:59,757 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:111] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 10:07:01,547 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:115] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-12 10:07:57,729 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:111] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 10:07:59,512 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:115] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-12 13:30:14,429 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 13:30:15,552 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 13:30:16,672 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 13:30:17,793 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 13:30:18,906 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 13:30:20,025 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 13:30:21,147 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 13:30:22,264 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 13:30:23,380 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 13:30:24,500 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 13:30:25,617 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 13:30:26,737 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 13:30:27,855 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 13:30:28,969 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 13:30:30,089 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 13:30:31,210 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 13:30:32,321 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:65] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 13:30:36,540 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:83] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 13:30:37,874 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:86] - INFO: 
+	 —— touch the sending-helper button ——
+2021-11-12 13:30:38,298 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:97] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 13:30:40,113 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:101] - INFO: 
+	 —— touch the select customer button ——
+2021-11-12 13:30:40,222 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:111] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 13:30:42,002 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:115] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-12 13:30:42,114 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:125] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 13:30:57,231 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:30:58,452 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:30:58,572 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:30:58,685 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:30:58,793 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:30:58,902 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:31:11,471 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:31:12,665 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:31:12,795 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:31:12,914 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:31:13,022 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:31:13,131 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:31:25,531 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:31:26,743 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:31:26,878 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:31:26,995 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:31:27,104 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:31:27,213 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:31:40,464 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:31:41,662 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:31:41,793 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:31:41,907 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:31:42,015 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:31:42,123 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:31:59,684 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:32:00,888 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:32:01,008 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:32:01,120 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:32:01,227 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:32:01,350 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:32:18,299 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:32:19,521 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:32:19,641 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:32:19,755 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:32:19,864 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:32:19,973 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:32:30,516 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:32:31,712 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:32:31,844 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:32:31,960 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:32:32,068 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:32:32,176 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1259,398) with wheel dist -1
+2021-11-12 13:34:27,102 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 13:34:28,223 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 13:34:29,345 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 13:34:30,460 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 13:34:31,577 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 13:34:32,690 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 13:34:33,810 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:65] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 13:34:38,330 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:83] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 13:34:39,663 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:86] - INFO: 
+	 —— touch the sending-helper button ——
+2021-11-12 13:34:40,084 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:97] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 13:34:41,869 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:101] - INFO: 
+	 —— touch the select customer button ——
+2021-11-12 13:34:41,978 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:111] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 13:34:43,792 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:115] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-12 13:34:43,901 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:125] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 13:34:58,091 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:34:59,239 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:34:59,366 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:34:59,472 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:34:59,581 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:34:59,690 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:35:16,954 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:35:18,154 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:35:18,278 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:35:18,389 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:35:18,498 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:35:18,607 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:35:30,264 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:35:31,424 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:35:31,549 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:35:31,656 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:35:31,767 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:35:31,876 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:35:44,891 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:35:46,091 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:35:46,219 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:35:46,323 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:35:46,433 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:35:46,543 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:36:01,586 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:36:02,770 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:36:02,901 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:36:03,006 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:36:03,113 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:36:03,222 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:36:14,800 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:36:16,006 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:36:16,132 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:36:16,242 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:36:16,349 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:36:16,472 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:36:29,466 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:36:30,359 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:36:30,470 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:36:30,578 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:36:30,686 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:36:30,795 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:36:41,358 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:36:42,549 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:36:42,669 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:36:42,783 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:36:42,892 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:36:42,999 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 13:36:52,594 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:36:53,746 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:36:53,867 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:36:53,984 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:36:54,107 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:36:54,216 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:37:04,794 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:37:05,983 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:37:06,111 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:37:06,231 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:37:06,341 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:37:06,449 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:37:16,211 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:37:17,369 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:37:17,486 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:37:17,604 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:37:17,712 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:37:17,823 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:37:31,553 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:37:32,743 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:37:32,869 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:37:32,978 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:37:33,087 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:37:33,197 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:37:42,683 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:37:43,839 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:37:43,969 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:37:44,075 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:37:44,185 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:37:44,294 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:37:59,086 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:38:00,293 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:38:00,420 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:38:00,530 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:38:00,638 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:38:00,748 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1031,480) with wheel dist -1
+2021-11-12 13:49:10,423 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:65] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 13:49:12,816 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:83] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 13:49:14,149 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:86] - INFO: 
+	 —— touch the sending-helper button ——
+2021-11-12 13:49:14,567 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:97] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 13:49:16,380 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:101] - INFO: 
+	 —— touch the select customer button ——
+2021-11-12 13:49:16,489 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:111] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 13:49:18,261 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:115] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-12 13:49:18,368 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:125] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 13:50:57,720 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:65] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 13:51:00,108 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:83] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 13:51:01,491 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:86] - INFO: 
+	 —— touch the sending-helper button ——
+2021-11-12 13:51:01,911 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:97] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 13:51:03,711 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:101] - INFO: 
+	 —— touch the select customer button ——
+2021-11-12 13:51:03,820 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:111] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 13:51:05,602 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:115] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-12 13:51:05,713 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:125] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 13:51:23,521 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:51:24,747 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:51:24,885 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:51:24,996 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:51:25,105 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:51:25,216 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:51:37,486 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:51:38,661 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:51:38,785 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:51:38,906 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:51:39,015 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:51:39,137 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:51:50,424 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:51:51,618 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:51:51,749 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:51:51,869 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:51:51,979 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:51:52,102 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:52:05,832 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:52:07,008 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:52:07,135 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:52:07,241 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:52:07,349 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:52:07,457 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:52:21,561 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:52:22,738 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:52:22,870 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:52:22,988 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:52:23,098 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:52:23,207 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:52:33,229 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 13:52:34,401 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 13:52:34,540 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:52:34,648 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:52:34,756 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:52:34,865 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (1271,389) with wheel dist -1
+2021-11-12 13:52:46,157 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 14:24:32,373 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 14:24:33,491 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 14:24:34,615 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 14:24:35,731 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 14:24:36,856 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 14:24:37,972 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 14:24:39,088 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 14:24:40,206 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:65] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 14:24:43,847 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:83] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 14:24:45,189 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:86] - INFO: 
+	 —— touch the sending-helper button ——
+2021-11-12 14:24:45,610 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:97] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 14:24:47,381 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:101] - INFO: 
+	 —— touch the select customer button ——
+2021-11-12 14:24:47,491 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:111] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 14:24:49,321 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:115] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-12 14:24:49,431 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:125] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 14:25:02,943 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 14:25:04,098 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 14:25:04,229 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 14:25:04,349 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 14:25:04,459 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 14:25:04,568 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 14:25:18,442 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 14:25:19,572 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 14:25:19,702 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 14:25:19,819 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 14:25:19,927 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 14:25:20,035 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 14:25:33,375 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 15:06:12,917 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 15:06:14,033 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 15:06:15,155 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 15:06:16,282 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 15:06:17,398 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 15:06:18,517 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 15:06:19,632 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 15:06:20,759 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 15:06:21,874 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 15:06:22,992 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:65] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 15:06:26,625 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:83] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 15:06:27,960 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:86] - INFO: 
+	 —— touch the sending-helper button ——
+2021-11-12 15:06:28,379 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:97] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 15:06:30,148 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:101] - INFO: 
+	 —— touch the select customer button ——
+2021-11-12 15:06:30,260 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:111] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 15:06:32,074 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:115] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-12 15:06:32,185 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:125] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 15:06:42,546 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 15:06:43,711 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 15:06:43,834 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 15:06:43,948 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 15:06:44,056 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 15:06:44,163 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 15:06:54,688 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 15:06:55,886 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:189] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 15:06:56,013 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 15:06:56,121 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 15:06:56,230 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 15:06:56,337 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 15:40:27,285 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 15:40:28,407 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 15:40:29,526 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 15:40:30,648 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 15:40:31,759 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:65] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 15:40:36,047 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:83] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 15:40:37,373 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:86] - INFO: 
+	 —— touch the sending-helper button ——
+2021-11-12 15:40:37,795 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:97] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 15:40:39,579 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:101] - INFO: 
+	 —— touch the select customer button ——
+2021-11-12 15:40:39,687 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:111] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 15:40:41,497 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:115] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-12 15:40:41,608 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:125] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 15:40:52,146 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 15:40:53,316 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:188] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 15:40:53,456 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 15:40:53,578 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 15:40:53,700 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 15:40:53,809 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 15:41:11,421 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:136] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 15:41:12,623 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:188] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 15:41:12,744 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 15:41:12,857 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 15:41:12,965 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 15:41:13,076 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:40:38,871 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 16:40:39,991 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 16:40:41,104 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 16:40:42,222 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 16:40:43,344 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:48] - ERROR: 
+	 ***SOP消息 window not fount or don not exists! ***
+2021-11-12 16:40:44,468 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:66] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:40:46,713 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:84] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:40:48,049 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:87] - INFO: 
+	 —— touch the sending-helper button ——
+2021-11-12 16:40:48,471 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:98] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:40:50,272 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:102] - INFO: 
+	 —— touch the select customer button ——
+2021-11-12 16:40:50,382 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:112] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:40:52,171 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:116] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-12 16:40:52,283 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:126] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:41:03,336 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:71] - ERROR: 
+	 *** can not connect to the workwechat,detil error info: ***
+	 (0, 'SetCursorPos', 'No error message is available')
+2021-11-12 16:41:08,002 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:140] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 16:41:08,758 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:194] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 16:41:08,887 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:41:08,994 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:41:09,104 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:41:09,213 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:41:32,661 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:140] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 16:41:33,948 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:194] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 16:41:34,067 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:41:34,179 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:41:34,288 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:41:34,398 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:42:08,175 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:140] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 16:42:09,359 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:194] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 16:42:09,486 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:42:09,591 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:42:09,698 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:42:09,807 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:42:29,101 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:140] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 16:42:31,058 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:194] - INFO: 
+	 —— Touch the Select tag text. ——
+2021-11-12 16:42:31,186 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:42:31,292 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:42:31,413 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:42:31,522 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:45:04,721 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:66] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:45:07,126 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:84] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:45:08,461 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:87] - INFO: 
+	 —— touch the sending-helper button ——
+2021-11-12 16:45:08,886 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:98] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:45:10,649 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:102] - INFO: 
+	 —— touch the select customer button ——
+2021-11-12 16:45:10,762 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:112] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:45:12,541 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:116] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-12 16:45:12,652 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:126] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:45:32,401 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:140] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 16:45:50,991 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:140] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 16:45:51,261 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:45:51,377 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:45:51,486 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:45:51,595 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:46:08,559 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:140] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 16:46:08,821 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:46:08,935 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:46:09,041 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:46:09,151 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:47:27,166 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:66] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:47:29,648 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:84] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:47:30,999 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:87] - INFO: 
+	 —— touch the sending-helper button ——
+2021-11-12 16:47:31,419 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:98] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:47:33,414 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:102] - INFO: 
+	 —— touch the select customer button ——
+2021-11-12 16:47:33,524 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:112] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:47:35,507 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:116] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-12 16:47:35,614 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:126] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:47:52,649 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:139] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 16:47:52,895 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:47:53,000 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:47:53,123 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:47:53,233 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:48:16,478 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:139] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 16:48:16,743 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:48:16,855 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:48:16,963 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:48:17,072 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:48:39,466 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:66] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:48:41,864 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:84] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:48:43,198 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:87] - INFO: 
+	 —— touch the sending-helper button ——
+2021-11-12 16:48:43,620 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:98] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:48:45,405 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:102] - INFO: 
+	 —— touch the select customer button ——
+2021-11-12 16:48:45,517 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:112] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:48:47,395 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:116] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-12 16:48:47,504 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:126] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:49:03,166 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:139] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 16:49:03,435 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:49:03,551 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:49:03,658 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:49:03,768 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:49:17,755 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:139] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 16:53:22,699 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:66] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:53:25,111 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:84] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:53:26,481 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:87] - INFO: 
+	 —— touch the sending-helper button ——
+2021-11-12 16:53:26,902 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:98] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:53:28,689 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:102] - INFO: 
+	 —— touch the select customer button ——
+2021-11-12 16:53:28,800 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:112] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:53:30,594 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:116] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-12 16:53:30,702 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:126] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:53:41,653 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:138] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 16:53:41,891 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:53:42,305 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:53:42,721 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:53:43,136 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:53:55,699 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:138] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 16:53:55,937 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:53:56,362 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:53:56,779 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:53:57,194 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:54:09,231 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:138] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 16:54:09,471 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:54:09,888 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:54:10,308 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:54:10,727 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:54:23,123 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:138] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 16:54:23,355 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:54:23,779 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:54:24,197 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:54:24,614 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:54:35,952 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:138] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 16:54:36,198 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:54:36,623 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:54:37,053 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:54:37,469 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:54:51,386 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:138] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 16:54:51,624 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:54:52,046 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:54:52,464 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:54:52,880 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:55:06,090 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:138] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 16:55:06,324 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:55:06,752 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:55:07,172 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:55:07,591 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:55:17,734 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:138] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 16:55:18,020 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:55:18,442 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:55:18,859 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:55:19,274 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:55:29,472 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:138] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 16:55:29,716 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:55:30,146 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:55:30,565 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:55:30,984 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:55:41,202 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:138] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 16:55:41,447 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:55:41,874 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:55:42,290 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:55:42,708 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:55:53,213 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:138] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 16:55:53,454 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:55:53,883 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:55:54,304 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:55:54,721 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:56:05,150 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:138] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-12 16:56:05,388 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:56:05,829 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:56:06,249 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:56:06,668 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:130] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-12 16:56:10,646 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:229] - INFO: 
+	 —— Target panel exists. ——
+2021-11-12 16:56:12,044 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:233] - INFO: 
+	 —— Target panel exists. ——
