@@ -1,6 +1,5 @@
 # -*- encoding=utf8 -*- 
 from airtest.core.api import *
-from PIL import Image
 import win32clipboard
 from base import Base,exists_ui,touch_ui,find_ui,shot,show_ui
 from airtest.aircv import *
@@ -241,22 +240,9 @@ class EveryDayTask(Base):
             self.select_all_customer()
 
 
-
-        # self.connect_to_special_panel('SOP消息')
-        # self.connect_to_desktop()
-        # shot('test')
-        # show_ui('test')
-
-
     def run_task(self):
         '''
         '''
-        
-        # self.open_sending_helper()
-        # self.select_the_customer()
-        # self.select_customer_tag()
-        # self.search_target_tag()
-        # self.send_message_to_customer()
 
         res = self.test()
 

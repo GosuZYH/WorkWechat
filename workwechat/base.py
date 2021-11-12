@@ -8,9 +8,7 @@ import logging
 from abc import ABC
 import pywinauto
 import pytesseract
-import win32clipboard
 import numpy as np
-from PIL import Image
 from airtest.core.api import *
 from airtest.cli.parser import cli_setup
 from airtest.aircv import cv2
@@ -70,61 +68,6 @@ class Base(ABC):
         except Exception as e:
             self.log.error(f'\n\t *** can not connect to the workwechat,detil error info: ***\n\t {e}')
             return False
-
-    # def connect_to_sop_chat(self):
-    #     '''
-    #     connect to the sop chat panel.
-    #     '''
-    #     conn = AirConn(title='SOP消息')
-    #     try:
-    #         conn.connect_to_target_window()
-    #     except Exception as e:
-    #         self.log.error(f'\n\t —— can not connect to the sop-chat panel,detil error info: ——\n\t {e}')
-    #     sleep(0.2)
-
-    # def connect_to_sending_helper(self):
-    #     '''
-    #     connect to the sending-msg-to-my-customer panel.
-    #     '''
-    #     conn = AirConn(title='向我的客户发消息')
-    #     try:
-    #         conn.connect_to_target_window()
-    #     except Exception as e:
-    #         self.log.error(f'\n\t —— can not connect to the sending-panel,detil error info: ——\n\t {e}')
-    #     sleep(0.2)
-    
-    # def connect_to_select_custom_panel(self):
-    #     '''
-    #     connect to the workwechat main window.
-    #     '''
-    #     conn = AirConn(title='选择客户')
-    #     try:
-    #         conn.connect_to_target_window()
-    #     except Exception as e:
-    #         self.log.error(f'\n\t —— can not connect to the workwechat,detil error info: ——\n\t {e}')
-    #     sleep(0.2)
-    
-    # def connect_to_msg_sending_confirm(self):
-    #     '''
-    #     connect to the message-sending-confirm panel.
-    #     '''
-    #     conn = AirConn(title='消息发送确认')
-    #     try:
-    #         conn.connect_to_target_window()
-    #     except Exception as e:
-    #         self.log.error(f'\n\t —— can not connect to the workwechat,detil error info: ——\n\t {e}')
-    #     sleep(0.2)
-
-    # def connect_to_text(self):
-    #     '''
-    #     connect to the message-sending-confirm panel.
-    #     '''
-    #     conn = AirConn(title='123.txt - 记事本')
-    #     try:
-    #         conn.connect_to_target_window()
-    #     except Exception as e:
-    #         self.log.error(f'\n\t —— can not connect to the workwechat,detil error info: ——\n\t {e}')
-    #     sleep(0.2)
 
     def mouse_scroll(self, x: int = None, y: int = None, wheel_dist: int = 1) -> None:
         self.log.info(f"mouse scroll at ({x},{y}) with wheel dist {wheel_dist}")
@@ -200,35 +143,6 @@ class Base(ABC):
         '''
         get target tag's position by OCR.
         '''
-        # self.connect_to_special_panel('SOP消息')
-        # touch(Template(r"photos\点击复制.png", record_pos=(-0.01, 0.003), resolution=(600, 720)))
-        # #   # 获取复制内容（并做处理）
-        # win32clipboard.OpenClipboard()
-        # label_target = win32clipboard.GetClipboardData()
-        # label_target = label_target.replace('_', ' ')
-        # win32clipboard.CloseClipboard()
-        
-        # #   # “转跳到群发助手”
-        # touch(Template(r"photos\tpl1636619069985.png", record_pos=(-0.003, 0.51), resolution=(600, 720)))
-
-        # print('\t -111')
-
-        # # “向我的客户发消息”
-        # self.connect_to_special_panel('向我的客户发消息')
-        # touch(Template(r"photos\tpl1636619146759.png", record_pos=(-0.234, -0.229), resolution=(500, 415)))
-
-        # print('\t 222')
-
-        # # "选择客户" 界面
-        # self.connect_to_special_panel('选择客户')
-
-        # print('\t 333')
-
-        #   # 保证为未点击状态（操作比较复杂）
-        # if not exists(Template(r"tpl1636535273023.png", record_pos=(-0.423, -0.216), resolution=(620, 500))):
-        #     print('\t111')
-        #     every_day_task.select_customer_tag()
-
         img_select_custom_panel_name = 'screen_select_custom_panel.png'
         screen_img_path = os.path.join(os.getcwd(), 'photos', img_select_custom_panel_name)
         snapshot(filename=screen_img_path, msg=img_select_custom_panel_name)
@@ -236,7 +150,7 @@ class Base(ABC):
         h_select_custom_panel, w_select_custom_panel = img_select_custom_panel.shape[:2]
         print('\t\t', h_select_custom_panel, w_select_custom_panel)
         template_select_custom_panel = Template(r"%s" % screen_img_path)
-
+        
         # 桌面截屏
         self.connect_to_desktop()
         screen_desk = G.DEVICE.snapshot()
