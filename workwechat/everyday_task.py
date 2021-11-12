@@ -67,8 +67,8 @@ class EveryDayTask(Base):
         search the str in chat-list.
         return Ture:已找到 False:未找到
         '''
-
-        if exists_ui('洛书SMR-test聊天窗口') or self.click_luoshu_SMR_in_chat_list() or self.check_for_extra_windows(title='洛书SMR-test'):
+        self.check_for_extra_windows(title='洛书SMR-test')
+        if exists_ui('洛书SMR-test聊天窗口') or self.click_luoshu_SMR_in_chat_list():
             self.log.info('当前在聊天窗口')
             return True
         # if self.find_the_chat() and exists_ui('洛书SMR-test聊天窗口'):
@@ -331,6 +331,9 @@ class EveryDayTask(Base):
         :return:True False stop delete
         '''
         self.log.info('准备进入1v1sop任务框')
+        if exists_ui('任务类型1v1') == False and self.is_in_chat_list():
+            self.log.info('当前页面没有消息,没有任务可以做,停止任务')
+            return 'stop'
         while True:
             if self.up_to_find() and self.check_for_extra_windows() and self.connect_to_workwechat() and exists_ui('任务类型1v1'):
                 self.log.info('当前页面存在消息,准备做任务')
@@ -349,10 +352,7 @@ class EveryDayTask(Base):
                             continue
                     else:
                         return False
-            else:
-                if exists_ui('任务类型1v1') == False:
-                    self.log.info('当前页面没有消息,没有任务可以做,停止任务')
-                    return 'stop'
+
 
     #这里是1对1话术任务处理的第二阶段,确定当前页面是否有可以执行的1v1sop话术任务,如果有就返回True,如果没有就返回False
     def do_sop1v1_task(self):
