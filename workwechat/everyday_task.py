@@ -390,124 +390,132 @@ class EveryDayTask(Base):
         every day 1V1 sending.
         * base on having openned the customer-sop.
         '''
-        self.connect_to_special_panel(title='SOP消息')
-        try_times = 0
-        while True:
-            if try_times > 3:
-                return False
-            if exists_ui('跳转到群发助手'):
-                self.log.info('\n\t —— find the group sending helper! ——')
-                sleep(0.2)
-                break
-            else:
-                self.connect_to_special_panel(title='SOP消息')
-                self.log.info('\n\t —— can not find the group sending helper! ——')
-                try_times += 1
-                sleep(3)
-        try:
-            touch_ui('跳转到群发助手')
-            self.log.info('\n\t —— touch the button ——')
-            return True
-        except:
-            self.log.error('\n\t —— can not find sending button——')
+        if self.check_window_exists(title='SOP消息'):
+            self.log.info('\n\t —— Target panel exists. ——')
+            if self.connect_to_special_panel(title='SOP消息'):
+                if touch_ui('跳转到群发助手'):
+                    sleep(0.5)
+                    self.log.info('\n\t —— touch the sending helper button ——')
+                    return True
+                self.log.error('\n\t *** can not find the group sending helper! ***')
+        return False
 
     def select_the_customer(self):
         '''
         after open the sending helper,select the customer tag.
         '''
-        self.connect_to_special_panel(title='向我的客户发消息')
-        try_times = 0
-        while True:
-            if try_times > 3:
-                return False
-            if exists_ui('选择客户'):
-                sleep(0.2)
-                break
-            else:
-                self.connect_to_special_panel(title='向我的客户发消息')
-                try_times += 1
-                sleep(3)
-        try:
-            touch_ui('选择客户')
-            return True
-        except:
-            self.log.error('\n\t —— can not find select customer button——')
+        if self.check_window_exists(title='向我的客户发消息'):
+            self.log.info('\n\t —— Target panel exists. ——')
+            if self.connect_to_special_panel(title='向我的客户发消息'):
+                if touch_ui('选择客户'):
+                    sleep(0.5)
+                    self.log.info('\n\t —— touch the select customer button ——')
+                    return True
+                self.log.error('\n\t *** can not find select customer button! ***')
+        return False
 
     def select_customer_tag(self):
         '''
         select the customer tags.
         '''
-        self.connect_to_special_panel(title='选择客户')
-        try_times = 0
-        while True:
-            if try_times > 3:
-                return False
-            if exists_ui('不限标签'):
-                sleep(0.2)
-                break
-            else:
-                self.connect_to_special_panel(title='选择客户')
-                try_times += 1
-                sleep(3)
-        try:
-            touch_ui('不限标签')
-            return True
-        except:
-            self.log.error('\n\t —— can not find select tag mini-menu ——')
+        if self.check_window_exists(title='选择客户'):
+            self.log.info('\n\t —— Target panel exists. ——')
+            if self.connect_to_special_panel(title='选择客户'):
+                if touch_ui('不限标签'):
+                    sleep(0.5)
+                    self.log.info('\n\t —— touch the tag mini-menu ——')
+                    return True
+                self.log.error('\n\t *** can not find select tag mini-menu! ***')
+        return False
 
     def search_target_tag(self):
         '''
         search target customer tag from the list.
         '''
-        self.connect_to_special_panel(title='选择客户')
-        self.connect_to_desktop()
-        try:
-            #此处写寻找标签逻辑
-            touch_ui('选择标签男')
-
-            touch_ui('确定')
-            self.connect_to_special_panel('选择客户')
+        if not self.connect_to_desktop():
+            return False
+        if touch_ui('选择标签男'):
             sleep(0.5)
-            touch_ui('全选客户',x=-25)
-            sleep(0.5)
-            touch_ui('确定')
-        except Exception as e:
-            self.log.error(f'\n\t —— some error occured when selected the customer,detil error info: ——\n\t {e}')
+            self.log.info('\n\t —— touch the select tag. ——')
+            if touch_ui('确定'):
+                sleep(0.5)
+                self.log.info('\n\t —— touch the confirm button. ——')
+                if self.check_window_exists(title='选择客户'):
+                    self.log.info('\n\t —— Target panel exists. ——')
+                    if self.connect_to_special_panel(title='选择客户'):
+                        sleep(0.5)
+                        if touch_ui('全选客户',x=-25):
+                            sleep(0.5)
+                            self.log.info('\n\t —— touch the select all customer button. ——')
+                            if touch_ui('确定'):
+                                sleep(0.5)
+                                self.log.info('\n\t —— touch the confirm button. ——')
+                                return True
+        self.log.error(f'\n\t *** some error occured when selected the customer ***')
+        return False
 
     def send_message_to_customer(self):
         '''
         send message to my customer.
         '''
-        self.connect_to_special_panel(title='向我的客户发消息')
-        try:
-            touch_ui('发送')
-        except Exception as e:
-            self.log.error(f'\n\t —— some error occured when send msg to customer step1,detil error info: ——\n\t {e}')
-        self.connect_to_special_panel(title='向我的客户发消息')
-        try:
-            touch_ui('确认发送')
-        except:
-            self.log.error(f'\n\t —— some error occured when send msg to customer,step2,detil error info: ——\n\t {e}')
+        if self.check_window_exists(title='向我的客户发消息'):
+            self.log.info('\n\t —— Target panel exists. ——')
+            if self.connect_to_special_panel(title='向我的客户发消息'):
+                if touch_ui('发送'):
+                    sleep(0.5)
+                    self.log.info('\n\t —— Touch the send button. ——')
+                    if touch_ui('确认发送'):
+                        sleep(0.5)
+                        self.log.info('\n\t —— Touch the Confirm-sending button. ——')
+                        return True
+        self.log.error(f'\n\t *** some error occured when send msg to customer ***')
+        return False
+
+    def scroll_the_tag_panel(self):
+        '''
+        scroll 1 page down in select tag panel.
+        '''
+        if not self.connect_to_desktop():
+            return False
+        if touch_ui('选择标签',y=35):
+            self.log.info('\n\t —— Touch the Select tag text. ——')
+            pos = find_ui('选择标签')[0]
+            print(pos)
+            for i in range(4):
+                self.mouse_scroll(x=pos.get('result')[0],y=pos.get('result')[1]+35,wheel_dist=-1)
+            return True
+            # self.mouse_scroll()
 
     def test(self):
         '''
         test
         '''
-        # self.connect_to_select_custom_panel()
-        # self.connect_to_desktop()
         # touch_ui('全选客户',x=-25)
-        print(self.check_window_exists(title='SOP消息'))
-        # self.connect_to_special_panel(title='SOP消息')
+        # print(self.check_window_exists(title='SOP消息'))
+        self.connect_to_special_panel(title='SOP消息')
+        print(find_ui('选择客户'))
         # shot('当前截屏')
-        
 
     def run_task(self):
         '''
         '''
-        # self.find_the_chat()
-        # self.search_the_SMR()
-        # self.back_to_latest_position()
-        # self.receipt_the_custom_sop()
+        while not self.open_sending_helper():
+            sleep(1)
+            print('wait for 1s')
+
+        while not self.select_the_customer():
+            self.open_sending_helper()
+
+        while not self.select_customer_tag():
+            self.select_the_customer()
+
+        print(self.scroll_the_tag_panel())
+
+        # while not self.search_target_tag():
+        #     self.select_customer_tag()
+
+        # while not self.send_message_to_customer():
+        #     self.search_target_tag()
 
         # self.open_sending_helper()
         # self.select_the_customer()

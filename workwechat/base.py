@@ -3,7 +3,6 @@ __author__ = "zyh"
 
 import winreg
 from abc import ABC
-import logging
 import time
 import win32gui
 import pywinauto
@@ -32,7 +31,7 @@ class Base(ABC):
         '''
         touch(Template(r'photos\\搜索框.png'))
 
-    def check_window_exists(self,title='',all=False):
+    def check_window_exists(self,title=''):
         '''
         check all exists windows the
         '''
@@ -59,6 +58,10 @@ class Base(ABC):
         '''
         if not cli_setup():
             auto_setup(__file__,logdir=True,devices=["Windows:///",])
+            return True
+        else:
+            self.log.error('\n\t ***can not connect to the windows desktop***.')
+            return False
 
     def connect_to_special_panel(self,title=''):
         '''
@@ -69,7 +72,7 @@ class Base(ABC):
             conn.connect_to_target_window()
             return True
         except Exception as e:
-            self.log.error(f'\n\t —— can not connect to the workwechat,detil error info: ——\n\t {e}')
+            self.log.error(f'\n\t *** can not connect to the workwechat,detil error info: ***\n\t {e}')
             return False
 
     # def connect_to_sop_chat(self):
@@ -127,6 +130,12 @@ class Base(ABC):
     #         self.log.error(f'\n\t —— can not connect to the workwechat,detil error info: ——\n\t {e}')
     #     sleep(0.2)
 
+    def mouse_scroll(self, x: int = None, y: int = None, wheel_dist: int = 1) -> None:
+        self.log.info(f"mouse scroll at ({x},{y}) with wheel dist {wheel_dist}")
+        if (x is None and y is None) or (x < 0 or y < 0):
+            raise ValueError(f"Can't click on given coordinates: ({x}, {y})")
+        pywinauto.mouse.scroll(coords=(x, y), wheel_dist=wheel_dist)
+
     def send_keys(self, keys):
         """
         输入keys中的内容，如果是'\n'则意为回车发送
@@ -159,160 +168,57 @@ class Base(ABC):
 
         return ''.join(str)
 
-    def get_WXWork_pid(self):
-        '''
-        Determine whether WXWork's process exists
-        If it doesn't exist,then return False
-        :return:
-        '''
-        try:
-            PID = process_iter()
-            for pid_temp in PID:
-                pid_dic = pid_temp.as_dict(attrs=['pid', 'name'])
-                if pid_dic['name'] == 'WXWork.exe':
-                    pid_num = pid_dic['pid']
-                    return pid_num
-                else:
-                    continue
-            return False
-        except Exception as e:
-            return False
-
-    def start_WXWork(self):
-        '''
-        通过链表找到企微的执行文件并启动
-        如果找到就启动它并返回True
-        否则就返回False
-        '''
-        try:
-            key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, r'Software\Tencent\WXWork')  # 利用系统的链表
-            file_path = str(winreg.QueryValueEx(key, "Executable")[0])
-            app = pywinauto.Application(backend='uia')
-            app.start(file_path)
-            self.log.info('企微窗口启动成功')
-            return True
-        except Exception as e:
-            self.log.info('企微窗口启动失败'+str(e))
-            return False
-
-    def get_all_hwnd(self,hwnd, mouse):
-        self.hwnd_title ={}
-        if (win32gui.IsWindow(hwnd)
-                and win32gui.IsWindowEnabled(hwnd)
-                and win32gui.IsWindowVisible(hwnd)):
-            self.hwnd_title.update({hwnd: win32gui.GetWindowText(hwnd)})
-
-
-    def get_WXWork_handle(self):
-
-        win32gui.EnumWindows(self.get_all_hwnd, 0)
-        for h, t in self.hwnd_title.items():
-            if t == '企业微信':
-                return True
-            else:
-                pass
-        return False
-
-    def open_WXWork_window(self):
-        '''
-        start WorkChat windows
-        if WXWork-process is killed
-        then return:False
-        else return:True
-        '''
-        global hwnd_title
-        hwnd_title = {}
-        if self.get_WXWork_pid() != False:
-            self.log.info('找到企业微信pid')
-            if self.get_WXWork_handle() == False:
-                self.log.info('找到企业微信的handle')
-                try:
-                    if self.start_WXWork():
-                        self.log.info('企微窗口唤起成功')
-                        return True
-                    else:
-                        self.log.error('企微窗口启动失败')
-                        return False
-                except Exception as e:
-                    self.log.error('企微窗口启动失败'+str(e))
-                    return False
-            elif self.get_WXWork_handle() == True:
-                if self.start_WXWork():
-                    self.log.info('企微窗口唤起成功')
-                    return True
-                else:
-                    self.log.error('企微窗口启动失败')
-                    return False
-            else:
-                return False
-        else:
-            if self.start_WXWork():
-                sleep(2)
-                return True
-            else:
-                return False
-
-    def connect_to_workwechat(self):
-        '''
-        保证企微进程以及窗口在最上边
-        :return:
-        '''
-        if self.connect_to_special_panel('企业微信'):
-            self.log.info('企业微信已连接')
-            return True
-        else:
-            while True:
-                if self.open_WXWork_window():
-                    if self.start_WXWork():
-                        self.connect_to_special_panel('企业微信')
-                        return True
-                    else:
-                        self.start_WXWork()
-                        sleep(2)
-                        self.connect_to_special_panel('企业微信')
-                        return True
-                else:
-                    self.log.info('链接微信失败')
-                    return False
-
 def touch_ui(photo_name='',**kwargs):
     '''
     touch the ui in photo.
     * if have kwargs: will touch the central point coordinate offset.
     '''
     if kwargs:
-        pos = find_all(Template('photos\%s.png' %photo_name))
-        if pos is not None:
-            offset_x = 0 if kwargs.get('x') is None else kwargs.get('x')
-            offset_y = 0 if kwargs.get('y') is None else kwargs.get('y')
-            pos_x = int(pos[0].get('result')[0]) + offset_x
-            pos_y = int(pos[0].get('result')[1]) + offset_y
-            touch((pos_x,pos_y))
-        else:
+        try:
+            pos = find_all(Template('photos\%s.png' %photo_name))
+            if pos is not None:
+                offset_x = 0 if kwargs.get('x') is None else kwargs.get('x')
+                offset_y = 0 if kwargs.get('y') is None else kwargs.get('y')
+                pos_x = int(pos[0].get('result')[0]) + offset_x
+                pos_y = int(pos[0].get('result')[1]) + offset_y
+                touch((pos_x,pos_y))
+                return True
+            else:
+                return False
+        except Exception as e:
+            print(f'\n\t ***some error occured when touch target ui:{e}***')
             return False
     else:
-
-        return touch(Template('photos\%s.png' % photo_name))
+        try:
+            touch(Template('photos\%s.png' %photo_name))
+            return True
+        except Exception as e:
+            print(f'\n\t ***some error occured when touch target ui:{e}***')
+            return False
 
 def exists_ui(photo_name=''):
     '''
     judge if the ui exists.
     '''
     try:
-        res = exists(Template('photos\%s.png' % photo_name))
+        res = exists(Template('photos\%s.png' %photo_name))
         if res:
             return True
         else:
             return False
     except Exception as e:
-        print(f'\n\t ***some error occured when judge target ui exists:{e}***')
-        return False
+            print(f'\n\t ***some error occured when judge target ui exists:{e}***')
+            return False
 
 def find_ui(photo_name=''):
     '''
     find all exists ui in panel.
     '''
-    return find_all(Template('photos\%s.png' %photo_name))
+    res = find_all(Template('photos\%s.png' %photo_name))
+    if res is not None:
+        return res
+    else:
+        return False
 
 def find_all_ui(photo_name=''):
     '''
