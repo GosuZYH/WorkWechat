@@ -2,15 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1a7ae64-ca19-4062-a958-4ea143973c21" name="更改" comment="fix:finished the task.">
+      <change afterPath="$PROJECT_DIR$/workwechat/constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workwechat/log/test1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workwechat/log/test2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workwechat/photos/任务类型1v1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workwechat/photos/客户SOP.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workwechat/photos/已回执按钮.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workwechat/photos/截图.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workwechat/photos/搜索框取消.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workwechat/photos/搜索框放大镜.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workwechat/photos/查询结果-洛书.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workwechat/photos/洛书SMR-test聊天窗口.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workwechat/photos/消息1_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workwechat/photos/消息列表-洛书.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workwechat/photos/聊天页笑脸.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workwechat/photos/选择标签男.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task.log" beforeDir="false" afterPath="$PROJECT_DIR$/task.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workwechat/baidu_OCR.py" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/baidu_OCR.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workwechat/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workwechat/everyday_task.py" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/everyday_task.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workwechat/log/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/log/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workwechat/photos/screen_select_custom_panel.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/screen_select_custom_panel.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workwechat/photos/test1.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/test1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workwechat/photos/test2.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/test2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workwechat/photos/已回执.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/已回执.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workwechat/photos/当前截屏.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/当前截屏.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
