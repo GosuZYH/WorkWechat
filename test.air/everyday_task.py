@@ -98,28 +98,6 @@ class EveryDayTask(Base):
         else:
             return False
 
-    def back_to_latest_position(self):
-        '''
-        turn to the latest position
-        '''
-        if exists_ui('回到最新位置'):
-            touch_ui('回到最新位置')
-
-    def click_message_page(self):
-        '''
-        Click and go to the message page
-        '''
-        count = 0
-        while True:
-            touch('聊天页笑脸')
-            if exists_ui('') or exists_ui('') or exists_ui(''):
-                logger.info('检测到聊天页滑动控件')
-                break
-            else:
-                logger.info('没有检测到聊天页滑动控件')
-                count+=1
-            if count == 10:
-                pass
 
     def is_in_chat_list(self):
         '''
