@@ -1,5 +1,6 @@
 import base64
 import requests
+from airtest.aircv import *
 
 class CodeDemo:
     def __init__(self,img_path):
@@ -30,14 +31,17 @@ class CodeDemo:
         return response.json()
 
 if __name__ == '__main__':
-    img_path=r"E:\\Git\\daqinjia\WorkWechat\\test.png" # image path
+    img_path=r"photos\\余庆.png" # image path
+    # local = aircv.imread(filename=img_path)
+    # show_origin_size(img = local)
+
     code_obj=CodeDemo(img_path=img_path)
     res=code_obj.getCode()
     words_result=res.get("words_result")
     words_list = [words.get('words') for words in words_result]
     words_str = str(words_list)
 
-    print(res)
-    print(words_result)
-    print(words_list)
-    print(words_str)
+    print('——response——:',res)
+    print('——res——:',words_result)
+    print('——list——:',words_list)
+    print('——string——:',words_str)
