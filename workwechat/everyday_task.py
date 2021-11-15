@@ -143,7 +143,6 @@ class EveryDayTask(Base):
             self.log.info('判断当前页面是否是与洛书SMR-test聊天页面的过程中出错')
             return False
 
-
     def screenshot_of_contrast(self):
         '''
         :return: True:翻到最上边  Stop:当前没有任务
@@ -179,43 +178,6 @@ class EveryDayTask(Base):
             self.log.error('消息页置顶任务--对比翻页前后截图出错'+str(e))
             return False
 
-    # 这里是1对1话术任务处理的第一阶段
-    # def up_to_find(self):
-    #     '''
-    #     Scroll up on the message page
-    #     如果两次截图的结果相等,则返回Turn 否则返回False
-    #     :return:
-    #     '''
-    #     if touch_ui('聊天页笑脸') == False:
-    #         self.log.info('\n\t没有检测到聊天页面,返回上一步')
-    #         return False
-    #     if self.is_in_chat_list() and self.screenshot_of_contrast():
-    #         self.log.info('第一次判断正在sop一对一聊天页面中,返回True')
-    #         return True
-    #     if self.connect_to_workwechat() and self.is_in_chat_list():
-    #         while self.connect_to_workwechat():
-    #             self.log.info('开始判断是否是消息列表最顶端')
-    #             if self.is_in_chat_list() and self.screenshot_of_contrast():
-    #                 list = []
-    #                 while True:
-    #                     list.clear()  #清空列表,防止循环时存在其他元素
-    #                     if self.is_in_chat_list():
-    #                         try:
-    #                             touch_ui('聊天页笑脸', y=-10)
-    #                             for i in range(2):
-    #                                 self.log.info('将对比结果放入list中')
-    #                                 list.append(self.screenshot_of_contrast())
-    #                             self.log.info(f'2次对比结果为{all(list)}')
-    #                             if False in list:
-    #                                 continue
-    #                             else:
-    #                                 self.log.info(f'2次对比结果为{all(list)},当前在最顶端')
-    #                                 return True
-    #                         except Exception as e:
-    #                             self.log.error('进行多次对比截图时出错'+str(e))
-    #                             return False
-    #     else:
-    #         return False
 
     def check_for_extra_windows(self,title=None):
         '''
@@ -384,7 +346,7 @@ class EveryDayTask(Base):
         try:
 
             while True:
-
+                self.check_for_extra_windows()
                 if self.third() == True:
                     # self.check_for_extra_windows()
                     if self.click_sop_1v1_task() == True:
@@ -410,6 +372,33 @@ class EveryDayTask(Base):
                     continue
         except Exception as e:
             self.log.info(''+str(e))
+            return False
+
+    def do_sop1v1_task(self):
+        '''
+        True:继续做任务
+        stop:没有任务可以做
+        :return:
+        '''
+        try:
+            while True:
+                if self.fourth() == True:
+                    '''
+                    这里开始做后续的任务
+                    如果做完了任务,要将状态变为已执行
+                    如果没有点击已执行:
+                        可以直接调:self.delete_sop_1v1_task() -->删除最顶端的任务
+                        之后无论返回什么:都continue跳过当前循环就好
+                    '''
+
+
+                    return True
+                elif self.fourth() == 'stop':
+                    return 'stop'
+                else:
+                    return False
+        except Exception as e:
+            self.log.info('做任务之前的任务出错' + str(e))
             return False
 
     def swip_sop1v1_windows(self):
@@ -608,25 +597,40 @@ class EveryDayTask(Base):
                 sleep(0.3)
             return True
 
-    #这里是1对1话术任务处理的第二阶段,确定当前页面是否有可以执行的1v1sop话术任务,如果有就返回True,如果没有就返回False
-    def do_sop1v1_task(self):
-        '''
-        True:继续做任务
-        stop:没有任务可以做
-        :return:
-        '''
-        try:
-            while True:
-                if self.fourth() == True:
-                    if self.sixth():
-                        continue
-                elif self.fourth() == 'stop':
-                    return 'stop'
-                else:
-                    return False
-        except Exception as e:
-            self.log.info('做任务之前的任务出错'+str(e))
-            return False
+
+
+    def execute_sop_task(self):
+
+        while not self.copy_sop_tag():
+            sleep(1)
+
+        while not self.click_group_sending_helper():
+            self.copy_sop_tag()
+
+        while not self.select_the_customer():
+            self.click_group_sending_helper()
+
+        while not self.select_customer_tag():
+            self.select_the_customer()
+
+        if not self.search_target_tag():
+            if self.connect_to_special_panel('选择客户'):
+                    self.connect_to_desktop()
+                    touch_ui('取消1')
+                    if self.connect_to_special_panel('选择客户'):
+                        touch_ui('取消2')
+                        if self.check_window_exists(title='向我的客户发消息'):
+                            self.log.info('\n\t —— Target panel exists. ——')
+                            if self.connect_to_special_panel(title='向我的客户发消息'):
+                                touch_ui('关闭1')
+                                if self.check_window_exists(title='SOP消息'):
+                                    self.log.info('\n\t —— Target panel exists. ——')
+                                    if self.connect_to_special_panel(title='SOP消息'):
+                                        touch_ui('关闭2')
+            return '该客户缺少标签'
+
+        while not self.select_all_customer():
+            self.search_target_tag()
 
     def test(self):
         '''
@@ -650,23 +654,23 @@ class EveryDayTask(Base):
         #
         # while not self.select_customer_tag():
         #     self.select_the_customer()
-        # #
-        while not self.sixth():
-            sleep(1)
-        if not self.search_target_tag():
-            if self.connect_to_special_panel('选择客户'):
-                    self.connect_to_desktop()
-                    touch_ui('取消1')
-                    if self.connect_to_special_panel('选择客户'):
-                        touch_ui('取消2')
-                        if self.check_window_exists(title='向我的客户发消息'):
-                            self.log.info('\n\t —— Target panel exists. ——')
-                            if self.connect_to_special_panel(title='向我的客户发消息'):
-                                touch_ui('关闭1')
-                                if self.check_window_exists(title='SOP消息'):
-                                    self.log.info('\n\t —— Target panel exists. ——')
-                                    if self.connect_to_special_panel(title='SOP消息'):
-                                        touch_ui('关闭2')
+        #
+        # while not self.sixth():
+        #     sleep(1)
+        # if not self.search_target_tag():
+        #     if self.connect_to_special_panel('选择客户'):
+        #             self.connect_to_desktop()
+        #             touch_ui('取消1')
+        #             if self.connect_to_special_panel('选择客户'):
+        #                 touch_ui('取消2')
+        #                 if self.check_window_exists(title='向我的客户发消息'):
+        #                     self.log.info('\n\t —— Target panel exists. ——')
+        #                     if self.connect_to_special_panel(title='向我的客户发消息'):
+        #                         touch_ui('关闭1')
+        #                         if self.check_window_exists(title='SOP消息'):
+        #                             self.log.info('\n\t —— Target panel exists. ——')
+        #                             if self.connect_to_special_panel(title='SOP消息'):
+        #                                 touch_ui('关闭2')
         #     return '该客户缺少标签'
         #
         # while not self.select_all_customer():
@@ -674,7 +678,7 @@ class EveryDayTask(Base):
         #
         # while not self.send_message_to_customer():
         #     self.select_all_customer()
-        # a = self.do_sop1v1_task()
+        a = self.do_sop1v1_task()
         # a = self.first()
         # a = self.second()
         # a = self.third()
@@ -692,7 +696,7 @@ class EveryDayTask(Base):
         # a = self.delete_sop_1v1_task()
         # a = self.select_the_customer()
         # a = self.search_target_tag()
-        # print(a)
+        print(a)
 
 
     def run_task(self):
