@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1a7ae64-ca19-4062-a958-4ea143973c21" name="更改" comment="fix:finished the task.">
-      <change afterPath="$PROJECT_DIR$/workwechat/everyweek_task.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workwechat/photos/every_week_task/cyjtest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/WorkWechat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WorkWechat.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task.log" beforeDir="false" afterPath="$PROJECT_DIR$/task.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workwechat/everyday_task.py" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/everyday_task.py" afterDir="false" />
@@ -47,7 +44,7 @@
       <recent name="F:\git\WorkWechat\workwechat" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.everyweek_task">
+  <component name="RunManager" selected="Python.everyday_task">
     <configuration name="base" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="WorkWechat" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,10 +150,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.everyweek_task" />
         <item itemvalue="Python.everyday_task" />
         <item itemvalue="Python 测试.test_case.MyTestCase.test_case01 的 Unittest" />
         <item itemvalue="Python.test_case" />
+        <item itemvalue="Python.everyweek_task" />
         <item itemvalue="Python.base" />
       </list>
     </recent_temporary>
@@ -208,7 +205,7 @@
     <SUITE FILE_PATH="coverage/WorkWechat$init_airtest.coverage" NAME="init_airtest 覆盖结果" MODIFIED="1636510703388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test.air" />
     <SUITE FILE_PATH="coverage/WorkWechat$everyweek_task.coverage" NAME="everyweek_task 覆盖结果" MODIFIED="1636969642107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workwechat" />
     <SUITE FILE_PATH="coverage/WorkWechat$cyjtest.coverage" NAME="cyjtest 覆盖结果" MODIFIED="1636569050235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test.air/photos" />
-    <SUITE FILE_PATH="coverage/WorkWechat$everyday_task__1_.coverage" NAME="everyday_task (1) 覆盖结果" MODIFIED="1636963232837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workwechat" />
+    <SUITE FILE_PATH="coverage/WorkWechat$everyday_task__1_.coverage" NAME="everyday_task (1) 覆盖结果" MODIFIED="1636971082141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workwechat" />
     <SUITE FILE_PATH="coverage/WorkWechat$test_case_MyTestCase_test_case01__Unittest.coverage" NAME="test_case.MyTestCase.test_case01 的 Unittest 覆盖结果" MODIFIED="1636867542816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workwechat" />
     <SUITE FILE_PATH="coverage/WorkWechat$test_case.coverage" NAME="test_case 覆盖结果" MODIFIED="1636878200800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workwechat" />
     <SUITE FILE_PATH="coverage/WorkWechat$base.coverage" NAME="base 覆盖结果" MODIFIED="1636866672700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workwechat" />
@@ -217,6 +214,6 @@
     <SUITE FILE_PATH="coverage/WorkWechat$any_wechat.coverage" NAME="any_wechat 覆盖结果" MODIFIED="1636561925871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/pictures" />
     <SUITE FILE_PATH="coverage/WorkWechat$test.coverage" NAME="test 覆盖结果" MODIFIED="1636422201610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test.air" />
     <SUITE FILE_PATH="coverage/WorkWechat$test_windowhandle.coverage" NAME="test_windowhandle 覆盖结果" MODIFIED="1636634911333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workwechat" />
-    <SUITE FILE_PATH="coverage/WorkWechat$everyday_task.coverage" NAME="everyday_task 覆盖结果" MODIFIED="1636964137696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workwechat" />
+    <SUITE FILE_PATH="coverage/WorkWechat$everyday_task.coverage" NAME="everyday_task 覆盖结果" MODIFIED="1636971332054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workwechat" />
   </component>
 </project>

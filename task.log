@@ -4550,3 +4550,73 @@
 2021-11-15 17:48:15,928 - F:/git/WorkWechat/workwechat/everyweek_task.py[line:90] - INFO: input "客户联系"
 2021-11-15 17:48:16,514 - F:/git/WorkWechat/workwechat/everyweek_task.py[line:122] - INFO: 
 	second函数出错'EveryWeekTask' object has no attribute 'check_for_extra_windows'
+2021-11-15 18:14:28,887 - F:/git/WorkWechat/workwechat/everyday_task.py[line:192] - INFO: 清除多余窗口
+2021-11-15 18:14:33,901 - F:\git\WorkWechat\workwechat\base.py[line:105] - ERROR: 
+	 *** can not connect to the workwechat,detil error info: ***
+	 Could not find '选择客户' in 'dict_keys(['Microsoft Text Input ApplicationShell_TrayWnd', 'Shell_TrayWnd', '小火箭通用加速UIDingNotifyV2Wnd', 'UIDingNotifyV2Wnd', '小火箭通用加速', 'TXGuiFoundation', '小火箭通用加速TXGuiFoundation', 'WorkWechat – everyday_task.pyShell_SecondaryTrayWnd', 'Shell_SecondaryTrayWnd', 'WorkWechat – everyday_task.pySunAwtFrame', 'WorkWechat – everyday_task.py', 'SunAwtFrame', '企业微信', '企业微信WeWorkWindow', 'WeWorkWindow', 'Microsoft StorePerryShadowWnd', 'PerryShadowWnd', 'Notepad', '做任务之前所有的函数.txt - 记事本Notepad', '做任务之前所有的函数.txt - 记事本', 'DuiShadowWnd', 'WorkWechat – everyday_task.pyDuiShadowWnd', 'Airtest IDE v1.2.12 ~~ F:\\git\\WorkWechat\\workwechat\\photos\\every_week_task\\cyjtest.py', 'Airtest IDE v1.2.12 ~~ F:\\git\\WorkWechat\\workwechat\\photos\\every_week_task\\cyjtest.pyQt5QWindowIcon', 'Qt5QWindowIcon', 'Windows.UI.Core.CoreWindow', 'WorkWechat – everyday_task.pyWindows.UI.Core.CoreWindow', '设置', 'ApplicationFrameWindow', '设置ApplicationFrameWindow', 'ApplicationFrameWindow0', 'ApplicationFrameWindow1', 'ApplicationFrameWindow2', 'WorkWechat – everyday_task.pyApplicationFrameWindow', '', 'ApplicationFrameWindow3', '0', '1', '2', 'DuiShadowWnd0', 'DuiShadowWnd1', 'DuiShadowWnd2', '3', 'DuiShadowWnd3', 'DuiShadowWnd4', 'WorkWechat – everyday_task.pyDuiShadowWnd0', 'WorkWechat – everyday_task.pyDuiShadowWnd1', 'WorkWechat – everyday_task.pyDuiShadowWnd2', '4', 'EdgeUiInputTopWndClass', 'EdgeUiInputTopWndClass0', 'EdgeUiInputTopWndClass1', 'EdgeUiInputTopWndClass2', 'WorkWechat – everyday_task.pyEdgeUiInputTopWndClass', 'WorkWechat – everyday_task.pyDummyDWMListenerWindow', 'DummyDWMListenerWindow', 'WorkWechat – everyday_task.pyDummyDWMListenerWindow0', 'WorkWechat – everyday_task.pyDummyDWMListenerWindow1', 'WorkWechat – everyday_task.pyDummyDWMListenerWindow2', 'DummyDWMListenerWindow0', 'DummyDWMListenerWindow1', 'DummyDWMListenerWindow2', 'WorkWechat – everyday_task.pyDummyDWMListenerWindow3', 'DummyDWMListenerWindow3', 'Microsoft Text Input ApplicationWindows.UI.Core.CoreWindow', 'Windows.UI.Core.CoreWindow0', 'Windows.UI.Core.CoreWindow1', 'Windows.UI.Core.CoreWindow2', 'Microsoft Text Input Application', 'Windows.UI.Core.CoreWindow3', 'WorkWechat – everyday_task.pyWindows.UI.Core.CoreWindow0', 'WorkWechat – everyday_task.pyWindows.UI.Core.CoreWindow1', 'WorkWechat – everyday_task.pyWindows.UI.Core.CoreWindow2', 'Microsoft Store', 'ApplicationFrameWindow4', 'Microsoft StoreApplicationFrameWindow', 'Windows.UI.Core.CoreWindow4', 'WorkWechat – everyday_task.pyWindows.UI.Core.CoreWindow3', '电影和电视ApplicationFrameWindow', 'ApplicationFrameWindow5', '电影和电视', 'AirtestIDE.exe - 快捷方式', 'AirtestIDE.exe - 快捷方式ConsoleWindowClass', 'ConsoleWindowClass', 'Chrome_WidgetWin_1', '企业微信 客户联系功能 - 国内版 Bing 和另外 7 个页面 - 个人 - Microsoft\u200b Edge', '企业微信 客户联系功能 - 国内版 Bing 和另外 7 个页面 - 个人 - Microsoft\u200b EdgeChrome_WidgetWin_1', 'Chrome_WidgetWin_10', 'Chrome_WidgetWin_11', 'Chrome_WidgetWin_12', 'PostmanChrome_WidgetWin_1', 'Postman', 'Program ManagerProgman', 'Program Manager', 'Progman', '小火箭通用加速SoPY_Status', 'SoPY_Status'])'
+2021-11-15 18:14:39,055 - F:\git\WorkWechat\workwechat\base.py[line:105] - ERROR: 
+	 *** can not connect to the workwechat,detil error info: ***
+	 Could not find 'SOP消息' in 'dict_keys(['Microsoft Text Input ApplicationShell_TrayWnd', 'Shell_TrayWnd', '小火箭通用加速UIDingNotifyV2Wnd', 'UIDingNotifyV2Wnd', '小火箭通用加速', 'TXGuiFoundation', '小火箭通用加速TXGuiFoundation', 'WorkWechat – everyday_task.pyShell_SecondaryTrayWnd', 'Shell_SecondaryTrayWnd', 'WorkWechat – everyday_task.pySunAwtFrame', 'WorkWechat – everyday_task.py', 'SunAwtFrame', '企业微信', '企业微信WeWorkWindow', 'WeWorkWindow', 'Microsoft StorePerryShadowWnd', 'PerryShadowWnd', 'Notepad', '做任务之前所有的函数.txt - 记事本Notepad', '做任务之前所有的函数.txt - 记事本', 'DuiShadowWnd', 'WorkWechat – everyday_task.pyDuiShadowWnd', 'Airtest IDE v1.2.12 ~~ F:\\git\\WorkWechat\\workwechat\\photos\\every_week_task\\cyjtest.py', 'Airtest IDE v1.2.12 ~~ F:\\git\\WorkWechat\\workwechat\\photos\\every_week_task\\cyjtest.pyQt5QWindowIcon', 'Qt5QWindowIcon', 'Windows.UI.Core.CoreWindow', 'WorkWechat – everyday_task.pyWindows.UI.Core.CoreWindow', '设置', 'ApplicationFrameWindow', '设置ApplicationFrameWindow', 'ApplicationFrameWindow0', 'ApplicationFrameWindow1', 'ApplicationFrameWindow2', 'WorkWechat – everyday_task.pyApplicationFrameWindow', '', 'ApplicationFrameWindow3', '0', '1', '2', 'DuiShadowWnd0', 'DuiShadowWnd1', 'DuiShadowWnd2', '3', 'DuiShadowWnd3', 'DuiShadowWnd4', 'WorkWechat – everyday_task.pyDuiShadowWnd0', 'WorkWechat – everyday_task.pyDuiShadowWnd1', 'WorkWechat – everyday_task.pyDuiShadowWnd2', '4', 'EdgeUiInputTopWndClass', 'EdgeUiInputTopWndClass0', 'EdgeUiInputTopWndClass1', 'EdgeUiInputTopWndClass2', 'WorkWechat – everyday_task.pyEdgeUiInputTopWndClass', 'WorkWechat – everyday_task.pyDummyDWMListenerWindow', 'DummyDWMListenerWindow', 'WorkWechat – everyday_task.pyDummyDWMListenerWindow0', 'WorkWechat – everyday_task.pyDummyDWMListenerWindow1', 'WorkWechat – everyday_task.pyDummyDWMListenerWindow2', 'DummyDWMListenerWindow0', 'DummyDWMListenerWindow1', 'DummyDWMListenerWindow2', 'WorkWechat – everyday_task.pyDummyDWMListenerWindow3', 'DummyDWMListenerWindow3', 'Microsoft Text Input ApplicationWindows.UI.Core.CoreWindow', 'Windows.UI.Core.CoreWindow0', 'Windows.UI.Core.CoreWindow1', 'Windows.UI.Core.CoreWindow2', 'Microsoft Text Input Application', 'Windows.UI.Core.CoreWindow3', 'WorkWechat – everyday_task.pyWindows.UI.Core.CoreWindow0', 'WorkWechat – everyday_task.pyWindows.UI.Core.CoreWindow1', 'WorkWechat – everyday_task.pyWindows.UI.Core.CoreWindow2', 'Microsoft Store', 'ApplicationFrameWindow4', 'Microsoft StoreApplicationFrameWindow', 'Windows.UI.Core.CoreWindow4', 'WorkWechat – everyday_task.pyWindows.UI.Core.CoreWindow3', '电影和电视ApplicationFrameWindow', 'ApplicationFrameWindow5', '电影和电视', 'AirtestIDE.exe - 快捷方式', 'AirtestIDE.exe - 快捷方式ConsoleWindowClass', 'ConsoleWindowClass', 'Chrome_WidgetWin_1', '企业微信 客户联系功能 - 国内版 Bing 和另外 7 个页面 - 个人 - Microsoft\u200b Edge', '企业微信 客户联系功能 - 国内版 Bing 和另外 7 个页面 - 个人 - Microsoft\u200b EdgeChrome_WidgetWin_1', 'Chrome_WidgetWin_10', 'Chrome_WidgetWin_11', 'Chrome_WidgetWin_12', 'PostmanChrome_WidgetWin_1', 'Postman', 'Program ManagerProgman', 'Program Manager', 'Progman', '小火箭通用加速SoPY_Status', 'SoPY_Status'])'
+2021-11-15 18:14:44,500 - F:/git/WorkWechat/workwechat/everyday_task.py[line:68] - INFO: 目标在列表中,直接点击
+2021-11-15 18:14:45,938 - F:/git/WorkWechat/workwechat/everyday_task.py[line:136] - INFO: 当前在洛书聊天页面
+2021-11-15 18:14:49,483 - F:/git/WorkWechat/workwechat/everyday_task.py[line:153] - INFO: 当前处在与洛书SMR-test的聊天记录页面
+2021-11-15 18:14:50,551 - F:/git/WorkWechat/workwechat/everyday_task.py[line:156] - INFO: 消息页置顶任务--准备在翻页前后截图做对比
+2021-11-15 18:14:51,345 - F:/git/WorkWechat/workwechat/everyday_task.py[line:160] - INFO: 消息页置顶任务--开始比对前后截图
+2021-11-15 18:14:51,346 - F:/git/WorkWechat/workwechat/everyday_task.py[line:169] - INFO: 前后对比结果不一致,继续翻页对比
+2021-11-15 18:14:52,427 - F:/git/WorkWechat/workwechat/everyday_task.py[line:156] - INFO: 消息页置顶任务--准备在翻页前后截图做对比
+2021-11-15 18:14:53,242 - F:/git/WorkWechat/workwechat/everyday_task.py[line:160] - INFO: 消息页置顶任务--开始比对前后截图
+2021-11-15 18:14:53,243 - F:/git/WorkWechat/workwechat/everyday_task.py[line:169] - INFO: 前后对比结果不一致,继续翻页对比
+2021-11-15 18:14:54,314 - F:/git/WorkWechat/workwechat/everyday_task.py[line:156] - INFO: 消息页置顶任务--准备在翻页前后截图做对比
+2021-11-15 18:14:55,089 - F:/git/WorkWechat/workwechat/everyday_task.py[line:160] - INFO: 消息页置顶任务--开始比对前后截图
+2021-11-15 18:14:55,090 - F:/git/WorkWechat/workwechat/everyday_task.py[line:166] - INFO: 前后对比结果一致
+2021-11-15 18:14:55,448 - F:\git\WorkWechat\workwechat\base.py[line:312] - INFO: 企业微信已经连接
+2021-11-15 18:14:59,031 - F:/git/WorkWechat/workwechat/everyday_task.py[line:332] - INFO: 识别sop话术任务状态
+2021-11-15 18:14:59,032 - F:/git/WorkWechat/workwechat/everyday_task.py[line:250] - INFO: 判断sop执行是否是已执行状态
+2021-11-15 18:15:05,264 - F:/git/WorkWechat/workwechat/everyday_task.py[line:260] - INFO: 判断sop执行是否是可执行状态
+2021-11-15 18:15:09,323 - F:/git/WorkWechat/workwechat/everyday_task.py[line:263] - INFO: 当前sop任务为未执行状态
+2021-11-15 18:15:09,568 - F:/git/WorkWechat/workwechat/everyday_task.py[line:265] - INFO: 当前任务为可执行状态
+2021-11-15 18:15:09,568 - F:/git/WorkWechat/workwechat/everyday_task.py[line:250] - INFO: 判断sop执行是否是已执行状态
+2021-11-15 18:15:15,264 - F:/git/WorkWechat/workwechat/everyday_task.py[line:260] - INFO: 判断sop执行是否是可执行状态
+2021-11-15 18:15:18,704 - F:/git/WorkWechat/workwechat/everyday_task.py[line:263] - INFO: 当前sop任务为未执行状态
+2021-11-15 18:15:18,944 - F:/git/WorkWechat/workwechat/everyday_task.py[line:265] - INFO: 当前任务为可执行状态
+2021-11-15 18:15:33,778 - F:/git/WorkWechat/workwechat/everyday_task.py[line:68] - INFO: 目标在列表中,直接点击
+2021-11-15 18:15:35,260 - F:/git/WorkWechat/workwechat/everyday_task.py[line:136] - INFO: 当前在洛书聊天页面
+2021-11-15 18:15:38,812 - F:/git/WorkWechat/workwechat/everyday_task.py[line:153] - INFO: 当前处在与洛书SMR-test的聊天记录页面
+2021-11-15 18:15:39,913 - F:/git/WorkWechat/workwechat/everyday_task.py[line:156] - INFO: 消息页置顶任务--准备在翻页前后截图做对比
+2021-11-15 18:15:40,630 - F:/git/WorkWechat/workwechat/everyday_task.py[line:160] - INFO: 消息页置顶任务--开始比对前后截图
+2021-11-15 18:15:40,630 - F:/git/WorkWechat/workwechat/everyday_task.py[line:169] - INFO: 前后对比结果不一致,继续翻页对比
+2021-11-15 18:15:41,711 - F:/git/WorkWechat/workwechat/everyday_task.py[line:156] - INFO: 消息页置顶任务--准备在翻页前后截图做对比
+2021-11-15 18:15:42,667 - F:/git/WorkWechat/workwechat/everyday_task.py[line:160] - INFO: 消息页置顶任务--开始比对前后截图
+2021-11-15 18:15:42,667 - F:/git/WorkWechat/workwechat/everyday_task.py[line:166] - INFO: 前后对比结果一致
+2021-11-15 18:15:43,020 - F:\git\WorkWechat\workwechat\base.py[line:312] - INFO: 企业微信已经连接
+2021-11-15 18:15:46,610 - F:/git/WorkWechat/workwechat/everyday_task.py[line:332] - INFO: 识别sop话术任务状态
+2021-11-15 18:15:46,610 - F:/git/WorkWechat/workwechat/everyday_task.py[line:250] - INFO: 判断sop执行是否是已执行状态
+2021-11-15 18:15:49,974 - F:/git/WorkWechat/workwechat/everyday_task.py[line:255] - INFO: 关闭当前页面
+2021-11-15 18:15:50,550 - F:\git\WorkWechat\workwechat\base.py[line:312] - INFO: 企业微信已经连接
+2021-11-15 18:15:50,551 - F:/git/WorkWechat/workwechat/everyday_task.py[line:258] - INFO: 当前框中的sop话术状态为已执行
+2021-11-15 18:15:50,551 - F:/git/WorkWechat/workwechat/everyday_task.py[line:354] - INFO: 检测到当前任务已经做好,删除它
+2021-11-15 18:15:50,881 - F:/git/WorkWechat/workwechat/everyday_task.py[line:68] - INFO: 目标在列表中,直接点击
+2021-11-15 18:15:52,354 - F:/git/WorkWechat/workwechat/everyday_task.py[line:136] - INFO: 当前在洛书聊天页面
+2021-11-15 18:15:55,779 - F:/git/WorkWechat/workwechat/everyday_task.py[line:153] - INFO: 当前处在与洛书SMR-test的聊天记录页面
+2021-11-15 18:15:56,879 - F:/git/WorkWechat/workwechat/everyday_task.py[line:156] - INFO: 消息页置顶任务--准备在翻页前后截图做对比
+2021-11-15 18:15:57,644 - F:/git/WorkWechat/workwechat/everyday_task.py[line:160] - INFO: 消息页置顶任务--开始比对前后截图
+2021-11-15 18:15:57,644 - F:/git/WorkWechat/workwechat/everyday_task.py[line:166] - INFO: 前后对比结果一致
+2021-11-15 18:15:57,644 - F:/git/WorkWechat/workwechat/everyday_task.py[line:307] - INFO: 当前在最顶端,准备删除任务
+2021-11-15 18:15:57,967 - F:/git/WorkWechat/workwechat/everyday_task.py[line:136] - INFO: 当前在洛书聊天页面
+2021-11-15 18:16:02,956 - F:/git/WorkWechat/workwechat/everyday_task.py[line:356] - INFO: 删除已执行消息消息
+2021-11-15 18:16:03,272 - F:/git/WorkWechat/workwechat/everyday_task.py[line:68] - INFO: 目标在列表中,直接点击
+2021-11-15 18:16:04,739 - F:/git/WorkWechat/workwechat/everyday_task.py[line:136] - INFO: 当前在洛书聊天页面
+2021-11-15 18:16:08,292 - F:/git/WorkWechat/workwechat/everyday_task.py[line:153] - INFO: 当前处在与洛书SMR-test的聊天记录页面
+2021-11-15 18:16:09,383 - F:/git/WorkWechat/workwechat/everyday_task.py[line:156] - INFO: 消息页置顶任务--准备在翻页前后截图做对比
+2021-11-15 18:16:10,221 - F:/git/WorkWechat/workwechat/everyday_task.py[line:160] - INFO: 消息页置顶任务--开始比对前后截图
+2021-11-15 18:16:10,222 - F:/git/WorkWechat/workwechat/everyday_task.py[line:166] - INFO: 前后对比结果一致
+2021-11-15 18:16:10,574 - F:\git\WorkWechat\workwechat\base.py[line:312] - INFO: 企业微信已经连接
+2021-11-15 18:16:14,094 - F:/git/WorkWechat/workwechat/everyday_task.py[line:332] - INFO: 识别sop话术任务状态
+2021-11-15 18:16:14,094 - F:/git/WorkWechat/workwechat/everyday_task.py[line:250] - INFO: 判断sop执行是否是已执行状态
+2021-11-15 18:16:19,765 - F:/git/WorkWechat/workwechat/everyday_task.py[line:260] - INFO: 判断sop执行是否是可执行状态
+2021-11-15 18:16:23,190 - F:/git/WorkWechat/workwechat/everyday_task.py[line:263] - INFO: 当前sop任务为未执行状态
+2021-11-15 18:16:23,421 - F:/git/WorkWechat/workwechat/everyday_task.py[line:265] - INFO: 当前任务为可执行状态
+2021-11-15 18:16:23,421 - F:/git/WorkWechat/workwechat/everyday_task.py[line:250] - INFO: 判断sop执行是否是已执行状态
+2021-11-15 18:16:29,029 - F:/git/WorkWechat/workwechat/everyday_task.py[line:260] - INFO: 判断sop执行是否是可执行状态
+2021-11-15 18:16:32,422 - F:/git/WorkWechat/workwechat/everyday_task.py[line:263] - INFO: 当前sop任务为未执行状态
+2021-11-15 18:16:32,678 - F:/git/WorkWechat/workwechat/everyday_task.py[line:265] - INFO: 当前任务为可执行状态

@@ -346,7 +346,7 @@ class EveryDayTask(Base):
         try:
 
             while True:
-                self.check_for_extra_windows()
+                # self.check_for_extra_windows()
                 if self.third() == True:
                     # self.check_for_extra_windows()
                     if self.click_sop_1v1_task() == True:
