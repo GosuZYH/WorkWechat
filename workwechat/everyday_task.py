@@ -1,7 +1,7 @@
 # -*- encoding=utf8 -*- 
 from airtest.core.api import *
 import win32clipboard
-from base import Base,exists_ui,touch_ui,find_ui,shot,show_ui,find_all_ui
+from base import Base,exists_ui,touch_ui,find_ui,shot,show_ui,find_all_ui,touch_ui1
 from airtest.aircv import *
 from airtest.core.api import Template, exists, touch, auto_setup, connect_device,snapshot,assert_equal
 
@@ -18,29 +18,41 @@ class EveryDayTask(Base):
         如果当前是消息页,就返回Trun
         如果无法做操作就返回False
         '''
-        if exists_ui('消息1_1') and exists_ui('消息1'):
-            self.log.info('当前在消息列表页')
-            return True
-        if self.connect_to_workwechat():
-            try:
-                if exists_ui('消息1_1') and exists_ui('消息1'):
-                    if  self.connect_to_workwechat():
-                        self.log.info('当前页面是消息页面')
-                        return True
+        try:
+            self.connect_to_special_panel('企业微信')
+            if exists_ui('消息1_1') and exists_ui('消息1'):
+                self.log.info('当前在消息列表页')
+                self.connect_to_special_panel('企业微信')
+                return True
+            elif exists_ui('消息2'):
+                self.log.info('点击消息按钮')
+                touch_ui('消息2')
+                if self.connect_to_workwechat():
+                    self.log.info('当前页面是消息页面')
+                    return True
+                else:
+                    return False
+        except Exception as e:
+            self.log.error('进入消息列表页出错'+str(e))
+            return False
+
+    def first(self):
+        try:
+            if self.find_the_chat():
+                return True
+            else:
+                while True:
+                    if self.connect_to_workwechat() == True:
+                        if  self.find_the_chat() == True:
+                            return True
+                        else:
+                            self.log.info('first执行第二步的时候出错')
+                            continue
                     else:
-                        return False
-                elif exists_ui('消息2'):
-                    self.log.info('点击消息按钮')
-                    touch_ui('消息2')
-                    if self.connect_to_workwechat():
-                        self.log.info('当前页面是消息页面')
-                        return True
-                    else:
-                        return False
-            except Exception as e:
-                self.log.error('进入消息列表页出错'+str(e))
-                return False
-        else:
+                        self.log.info('first执行第一步的时候出错')
+                        continue
+        except Exception as e:
+            self.log.info('\n\tfirst函数执行出错'+str(e))
             return False
 
     def click_luoshu_SMR_in_chat_list(self):
@@ -49,35 +61,27 @@ class EveryDayTask(Base):
         直接点击
         :return:
         '''
-        if self.check_for_extra_windows(title='洛书SMR-test'):
-
-            if self.find_the_chat():
-                if exists_ui('消息列表-洛书'):
-                    self.log.info('目标在列表中,直接点击')
-                    touch_ui('消息列表-洛书')
-                    return True
-                else:
-                    return False
+        try:
+            self.connect_to_special_panel('企业微信')
+            if exists_ui('消息列表-洛书'):
+                self.log.info('目标在列表中,直接点击')
+                touch_ui('消息列表-洛书')
+                return True
             else:
                 return False
+        except Exception as e:
+            self.log.info(e)
+            return False
 
     def search_the_SMR(self,str='洛书SMR-test'):
         '''
         search the str in chat-list.
         return Ture:已找到 False:未找到
         '''
-        self.check_for_extra_windows(title='洛书SMR-test')
-        if exists_ui('洛书SMR-test聊天窗口') or self.click_luoshu_SMR_in_chat_list():
-            self.log.info('当前在聊天窗口')
-            return True
-        if self.connect_to_workwechat() and self.find_the_chat():
-            '''
-            判断是否在消息列表页
-            如果在就进行搜索操作
-            '''
-            if exists_ui('搜索框'):
-                self.log.info('点击放大镜')
-                touch_ui('搜索框放大镜')
+        try:
+            self.connect_to_special_panel('企业微信')
+            self.log.info('点击放大镜')
+            touch_ui('搜索框放大镜')
             if exists_ui('搜索框取消'):
                 self.log.info('检测到搜索框中有文字,点击清空搜索框')
                 touch_ui('搜索框取消')
@@ -87,20 +91,32 @@ class EveryDayTask(Base):
             if exists_ui('查询结果-洛书'):
                 self.log.info('找到查询结果')
                 touch_ui('查询结果-洛书')
-                try:
-                    if self.connect_to_workwechat():
-                        self.log.info('当前页面是消息页面')
-                        return True
-                    else:
-                        return False
-                except Exception as e:
-                    self.log.error('搜索洛书SMR-test之后没有连接到企微窗口或没有有点击到聊天页面'+e)
-                    self.log.error(e)
+                if self.connect_to_special_panel('企业微信'):
+                    return True
+                else:
                     return False
             else:
-                self.log.error('can not find the LuoShu-SMR mini-program')
+                return False
+        except:
             return False
-        else:
+
+    def second(self):
+        try:
+            if self.click_luoshu_SMR_in_chat_list() or self.search_the_SMR():
+                return True
+            while True:
+                self.check_for_extra_windows(title='洛书SMR-test')
+                if self.first() == True:
+                    if self.click_luoshu_SMR_in_chat_list() or self.search_the_SMR() == True:
+                        return True
+                    else:
+                        self.log.info('second执行第二步的时候出错')
+                        continue
+                else:
+                    self.log.info('second执行第一步的时候出错')
+                    continue
+        except Exception as e:
+            self.log.info('\n\tsecond函数出错'+str(e))
             return False
 
     def is_in_chat_list(self):
@@ -111,84 +127,92 @@ class EveryDayTask(Base):
         如果没有进入到洛书SMR聊天框,则返回False
         :return:
         '''
-        while True:
-            if exists_ui('当前在与洛书SMR-test的聊天页面') and self.search_the_SMR():
+        try:
+            self.connect_to_special_panel('企业微信')
+            if exists_ui('洛书SMR-test聊天窗口') or exists_ui('洛书SMR-test聊天窗口1'):
                 self.log.info('当前在洛书聊天页面')
+                sleep(2)
+                touch_ui('聊天页笑脸', y=-10)
                 return True
-            while True:
-                if self.search_the_SMR():
-                    try:
-                        if self.connect_to_workwechat():
-                            self.log.info('当前在与洛书SMR-test的聊天页面')
-                            touch_ui('聊天页笑脸', y=-10)
-                            return True
-                        else:
-                            return False
+            else:
+                return False
+        except Exception as e:
+            self.log.info('判断当前页面是否是与洛书SMR-test聊天页面的过程中出错')
+            return False
 
-                    except Exception as e:
-                        self.log.error('判断是否链接企微窗口或点击聊天页面的过程中出错'+str(e))
-                        return False
-                else:
-                    return False
 
     def screenshot_of_contrast(self):
         '''
-        在翻页前后进行两次截图
-        然后对比截图的二进制文件
-        如果一样返回True
-        否则返回False
-        :return:
+        :return: True:翻到最上边  Stop:当前没有任务
         '''
         try:
-            self.log.info('消息页置顶任务--准备在翻页前后截图做对比')
-            snapshot(filename='test1.png')
-            keyevent('{PGUP 2}')
-            snapshot(filename='test2.png')
-        except Exception as e:
-            self.log.error('消息页置顶任务--执行截图或翻页时出错'+str(e))
-            return False
-        try:
-            self.log.info('消息页置顶任务--开始比对前后截图')
-            with open('log\\test1.png', 'rb') as test1:
-                res1 = test1.read()
-            with open('log\\test2.png', 'rb') as test2:
-                res2 = test2.read()
-            return res1 == res2
+            self.connect_to_special_panel('企业微信')
+            if exists_ui('洛书SOP'):
+                self.log.info('当前处在与洛书SMR-test的聊天记录页面')
+                while True:
+                    touch_ui('聊天页笑脸')
+                    self.log.info('消息页置顶任务--准备在翻页前后截图做对比')
+                    snapshot(filename='..\\photos\\test1.png')
+                    keyevent('{PGUP 5}')   #向上翻5页
+                    snapshot(filename='..\\photos\\test2.png')
+                    self.log.info('消息页置顶任务--开始比对前后截图')
+                    with open('photos\\test1.png', 'rb') as test1:
+                        res1 = test1.read()
+                    with open('photos\\test2.png', 'rb') as test2:
+                        res2 = test2.read()
+                    if res1 == res2:
+                        self.log.info('前后对比结果一致')
+                        return True
+                    else:
+                        self.log.info('前后对比结果不一致,继续翻页对比')
+                        continue
+            else:
+                if exists_ui('洛书SMR-test聊天窗口') or exists_ui('洛书SMR-test聊天窗口1'):
+                    return 'stop'
+                else:
+                    self.log.info('当前不在聊天页面')
+                    return False
         except Exception as e:
             self.log.error('消息页置顶任务--对比翻页前后截图出错'+str(e))
             return False
 
     # 这里是1对1话术任务处理的第一阶段
-    def up_to_find(self):
-        '''
-        Scroll up on the message page
-        如果两次截图的结果相等,则返回Turn 否则返回False
-        :return:
-        '''
-        if self.is_in_chat_list() and self.screenshot_of_contrast():
-            self.log.info('第一次判断正在sop一对一聊天页面中,返回True')
-            return True
-        if self.connect_to_workwechat() and self.is_in_chat_list():
-            while self.connect_to_workwechat():
-                self.log.info('开始判断是否是消息列表最顶端')
-                if self.is_in_chat_list() and self.screenshot_of_contrast():
-                    list = []
-                    while True:
-                        if self.is_in_chat_list():
-                            try:
-                                touch_ui('聊天页笑脸', y=-10)
-                                for i in range(2):
-                                    self.log.info('将对比结果放入list中')
-                                    list.append(self.screenshot_of_contrast())
-                                self.log.info(f'2次对比结果为{all(list)}')
-                                if all(list) == True:
-                                    self.log.info(f'2次对比结果为{all(list)},当前在最顶端')
-                                    return True
-                            except Exception as e:
-                                self.log.error('进行多次对比截图时出错'+str(e))
-                                return False
-        else:
-            return False
+    # def up_to_find(self):
+    #     '''
+    #     Scroll up on the message page
+    #     如果两次截图的结果相等,则返回Turn 否则返回False
+    #     :return:
+    #     '''
+    #     if touch_ui('聊天页笑脸') == False:
+    #         self.log.info('\n\t没有检测到聊天页面,返回上一步')
+    #         return False
+    #     if self.is_in_chat_list() and self.screenshot_of_contrast():
+    #         self.log.info('第一次判断正在sop一对一聊天页面中,返回True')
+    #         return True
+    #     if self.connect_to_workwechat() and self.is_in_chat_list():
+    #         while self.connect_to_workwechat():
+    #             self.log.info('开始判断是否是消息列表最顶端')
+    #             if self.is_in_chat_list() and self.screenshot_of_contrast():
+    #                 list = []
+    #                 while True:
+    #                     list.clear()  #清空列表,防止循环时存在其他元素
+    #                     if self.is_in_chat_list():
+    #                         try:
+    #                             touch_ui('聊天页笑脸', y=-10)
+    #                             for i in range(2):
+    #                                 self.log.info('将对比结果放入list中')
+    #                                 list.append(self.screenshot_of_contrast())
+    #                             self.log.info(f'2次对比结果为{all(list)}')
+    #                             if False in list:
+    #                                 continue
+    #                             else:
+    #                                 self.log.info(f'2次对比结果为{all(list)},当前在最顶端')
+    #                                 return True
+    #                         except Exception as e:
+    #                             self.log.error('进行多次对比截图时出错'+str(e))
+    #                             return False
+    #     else:
+    #         return False
 
     def check_for_extra_windows(self,title=None):
         '''
@@ -196,43 +220,58 @@ class EveryDayTask(Base):
         有则杀死并返回True
         :return:
         '''
-        while True:
-            if title is None:
-                self.log.info('清除多余窗口')
-                res = self.check_window_exists(all=True) & WINDOW_LIST
-                print(self.check_window_exists(all=True))
-                if len(res)==0:
-                    self.log.info('没有检测到多余窗口,退出检测')
+        try:
+            self.connect_to_special_panel('企业微信')
+            while True:
+                if title is None:
+                    self.log.info('清除多余窗口')
+                    for i in WINDOW_LIST:
+                        while self.connect_to_special_panel(i):
+                            self.log.info(f'检测到额外的窗口{i},将要关掉她')
+                            self.send_keys('%{F4}')
                     return True
                 else:
-                    for i in res:
-                        self.log.info(f'检测到额外的窗口{i},将要关掉她')
-                        self.connect_to_special_panel(i)
-                        sleep(0.5)
+                    if self.connect_to_special_panel(title):
+                        self.log.info(f'检测到额外的窗口{title},将要关掉她')
                         self.send_keys('%{F4}')
-                        self.log.info(f'窗口{i}已被关闭')
-                    self.log.info('再次检测是否有同名的窗口')
-                    if len(res) == 0:
-                        self.log.info('没有同名窗口,窗口清除完毕,退出检测')
                         return True
                     else:
-                        self.log.info('检测到同名窗口,准备再次清理')
+                        return True
+        except Exception as e:
+            self.log.info('清除多余窗口的过程中出错')
+            return False
+
+    def third(self):
+        '''
+        返回值:
+            True 可以继续任务
+            stop:没有任务
+        '''
+        try:
+        #     if self.screenshot_of_contrast() == True:
+        #         return True
+        #     elif self.screenshot_of_contrast() == 'stop':
+        #         return 'stop'
+            while True:
+                if self.second() == True:
+                    if self.is_in_chat_list() == True:
+                        if self.screenshot_of_contrast() == True:
+                            return True
+                        elif self.screenshot_of_contrast() == 'stop':
+                            self.log.info('没有任务,停止执行')
+                            return 'stop'
+                        else:
+                            self.log.info('third执行第三步的时候出错')
+                            continue
+                    else:
+                        self.log.info('third执行第二步的时候出错')
                         continue
-            else:
-                self.log.info(f'检测到额外的窗口{title}')
-                set = {title}
-                res = self.check_window_exists(all=True) & set
-                if len(res) > 0:
-                    for i in res:
-                        self.log.info(f'检测到额外的窗口{i},将要关掉她')
-                        self.connect_to_special_panel(i)
-                        sleep(0.5)
-                        self.send_keys('%{F4}')
-                        self.log.info(f'窗口{i}已被关闭')
-                    return True
                 else:
-                    self.log.info(f'没有检测到独立的{title}窗口')
-                    return True
+                    self.log.info('third执行第一步的时候出错')
+                    continue
+        except Exception as e:
+            self.log.info('到达消息最上方的过程中出错')
+            return False
 
     def get_sop_1v1_task_status(self):
         '''
@@ -241,52 +280,69 @@ class EveryDayTask(Base):
         已执行返回False
         :return:
         '''
-        c = True
-        conut = 0
-        while c:
-            self.log.info('判断sop执行是否是已执行状态')
-            if self.connect_to_special_panel('SOP消息'):
-                self.connect_to_desktop()
-                if exists_ui('已回执') and exists_ui('已回执按钮'):
-                    self.log.info('当前框中的sop话术状态为已执行')
-                    self.log.info('关闭当前页面')
-                    self.send_keys('%{F4}')
-                    self.connect_to_workwechat()
-                    return 'delete'
-                self.log.info('判断sop执行是否是可执行状态')
-                self.connect_to_desktop()
-                if not exists_ui('已回执') and exists_ui('已回执按钮'):
-                    self.log.info('当前sop任务为未执行状态')
-                    if self.connect_to_special_panel('SOP消息'):
-                        self.log.info('当前任务为可执行状态')
-                        return True
+        try:
+            c = True
+            conut = 0
+            conut1=0
+            while c:
+                self.log.info('判断sop执行是否是已执行状态')
+                if self.connect_to_special_panel('SOP消息'):
+                    sleep(2)
+                    self.connect_to_special_panel('SOP消息')
+                    if exists_ui('已回执') and exists_ui('已回执按钮'):
+                        self.log.info('关闭当前页面')
+                        self.send_keys('%{F4}')
+                        self.connect_to_workwechat()
+                        self.log.info('当前框中的sop话术状态为已执行')
+                        return 'delete'
+                    self.log.info('判断sop执行是否是可执行状态')
+                    self.connect_to_special_panel('SOP消息')
+                    if not exists_ui('已回执') and exists_ui('已回执按钮'):
+                        self.log.info('当前sop任务为未执行状态')
+                        if self.connect_to_special_panel('SOP消息'):
+                            self.log.info('当前任务为可执行状态')
+                            return True
+                    else:
+                        self.log.info('没有识别到sop话术任务的状态,继续寻找')
+                        conut+=1
+                        if conut < 10:
+                            self.log.info(f'尝试第{conut}次寻找状态')
+                            sleep(1)
+                            self.connect_to_special_panel('SOP消息')
+                            continue
+                        else:
+                            self.log.info(f'尝试寻找{conut}次状态未果,退出寻找')
+                            c = False
+                            self.connect_to_special_panel('SOP消息')
+                            self.send_keys('%{F4}')
+                            return False
                 else:
-                    self.log.info('没有识别到sop话术任务的状态,继续寻找')
-                    conut+=1
-                    if conut < 10:
-                        self.log.info(f'尝试第{conut}次寻找状态')
+                    self.log.info('链接SOP消息框的过程中出错')
+                    conut1 += 1
+                    if conut1 < 10:
+                        self.connect_to_special_panel('SOP消息')
+                        self.log.info(f'尝试第{conut1}次链接SOP消息窗口')
                         sleep(1)
                         continue
                     else:
-                        self.log.info(f'尝试寻找{conut}次状态未果,退出寻找')
+                        self.log.info(f'尝试寻找{conut1}次状态未果,退出寻找')
                         c = False
+                        self.connect_to_special_panel('SOP消息')
                         self.send_keys('%{F4}')
-                        self.connect_to_workwechat()
                         return False
-            else:
-                self.log.info('链接sop消息窗口失败')
-                return False
+        except Exception as e:
+            self.log.info('获取sop1v1任务状态的过程中出错'+str(e))
+            return False
 
     def delete_sop_1v1_task(self):
         '''
         删除最顶部的任务
         :return:
         '''
-        if self.is_in_chat_list():
+        try:
             while True:
-                if self.up_to_find():
+                if self.third():
                     self.log.info('当前在最顶端,准备删除任务')
-                    print(find_all_ui('任务类型1v1'))
                     if self.is_in_chat_list():
                         touch(find_all_ui('任务类型1v1')[0],right_click=True)
                         self.send_keys('{DOWN 6}')
@@ -298,40 +354,65 @@ class EveryDayTask(Base):
                         continue
                 else:
                     continue
-
-        else:
+        except Exception as e:
+            self.log.info('删除任务的过程中出错'+str(e))
             return False
 
     def click_sop_1v1_task(self):
         '''
-        四个返回值
-        关闭当前所有存在的点开sop之后的窗口,并点击窗口最上边一条1v1sop话术任务,如果打开了sop消息弹框,则返回True,
-        否则返回 False,但是如果没有检测到消息,则返回字符串 stop ,表示当前没有可以执行的任务,delete:表示要删除当前任务
-        :return:True False stop delete
+        :return:True False
         '''
-        self.log.info('准备进入1v1sop任务框')
-        if exists_ui('任务类型1v1') == False and self.is_in_chat_list():
-            self.log.info('当前页面没有消息,没有任务可以做,停止任务')
-            return 'stop'
-        while True:
-            if self.up_to_find() and self.check_for_extra_windows() and self.connect_to_workwechat() and exists_ui('任务类型1v1'):
-                self.log.info('当前页面存在消息,准备做任务')
-                while True:
-                    self.log.info('点击sop话术任务')
-                    self.connect_to_workwechat()
-                    if touch(find_all_ui('任务类型1v1')[0]):
-                        sleep(2)
-                        if self.connect_to_special_panel('SOP消息'):
-                            self.log.info('识别sop话术任务状态')
-                            return self.get_sop_1v1_task_status()
-                        else:
-                            self.log.info('链接窗口失败')
-                            # 这里可能是断网,现在是跳过
-                            # 之后可以做ping百度的操作,如果ping不同就做一个程序意外停止的弹框
-                            continue
-                    else:
-                        return False
+        try:
+            self.check_for_extra_windows()
+            self.connect_to_workwechat()
+            if touch(find_all_ui('任务类型1v1')[0]):
+                sleep(2)
+                if self.connect_to_special_panel('SOP消息'):
+                    self.log.info('识别sop话术任务状态')
+                    return True
+                else:
+                    self.log.info('链接窗口失败')
+                    # 这里可能是断网,现在是跳过
+                    # 之后可以做ping百度的操作,如果ping不同就做一个程序意外停止的弹框
+                    return False
+            else:
+                return False
+        except Exception as e:
+            self.log.info('点击聊天页面最顶端元素的过程中出错')
+            return False
 
+    def fourth(self):
+        try:
+            while True:
+
+                if self.third() == True:
+                    if self.click_sop_1v1_task() == 'delete':
+                        self.log.info('检测到当前任务已经做好,删除它')
+                        if self.delete_sop_1v1_task():
+                            self.log.info('fourth获取任务状态时时候出错')
+                            if self.check_for_extra_windows():
+                                continue
+                        else:
+                            continue
+                    elif self.click_sop_1v1_task() == True:
+                        if self.get_sop_1v1_task_status() == True:
+                            return True
+                        else:
+                            self.log.info('fourth获取任务状态时时候出错')
+                            if self.check_for_extra_windows():
+                                continue
+                    else:
+                        self.log.info('点击聊天任务出错')
+                        if self.check_for_extra_windows():
+                            continue
+                elif self.third() == 'stop':
+                    return 'stop'
+                else:
+                    self.log.info('fourth执行第一步时候出错')
+                    continue
+        except Exception as e:
+            self.log.info(''+str(e))
+            return False
 
     #这里是1对1话术任务处理的第二阶段,确定当前页面是否有可以执行的1v1sop话术任务,如果有就返回True,如果没有就返回False
     def do_sop1v1_task(self):
@@ -340,24 +421,17 @@ class EveryDayTask(Base):
         stop:没有任务可以做
         :return:
         '''
-        while True:
-            if self.is_in_chat_list():
-                if self.click_sop_1v1_task() == True:
-                    self.log.info('当前sop1v1话术任务处于未做状态')
-                    self.connect_to_special_panel('SOP消息')
+        try:
+            while True:
+                if self.fourth() == True:
                     return True
-                elif self.click_sop_1v1_task() == 'delete':
-                    self.delete_sop_1v1_task()
-                    continue
-                elif self.click_sop_1v1_task() == 'stop':
-                    self.log.info('当前无任务')
+                elif self.fourth() == 'stop':
                     return 'stop'
-                elif self.click_sop_1v1_task() == False:
-                    self.log.info('操作出错,初始化,回到列表顶端')
-                    self.is_in_chat_list()
-                    self.up_to_find()
-                    continue
-
+                else:
+                    return False
+        except Exception as e:
+            self.log.info('做任务之前的任务出错'+str(e))
+            return False
     
     def copy_sop_tag(self):
         '''
@@ -508,9 +582,12 @@ class EveryDayTask(Base):
         '''
         test
         '''
-        # while not self.copy_sop_tag():
-        #     sleep(1)
-        #     print('wait for 1s')
+        while True:
+            if self.copy_sop_tag():
+                print(1)
+            else:
+                break
+        print('跳出了循环')
 
         # while not self.click_group_sending_helper():
         #     self.copy_sop_tag()
@@ -542,7 +619,19 @@ class EveryDayTask(Base):
 
         # while not self.send_message_to_customer():
         #     self.select_all_customer()
-        self.do_sop1v1_task()
+        # a = self.do_sop1v1_task()
+        # a = self.first()
+        # a = self.second()
+        # a = self.third()
+        # a = self.fourth()
+        # a = self.click_luoshu_SMR_in_chat_list()
+        # a = self.search_the_SMR()
+        # a = self.screenshot_of_contrast()
+        # a = self.is_in_chat_list()
+        # a = self.check_for_extra_windows()
+        # a = self.get_sop_1v1_task_status()
+        # a = self.delete_sop_1v1_task()
+        # print(a)
 
 
     def run_task(self):

@@ -36,38 +36,38 @@ class Base(ABC):
         '''
         touch(Template(r'photos\\搜索框.png'))
 
-    # def check_window_exists(self,title=''):
-    #     '''
-    #     check all exists windows the
-    #     '''
-    #     handlers = []
-    #     win32gui.EnumWindows(lambda handle, param: param.append(handle), handlers)
-    #     time.sleep(0.1)
-    #     for handler in handlers:
-    #         if win32gui.GetWindowText(handler) == title:
-    #             return True
-    #     self.log.error(f'\n\t ***{title} window not fount or don not exists! ***')
-    #     return False
-
-    def check_window_exists(self,title='',all=False):
+    def check_window_exists(self,title=''):
         '''
         check all exists windows the
         '''
-        if all == True:
-            set1 = {0}
-            win32gui.EnumWindows(self.get_all_hwnd, 0)
-            for h, t in self.hwnd_title.items():
-                if t not in list:
-                    set1.update(t)
-            return set1
-        elif all == False:
-            handlers = []
-            win32gui.EnumWindows(lambda handle, param: param.append(handle), handlers)
-            time.sleep(0.1)
-            for handler in handlers:
-                if win32gui.GetWindowText(handler) == title:
-                    return True
-            return False
+        handlers = []
+        win32gui.EnumWindows(lambda handle, param: param.append(handle), handlers)
+        time.sleep(0.1)
+        for handler in handlers:
+            if win32gui.GetWindowText(handler) == title:
+                return True
+        self.log.error(f'\n\t ***{title} window not fount or don not exists! ***')
+        return False
+
+    # def check_window_exists(self,title='',all=False):
+    #     '''
+    #     check all exists windows the
+    #     '''
+    #     if all == True:
+    #         set1 = {0}
+    #         win32gui.EnumWindows(self.get_all_hwnd, 0)
+    #         for h, t in self.hwnd_title.items():
+    #             if t not in list:
+    #                 set1.update(t)
+    #         return set1
+    #     elif all == False:
+    #         handlers = []
+    #         win32gui.EnumWindows(lambda handle, param: param.append(handle), handlers)
+    #         time.sleep(0.1)
+    #         for handler in handlers:
+    #             if win32gui.GetWindowText(handler) == title:
+    #                 return True
+    #         return False
 
     def get_all_hwnd(self,hwnd, mouse):
         self.hwnd_title ={}
@@ -240,8 +240,8 @@ class Base(ABC):
             for pid_temp in PID:
                 pid_dic = pid_temp.as_dict(attrs=['pid', 'name'])
                 if pid_dic['name'] == 'WXWork.exe':
-                    pid_num = pid_dic['pid']
-                    return pid_num
+                    self.log.info('找到企微pid')
+                    return True
                 else:
                     continue
             return False
@@ -255,15 +255,32 @@ class Base(ABC):
         否则就返回False
         '''
         try:
+            if self.connect_to_special_panel('企业微信'):
+                return True
             key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, r'Software\Tencent\WXWork')  # 利用系统的链表
             file_path = str(winreg.QueryValueEx(key, "Executable")[0])
             app = pywinauto.Application(backend='uia')
             app.start(file_path)
-            self.log.info('企微窗口启动成功')
-            return True
+            sleep(2)
+            conut = 1
+            c = True
+            while c:
+                app = pywinauto.Application(backend='uia')
+                app.start(file_path)
+                sleep(2)
+                if self.connect_to_special_panel('企业微信'):
+                    self.log.info('企微窗口启动成功')
+                    return True
+                elif conut <= 10:
+                    self.log.info(f'尝试第{conut}次启动企业微信')
+                    conut+=1
+                    continue
+                else:
+                    self.log.info(f'{conut}次启动企业微信失败,返回False')
+                    return False
         except Exception as e:
-            self.log.info('企微窗口启动失败'+str(e))
-            return False
+                self.log.info('企微窗口启动失败'+str(e))
+                return False
     
     def get_WXWork_handle(self):
 
@@ -284,12 +301,21 @@ class Base(ABC):
         '''
         global hwnd_title
         hwnd_title = {}
-        if self.get_WXWork_pid() != False:
+        if self.check_window_exists(title='企业微信'):
+            if self.connect_to_special_panel('企业微信'):
+                self.log.info('企业微信已经连接')
+                return True
+        if self.start_WXWork():
+            sleep(2)
+            if self.connect_to_special_panel('企业微信'):
+                self.log.info('企业微信已经连接')
+                return True
+        if self.get_WXWork_pid():
             self.log.info('找到企业微信pid')
             if self.get_WXWork_handle() == False:
                 self.log.info('找到企业微信的handle')
                 try:
-                    if self.start_WXWork():
+                    if self.connect_to_special_panel('企业微信'):
                         self.log.info('企微窗口唤起成功')
                         return True
                     else:
@@ -298,7 +324,7 @@ class Base(ABC):
                 except Exception as e:
                     self.log.error('企微窗口启动失败'+str(e))
                     return False
-            elif self.get_WXWork_handle() == True:
+            elif self.check_window_exists(title='企业微信') == True:
                 if self.start_WXWork():
                     self.log.info('企微窗口唤起成功')
                     return True
@@ -319,23 +345,16 @@ class Base(ABC):
         保证企微进程以及窗口在最上边
         :return:
         '''
-        if self.connect_to_special_panel('企业微信'):
-            self.log.info('企业微信已连接')
-            return True
-        else:
-            while True:
-                if self.open_WXWork_window():
-                    if self.start_WXWork():
-                        self.connect_to_special_panel('企业微信')
-                        return True
-                    else:
-                        self.start_WXWork()
-                        sleep(2)
-                        self.connect_to_special_panel('企业微信')
-                        return True
+        count = 1
+
+        while True:
+            if self.open_WXWork_window():
+                return True
+            else:
+                if count<=10:
+                    continue
                 else:
-                    self.log.info('链接微信失败')
-                    return False
+                    return self.open_WXWork_window()
 
     
 
@@ -366,6 +385,17 @@ def touch_ui(photo_name='',**kwargs):
         except Exception as e:
             print(f'\n\t ***some error occured when touch target ui:{e}***')
             return False
+
+def touch_ui1(photo_name=''):
+    '''
+    只是判断能不能点击
+    '''
+    try:
+        touch(Template('photos\%s.png' %photo_name))
+        return True
+    except Exception as e:
+        print(f'\n\t ***some error occured when touch target ui:{e}***')
+        return False
 
 def exists_ui(photo_name=''):
     '''
@@ -413,4 +443,8 @@ def show_ui(photo_name=''):
 
 if __name__ == '__main__':
     a = Base()
-    a.connect_to_workwechat()
+    print(a.connect_to_workwechat())
+    # print(a.start_WXWork())
+    # print(a.get_WXWork_pid())
+    # print(a.open_WXWork_window())
+    # a.connect_to_special_panel('企业微信')
