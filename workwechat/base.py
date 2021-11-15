@@ -19,7 +19,13 @@ from airtest.aircv import *
 from init_airtest import AirConn
 from setup_log import Logger
 
-
+#ST.RESIZE_METHOD = staticmethod(cocos_min_strategy)
+ST.THRESHOLD = 0.7 # [0, 1]图像识别的阈值
+ST.THRESHOLD_STRICT = 0.7 # [0, 1]这是一个更加严格的阈值设定，只用于assert_exists(图片)接口。
+ST.OPDELAY = 0.1      #即每一步操作后等待0.1秒
+ST.FIND_TIMEOUT = 5   #设置寻找元素的等待时间,默认为20  默认是find_timeout = ST.FIND_TIMEOUT
+ST.FIND_TIMEOUT_TMP = 3 ##设置寻找元素的等待时间,默认为3   默认是find_timeout = ST.FIND_TIMEOUT
+#ST.PROJECT_ROOT = os.environ.get("PROJECT_ROOT", "") # for using other script
 class Base(ABC):
     '''
     base operation in workwechat.

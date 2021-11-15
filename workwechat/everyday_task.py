@@ -1,4 +1,5 @@
-# -*- encoding=utf8 -*- 
+# -*- encoding=utf8 -*-
+import poco
 from airtest.core.api import *
 import win32clipboard
 from base import Base,exists_ui,touch_ui,find_ui,shot,show_ui,find_all_ui,touch_ui1
@@ -79,6 +80,7 @@ class EveryDayTask(Base):
         return Ture:已找到 False:未找到
         '''
         try:
+
             self.connect_to_special_panel('企业微信')
             self.log.info('点击放大镜')
             touch_ui('搜索框放大镜')
@@ -86,7 +88,7 @@ class EveryDayTask(Base):
                 self.log.info('检测到搜索框中有文字,点击清空搜索框')
                 touch_ui('搜索框取消')
             self.log.info('input "洛书SMR-test"')
-            text(str)
+            text(str, search=True)
             self.connect_to_desktop()
             if exists_ui('查询结果-洛书'):
                 self.log.info('找到查询结果')
@@ -97,7 +99,8 @@ class EveryDayTask(Base):
                     return False
             else:
                 return False
-        except:
+        except Exception as e:
+            self.log.info(e)
             return False
 
     def second(self):
@@ -248,10 +251,6 @@ class EveryDayTask(Base):
             stop:没有任务
         '''
         try:
-        #     if self.screenshot_of_contrast() == True:
-        #         return True
-        #     elif self.screenshot_of_contrast() == 'stop':
-        #         return 'stop'
             while True:
                 if self.second() == True:
                     if self.is_in_chat_list() == True:
@@ -277,7 +276,8 @@ class EveryDayTask(Base):
         '''
         判断sop执行状态
         未执行返回True
-        已执行返回False
+        已执行返回delete
+        报错返回False
         :return:
         '''
         try:
@@ -363,7 +363,6 @@ class EveryDayTask(Base):
         :return:True False
         '''
         try:
-            self.check_for_extra_windows()
             self.connect_to_workwechat()
             if touch(find_all_ui('任务类型1v1')[0]):
                 sleep(2)
@@ -383,19 +382,18 @@ class EveryDayTask(Base):
 
     def fourth(self):
         try:
+
             while True:
 
                 if self.third() == True:
-                    if self.click_sop_1v1_task() == 'delete':
-                        self.log.info('检测到当前任务已经做好,删除它')
-                        if self.delete_sop_1v1_task():
-                            self.log.info('fourth获取任务状态时时候出错')
-                            if self.check_for_extra_windows():
+                    # self.check_for_extra_windows()
+                    if self.click_sop_1v1_task() == True:
+                        if self.get_sop_1v1_task_status() == 'delete':
+                            self.log.info('检测到当前任务已经做好,删除它')
+                            if self.delete_sop_1v1_task():
+                                self.log.info('删除已执行消息消息')
                                 continue
-                        else:
-                            continue
-                    elif self.click_sop_1v1_task() == True:
-                        if self.get_sop_1v1_task_status() == True:
+                        elif self.get_sop_1v1_task_status() == True:
                             return True
                         else:
                             self.log.info('fourth获取任务状态时时候出错')
@@ -412,6 +410,25 @@ class EveryDayTask(Base):
                     continue
         except Exception as e:
             self.log.info(''+str(e))
+            return False
+
+    def swip_sop1v1_windows(self):
+        '''
+        将sop1v1任务栏滑动到宽度最小
+        :return:
+        '''
+        try:
+            self.connect_to_special_panel('SOP消息')
+            if exists_ui('取消sop窗口最大化'):
+                touch_ui('取消sop窗口最大化')
+            # self.connect_to_desktop()
+            # if swipe(Template(r"photos\滑动sop1v1窗口.png",target_pos=4, threshold=0.6, record_pos=(-0.496, -0.727), resolution=(479, 800)), vector=[0.6096, 0.0338]):
+            if swipe(Template(r"photos\滑动sop1v1窗口1.png",target_pos=4, threshold=0.6,  record_pos=(-0.498, -0.806), resolution=(480, 778)), vector=[0.4271, 0.0]):
+                return True
+            else:
+                return False
+        except Exception as e:
+            self.log.info('滑动窗口出错'+str(e))
             return False
     
     def copy_sop_tag(self):
@@ -448,6 +465,11 @@ class EveryDayTask(Base):
         return False
 
     def fifth(self):
+        '''
+        点击跳转 到群发助手
+        :return:
+        '''
+        # if self.swip_sop1v1_windows():
         while True:
             if self.copy_sop_tag():
                 if self.click_group_sending_helper():
@@ -484,6 +506,23 @@ class EveryDayTask(Base):
                     return True
                 self.log.error('\n\t *** can not find select tag mini-menu! ***')
         return False
+
+    def sixth(self):
+        '''
+
+        :return:
+        '''
+        while True:
+            if self.fifth():
+                if self.select_the_customer():
+                    if self.select_customer_tag():
+                        return True
+                    else:
+                        continue
+                else:
+                    continue
+            else:
+                continue
 
     def search_target_tag(self):
         '''
@@ -579,7 +618,8 @@ class EveryDayTask(Base):
         try:
             while True:
                 if self.fourth() == True:
-                    return True
+                    if self.sixth():
+                        continue
                 elif self.fourth() == 'stop':
                     return 'stop'
                 else:
@@ -599,6 +639,9 @@ class EveryDayTask(Base):
         #         break
         # print('跳出了循环')
         #
+        # while not self.copy_sop_tag():
+        #     sleep(1)
+        #
         # while not self.click_group_sending_helper():
         #     self.copy_sop_tag()
         #
@@ -607,21 +650,23 @@ class EveryDayTask(Base):
         #
         # while not self.select_customer_tag():
         #     self.select_the_customer()
-        #
-        # if not self.search_target_tag():
-        #     if self.connect_to_special_panel('选择客户'):
-        #             self.connect_to_desktop()
-        #             touch_ui('取消1')
-        #             if self.connect_to_special_panel('选择客户'):
-        #                 touch_ui('取消2')
-        #                 if self.check_window_exists(title='向我的客户发消息'):
-        #                     self.log.info('\n\t —— Target panel exists. ——')
-        #                     if self.connect_to_special_panel(title='向我的客户发消息'):
-        #                         touch_ui('关闭1')
-        #                         if self.check_window_exists(title='SOP消息'):
-        #                             self.log.info('\n\t —— Target panel exists. ——')
-        #                             if self.connect_to_special_panel(title='SOP消息'):
-        #                                 touch_ui('关闭2')
+        # #
+        while not self.sixth():
+            sleep(1)
+        if not self.search_target_tag():
+            if self.connect_to_special_panel('选择客户'):
+                    self.connect_to_desktop()
+                    touch_ui('取消1')
+                    if self.connect_to_special_panel('选择客户'):
+                        touch_ui('取消2')
+                        if self.check_window_exists(title='向我的客户发消息'):
+                            self.log.info('\n\t —— Target panel exists. ——')
+                            if self.connect_to_special_panel(title='向我的客户发消息'):
+                                touch_ui('关闭1')
+                                if self.check_window_exists(title='SOP消息'):
+                                    self.log.info('\n\t —— Target panel exists. ——')
+                                    if self.connect_to_special_panel(title='SOP消息'):
+                                        touch_ui('关闭2')
         #     return '该客户缺少标签'
         #
         # while not self.select_all_customer():
@@ -634,15 +679,20 @@ class EveryDayTask(Base):
         # a = self.second()
         # a = self.third()
         # a = self.fourth()
-        a = self.fifth()
+        # a = self.fifth()
+        # a = self.sixth()
         # a = self.click_luoshu_SMR_in_chat_list()
         # a = self.search_the_SMR()
+        # a = self.swip_sop1v1_windows()
+
         # a = self.screenshot_of_contrast()
         # a = self.is_in_chat_list()
         # a = self.check_for_extra_windows()
         # a = self.get_sop_1v1_task_status()
         # a = self.delete_sop_1v1_task()
-        print(a)
+        # a = self.select_the_customer()
+        # a = self.search_target_tag()
+        # print(a)
 
 
     def run_task(self):
