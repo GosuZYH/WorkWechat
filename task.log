@@ -4620,3 +4620,108 @@
 2021-11-15 18:16:29,029 - F:/git/WorkWechat/workwechat/everyday_task.py[line:260] - INFO: 判断sop执行是否是可执行状态
 2021-11-15 18:16:32,422 - F:/git/WorkWechat/workwechat/everyday_task.py[line:263] - INFO: 当前sop任务为未执行状态
 2021-11-15 18:16:32,678 - F:/git/WorkWechat/workwechat/everyday_task.py[line:265] - INFO: 当前任务为可执行状态
+2021-11-15 18:19:13,265 - F:/git/WorkWechat/workwechat/everyday_task.py[line:68] - INFO: 目标在列表中,直接点击
+2021-11-15 18:19:14,687 - F:/git/WorkWechat/workwechat/everyday_task.py[line:136] - INFO: 当前在洛书聊天页面
+2021-11-15 18:19:18,200 - F:/git/WorkWechat/workwechat/everyday_task.py[line:153] - INFO: 当前处在与洛书SMR-test的聊天记录页面
+2021-11-15 18:19:19,312 - F:/git/WorkWechat/workwechat/everyday_task.py[line:156] - INFO: 消息页置顶任务--准备在翻页前后截图做对比
+2021-11-15 18:19:20,101 - F:/git/WorkWechat/workwechat/everyday_task.py[line:160] - INFO: 消息页置顶任务--开始比对前后截图
+2021-11-15 18:19:20,101 - F:/git/WorkWechat/workwechat/everyday_task.py[line:166] - INFO: 前后对比结果一致
+2021-11-15 18:19:20,451 - F:\git\WorkWechat\workwechat\base.py[line:312] - INFO: 企业微信已经连接
+2021-11-15 18:19:24,038 - F:/git/WorkWechat/workwechat/everyday_task.py[line:332] - INFO: 识别sop话术任务状态
+2021-11-15 18:19:24,038 - F:/git/WorkWechat/workwechat/everyday_task.py[line:250] - INFO: 判断sop执行是否是已执行状态
+2021-11-15 18:19:29,702 - F:/git/WorkWechat/workwechat/everyday_task.py[line:260] - INFO: 判断sop执行是否是可执行状态
+2021-11-15 18:19:33,110 - F:/git/WorkWechat/workwechat/everyday_task.py[line:263] - INFO: 当前sop任务为未执行状态
+2021-11-15 18:19:33,355 - F:/git/WorkWechat/workwechat/everyday_task.py[line:265] - INFO: 当前任务为可执行状态
+2021-11-15 18:19:33,355 - F:/git/WorkWechat/workwechat/everyday_task.py[line:250] - INFO: 判断sop执行是否是已执行状态
+2021-11-15 18:19:39,078 - F:/git/WorkWechat/workwechat/everyday_task.py[line:260] - INFO: 判断sop执行是否是可执行状态
+2021-11-15 18:19:42,519 - F:/git/WorkWechat/workwechat/everyday_task.py[line:263] - INFO: 当前sop任务为未执行状态
+2021-11-15 18:19:42,762 - F:/git/WorkWechat/workwechat/everyday_task.py[line:265] - INFO: 当前任务为可执行状态
+2021-11-15 18:37:18,873 - F:/git/WorkWechat/workwechat/everyday_task.py[line:68] - INFO: 目标在列表中,直接点击
+2021-11-15 18:37:20,311 - F:/git/WorkWechat/workwechat/everyday_task.py[line:136] - INFO: 当前在洛书聊天页面
+2021-11-15 18:37:23,764 - F:/git/WorkWechat/workwechat/everyday_task.py[line:153] - INFO: 当前处在与洛书SMR-test的聊天记录页面
+2021-11-15 18:37:24,835 - F:/git/WorkWechat/workwechat/everyday_task.py[line:156] - INFO: 消息页置顶任务--准备在翻页前后截图做对比
+2021-11-15 18:37:25,631 - F:/git/WorkWechat/workwechat/everyday_task.py[line:160] - INFO: 消息页置顶任务--开始比对前后截图
+2021-11-15 18:37:25,632 - F:/git/WorkWechat/workwechat/everyday_task.py[line:166] - INFO: 前后对比结果一致
+2021-11-15 18:37:26,003 - F:\git\WorkWechat\workwechat\base.py[line:312] - INFO: 企业微信已经连接
+2021-11-15 18:37:29,684 - F:/git/WorkWechat/workwechat/everyday_task.py[line:332] - INFO: 识别sop话术任务状态
+2021-11-15 18:37:29,684 - F:/git/WorkWechat/workwechat/everyday_task.py[line:250] - INFO: 判断sop执行是否是已执行状态
+2021-11-15 18:37:35,332 - F:/git/WorkWechat/workwechat/everyday_task.py[line:260] - INFO: 判断sop执行是否是可执行状态
+2021-11-15 18:37:38,837 - F:/git/WorkWechat/workwechat/everyday_task.py[line:263] - INFO: 当前sop任务为未执行状态
+2021-11-15 18:37:39,085 - F:/git/WorkWechat/workwechat/everyday_task.py[line:265] - INFO: 当前任务为可执行状态
+2021-11-15 18:37:39,085 - F:/git/WorkWechat/workwechat/everyday_task.py[line:250] - INFO: 判断sop执行是否是已执行状态
+2021-11-15 18:37:44,746 - F:/git/WorkWechat/workwechat/everyday_task.py[line:260] - INFO: 判断sop执行是否是可执行状态
+2021-11-15 18:37:48,197 - F:/git/WorkWechat/workwechat/everyday_task.py[line:263] - INFO: 当前sop任务为未执行状态
+2021-11-15 18:37:48,435 - F:/git/WorkWechat/workwechat/everyday_task.py[line:265] - INFO: 当前任务为可执行状态
+2021-11-15 18:37:48,544 - F:/git/WorkWechat/workwechat/everyday_task.py[line:433] - INFO: 
+	 —— Target panel exists. ——
+2021-11-15 18:37:50,722 - F:/git/WorkWechat/workwechat/everyday_task.py[line:451] - INFO: 
+	 —— Target panel exists. ——
+2021-11-15 18:37:52,072 - F:/git/WorkWechat/workwechat/everyday_task.py[line:454] - INFO: 
+	 —— touch the sending-helper button ——
+2021-11-15 18:37:52,497 - F:/git/WorkWechat/workwechat/everyday_task.py[line:480] - INFO: 
+	 —— Target panel exists. ——
+2021-11-15 18:37:54,327 - F:/git/WorkWechat/workwechat/everyday_task.py[line:484] - INFO: 
+	 —— touch the select customer button ——
+2021-11-15 18:37:54,443 - F:/git/WorkWechat/workwechat/everyday_task.py[line:494] - INFO: 
+	 —— Target panel exists. ——
+2021-11-15 18:37:56,325 - F:/git/WorkWechat/workwechat/everyday_task.py[line:498] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-15 18:37:56,440 - F:/git/WorkWechat/workwechat/everyday_task.py[line:525] - INFO: 
+	 —— Target panel exists. ——
+2021-11-15 18:38:19,056 - F:/git/WorkWechat/workwechat/everyday_task.py[line:537] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-15 18:38:19,590 - F:\git\WorkWechat\workwechat\base.py[line:109] - INFO: mouse scroll at (2632,484) with wheel dist -1
+2021-11-15 18:38:20,026 - F:\git\WorkWechat\workwechat\base.py[line:109] - INFO: mouse scroll at (2632,484) with wheel dist -1
+2021-11-15 18:38:20,464 - F:\git\WorkWechat\workwechat\base.py[line:109] - INFO: mouse scroll at (2632,484) with wheel dist -1
+2021-11-15 18:38:20,917 - F:\git\WorkWechat\workwechat\base.py[line:109] - INFO: mouse scroll at (2632,484) with wheel dist -1
+2021-11-15 18:43:04,014 - F:/git/WorkWechat/workwechat/everyday_task.py[line:68] - INFO: 目标在列表中,直接点击
+2021-11-15 18:43:09,211 - F:/git/WorkWechat/workwechat/everyday_task.py[line:136] - INFO: 当前在洛书聊天页面
+2021-11-15 18:43:25,405 - F:/git/WorkWechat/workwechat/everyday_task.py[line:222] - INFO: 没有任务,停止执行
+2021-11-15 18:43:25,699 - F:/git/WorkWechat/workwechat/everyday_task.py[line:68] - INFO: 目标在列表中,直接点击
+2021-11-15 18:43:27,161 - F:/git/WorkWechat/workwechat/everyday_task.py[line:136] - INFO: 当前在洛书聊天页面
+2021-11-15 18:43:30,649 - F:/git/WorkWechat/workwechat/everyday_task.py[line:153] - INFO: 当前处在与洛书SMR-test的聊天记录页面
+2021-11-15 18:43:31,735 - F:/git/WorkWechat/workwechat/everyday_task.py[line:156] - INFO: 消息页置顶任务--准备在翻页前后截图做对比
+2021-11-15 18:43:32,516 - F:/git/WorkWechat/workwechat/everyday_task.py[line:160] - INFO: 消息页置顶任务--开始比对前后截图
+2021-11-15 18:43:32,517 - F:/git/WorkWechat/workwechat/everyday_task.py[line:169] - INFO: 前后对比结果不一致,继续翻页对比
+2021-11-15 18:43:33,579 - F:/git/WorkWechat/workwechat/everyday_task.py[line:156] - INFO: 消息页置顶任务--准备在翻页前后截图做对比
+2021-11-15 18:43:34,384 - F:/git/WorkWechat/workwechat/everyday_task.py[line:160] - INFO: 消息页置顶任务--开始比对前后截图
+2021-11-15 18:43:34,384 - F:/git/WorkWechat/workwechat/everyday_task.py[line:166] - INFO: 前后对比结果一致
+2021-11-15 18:43:34,385 - F:/git/WorkWechat/workwechat/everyday_task.py[line:371] - INFO: fourth执行第一步时候出错
+2021-11-15 18:43:34,709 - F:/git/WorkWechat/workwechat/everyday_task.py[line:68] - INFO: 目标在列表中,直接点击
+2021-11-15 18:43:36,093 - F:/git/WorkWechat/workwechat/everyday_task.py[line:136] - INFO: 当前在洛书聊天页面
+2021-11-15 18:43:39,534 - F:/git/WorkWechat/workwechat/everyday_task.py[line:153] - INFO: 当前处在与洛书SMR-test的聊天记录页面
+2021-11-15 18:43:40,617 - F:/git/WorkWechat/workwechat/everyday_task.py[line:156] - INFO: 消息页置顶任务--准备在翻页前后截图做对比
+2021-11-15 18:43:41,441 - F:/git/WorkWechat/workwechat/everyday_task.py[line:160] - INFO: 消息页置顶任务--开始比对前后截图
+2021-11-15 18:43:41,441 - F:/git/WorkWechat/workwechat/everyday_task.py[line:166] - INFO: 前后对比结果一致
+2021-11-15 18:43:41,796 - F:\git\WorkWechat\workwechat\base.py[line:312] - INFO: 企业微信已经连接
+2021-11-15 18:43:45,364 - F:/git/WorkWechat/workwechat/everyday_task.py[line:332] - INFO: 识别sop话术任务状态
+2021-11-15 18:43:45,365 - F:/git/WorkWechat/workwechat/everyday_task.py[line:250] - INFO: 判断sop执行是否是已执行状态
+2021-11-15 18:43:51,023 - F:/git/WorkWechat/workwechat/everyday_task.py[line:260] - INFO: 判断sop执行是否是可执行状态
+2021-11-15 18:43:54,524 - F:/git/WorkWechat/workwechat/everyday_task.py[line:263] - INFO: 当前sop任务为未执行状态
+2021-11-15 18:43:54,784 - F:/git/WorkWechat/workwechat/everyday_task.py[line:265] - INFO: 当前任务为可执行状态
+2021-11-15 18:43:54,784 - F:/git/WorkWechat/workwechat/everyday_task.py[line:250] - INFO: 判断sop执行是否是已执行状态
+2021-11-15 18:44:00,442 - F:/git/WorkWechat/workwechat/everyday_task.py[line:260] - INFO: 判断sop执行是否是可执行状态
+2021-11-15 18:44:03,852 - F:/git/WorkWechat/workwechat/everyday_task.py[line:263] - INFO: 当前sop任务为未执行状态
+2021-11-15 18:44:04,089 - F:/git/WorkWechat/workwechat/everyday_task.py[line:265] - INFO: 当前任务为可执行状态
+2021-11-15 18:44:04,207 - F:/git/WorkWechat/workwechat/everyday_task.py[line:433] - INFO: 
+	 —— Target panel exists. ——
+2021-11-15 18:44:06,403 - F:/git/WorkWechat/workwechat/everyday_task.py[line:451] - INFO: 
+	 —— Target panel exists. ——
+2021-11-15 18:44:07,781 - F:/git/WorkWechat/workwechat/everyday_task.py[line:454] - INFO: 
+	 —— touch the sending-helper button ——
+2021-11-15 18:44:08,205 - F:/git/WorkWechat/workwechat/everyday_task.py[line:480] - INFO: 
+	 —— Target panel exists. ——
+2021-11-15 18:44:10,120 - F:/git/WorkWechat/workwechat/everyday_task.py[line:484] - INFO: 
+	 —— touch the select customer button ——
+2021-11-15 18:44:10,234 - F:/git/WorkWechat/workwechat/everyday_task.py[line:494] - INFO: 
+	 —— Target panel exists. ——
+2021-11-15 18:44:12,131 - F:/git/WorkWechat/workwechat/everyday_task.py[line:498] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-15 18:44:12,242 - F:/git/WorkWechat/workwechat/everyday_task.py[line:525] - INFO: 
+	 —— Target panel exists. ——
+2021-11-15 18:44:33,848 - F:/git/WorkWechat/workwechat/everyday_task.py[line:537] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-15 18:44:34,382 - F:\git\WorkWechat\workwechat\base.py[line:109] - INFO: mouse scroll at (2632,484) with wheel dist -1
+2021-11-15 18:44:34,825 - F:\git\WorkWechat\workwechat\base.py[line:109] - INFO: mouse scroll at (2632,484) with wheel dist -1
+2021-11-15 18:44:35,265 - F:\git\WorkWechat\workwechat\base.py[line:109] - INFO: mouse scroll at (2632,484) with wheel dist -1
+2021-11-15 18:44:35,714 - F:\git\WorkWechat\workwechat\base.py[line:109] - INFO: mouse scroll at (2632,484) with wheel dist -1

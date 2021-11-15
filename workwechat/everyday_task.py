@@ -390,9 +390,13 @@ class EveryDayTask(Base):
                         可以直接调:self.delete_sop_1v1_task() -->删除最顶端的任务
                         之后无论返回什么:都continue跳过当前循环就好
                     '''
-
-
-                    return True
+                    if self.execute_sop_task() == True:
+                        continue
+                    elif self.execute_sop_task() == 'delete':
+                        if self.delete_sop_1v1_task():
+                            continue
+                    else:
+                        continue
                 elif self.fourth() == 'stop':
                     return 'stop'
                 else:
@@ -627,10 +631,17 @@ class EveryDayTask(Base):
                                     self.log.info('\n\t —— Target panel exists. ——')
                                     if self.connect_to_special_panel(title='SOP消息'):
                                         touch_ui('关闭2')
-            return '该客户缺少标签'
+            return False
 
         while not self.select_all_customer():
             self.search_target_tag()
+
+        while not self.send_message_to_customer():
+            self.select_all_customer()
+
+        这里填写上最后点击回执的操作
+
+        return True
 
     def test(self):
         '''
