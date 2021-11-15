@@ -413,25 +413,6 @@ class EveryDayTask(Base):
         except Exception as e:
             self.log.info(''+str(e))
             return False
-
-    #这里是1对1话术任务处理的第二阶段,确定当前页面是否有可以执行的1v1sop话术任务,如果有就返回True,如果没有就返回False
-    def do_sop1v1_task(self):
-        '''
-        True:继续做任务
-        stop:没有任务可以做
-        :return:
-        '''
-        try:
-            while True:
-                if self.fourth() == True:
-                    return True
-                elif self.fourth() == 'stop':
-                    return 'stop'
-                else:
-                    return False
-        except Exception as e:
-            self.log.info('做任务之前的任务出错'+str(e))
-            return False
     
     def copy_sop_tag(self):
         '''
@@ -441,7 +422,7 @@ class EveryDayTask(Base):
         if self.check_window_exists(title='SOP消息'):
             self.log.info('\n\t —— Target panel exists. ——')
             if self.connect_to_special_panel(title='SOP消息'):
-                if touch_ui('点击复制'):
+                if touch_ui('点击复制2'):
                     sleep(0.2)
                     win32clipboard.OpenClipboard()
                     copy_tag= win32clipboard.GetClipboardData()
@@ -465,6 +446,16 @@ class EveryDayTask(Base):
                     return True
                 self.log.error('\n\t *** can not find the group sending helper! ***')
         return False
+
+    def fifth(self):
+        while True:
+            if self.copy_sop_tag():
+                if self.click_group_sending_helper():
+                    return True
+                else:
+                    continue
+            else:
+                continue
 
     def select_the_customer(self):
         '''
@@ -578,26 +569,45 @@ class EveryDayTask(Base):
                 sleep(0.3)
             return True
 
+    #这里是1对1话术任务处理的第二阶段,确定当前页面是否有可以执行的1v1sop话术任务,如果有就返回True,如果没有就返回False
+    def do_sop1v1_task(self):
+        '''
+        True:继续做任务
+        stop:没有任务可以做
+        :return:
+        '''
+        try:
+            while True:
+                if self.fourth() == True:
+                    return True
+                elif self.fourth() == 'stop':
+                    return 'stop'
+                else:
+                    return False
+        except Exception as e:
+            self.log.info('做任务之前的任务出错'+str(e))
+            return False
+
     def test(self):
         '''
         test
         '''
-        while True:
-            if self.copy_sop_tag():
-                print(1)
-            else:
-                break
-        print('跳出了循环')
-
+        # while True:
+        # self.copy_sop_tag()
+        #         print(1)
+        #     else:
+        #         break
+        # print('跳出了循环')
+        #
         # while not self.click_group_sending_helper():
         #     self.copy_sop_tag()
-
+        #
         # while not self.select_the_customer():
         #     self.click_group_sending_helper()
-
+        #
         # while not self.select_customer_tag():
         #     self.select_the_customer()
-
+        #
         # if not self.search_target_tag():
         #     if self.connect_to_special_panel('选择客户'):
         #             self.connect_to_desktop()
@@ -613,10 +623,10 @@ class EveryDayTask(Base):
         #                             if self.connect_to_special_panel(title='SOP消息'):
         #                                 touch_ui('关闭2')
         #     return '该客户缺少标签'
-
+        #
         # while not self.select_all_customer():
         #     self.search_target_tag()
-
+        #
         # while not self.send_message_to_customer():
         #     self.select_all_customer()
         # a = self.do_sop1v1_task()
@@ -624,6 +634,7 @@ class EveryDayTask(Base):
         # a = self.second()
         # a = self.third()
         # a = self.fourth()
+        a = self.fifth()
         # a = self.click_luoshu_SMR_in_chat_list()
         # a = self.search_the_SMR()
         # a = self.screenshot_of_contrast()
@@ -631,7 +642,7 @@ class EveryDayTask(Base):
         # a = self.check_for_extra_windows()
         # a = self.get_sop_1v1_task_status()
         # a = self.delete_sop_1v1_task()
-        # print(a)
+        print(a)
 
 
     def run_task(self):

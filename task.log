@@ -1325,3 +1325,33 @@
 	 —— Target panel exists. ——
 2021-11-15 10:48:32,257 - F:/git/WorkWechat/workwechat/everyday_task.py[line:452] - ERROR: 
 	 *** can not find the click-copy button! ***
+2021-11-15 10:55:45,575 - F:/git/WorkWechat/workwechat/everyday_task.py[line:442] - INFO: 
+	 —— Target panel exists. ——
+2021-11-15 10:56:06,325 - F:/git/WorkWechat/workwechat/everyday_task.py[line:452] - ERROR: 
+	 *** can not find the click-copy button! ***
+2021-11-15 10:57:16,368 - F:/git/WorkWechat/workwechat/everyday_task.py[line:442] - INFO: 
+	 —— Target panel exists. ——
+2021-11-15 10:58:11,476 - F:/git/WorkWechat/workwechat/everyday_task.py[line:442] - INFO: 
+	 —— Target panel exists. ——
+2021-11-15 10:58:32,291 - F:/git/WorkWechat/workwechat/everyday_task.py[line:452] - ERROR: 
+	 *** can not find the click-copy button! ***
+2021-11-15 11:00:16,129 - F:/git/WorkWechat/workwechat/everyday_task.py[line:442] - INFO: 
+	 —— Target panel exists. ——
+2021-11-15 11:00:23,523 - F:/git/WorkWechat/workwechat/everyday_task.py[line:442] - INFO: 
+	 —— Target panel exists. ——
+2021-11-15 11:00:44,894 - F:/git/WorkWechat/workwechat/everyday_task.py[line:442] - INFO: 
+	 —— Target panel exists. ——
+2021-11-15 11:04:53,056 - F:/git/WorkWechat/workwechat/everyday_task.py[line:423] - INFO: 
+	 —— Target panel exists. ——
+2021-11-15 11:04:55,814 - F:/git/WorkWechat/workwechat/everyday_task.py[line:441] - INFO: 
+	 —— Target panel exists. ——
+2021-11-15 11:07:38,439 - F:/git/WorkWechat/workwechat/everyday_task.py[line:423] - INFO: 
+	 —— Target panel exists. ——
+2021-11-15 11:07:40,897 - F:/git/WorkWechat/workwechat/everyday_task.py[line:441] - INFO: 
+	 —— Target panel exists. ——
+2021-11-15 11:07:57,520 - F:/git/WorkWechat/workwechat/everyday_task.py[line:423] - INFO: 
+	 —— Target panel exists. ——
+2021-11-15 11:10:45,838 - F:/git/WorkWechat/workwechat/everyday_task.py[line:423] - INFO: 
+	 —— Target panel exists. ——
+2021-11-15 11:10:48,287 - F:/git/WorkWechat/workwechat/everyday_task.py[line:441] - INFO: 
+	 —— Target panel exists. ——
