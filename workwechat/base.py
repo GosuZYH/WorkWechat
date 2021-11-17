@@ -2,6 +2,8 @@
 __author__ = "zyh"
 import os
 import time
+
+import poco as poco
 import win32gui
 import logging
 import winreg
@@ -12,20 +14,23 @@ from psutil import process_iter
 import pytesseract
 import numpy as np
 from airtest.core.api import *
+from airtest.core.settings import Settings
 from airtest.cli.parser import cli_setup
 from airtest.aircv import cv2
 from airtest.aircv import *
+from pywinauto import Application, mouse
 
 from init_airtest import AirConn
 from setup_log import Logger
 
-#ST.RESIZE_METHOD = staticmethod(cocos_min_strategy)
-ST.THRESHOLD = 0.7 # [0, 1]图像识别的阈值
-ST.THRESHOLD_STRICT = 0.7 # [0, 1]这是一个更加严格的阈值设定，只用于assert_exists(图片)接口。
-ST.OPDELAY = 0.1      #即每一步操作后等待0.1秒
-ST.FIND_TIMEOUT = 5   #设置寻找元素的等待时间,默认为20  默认是find_timeout = ST.FIND_TIMEOUT
-ST.FIND_TIMEOUT_TMP = 3 ##设置寻找元素的等待时间,默认为3   默认是find_timeout = ST.FIND_TIMEOUT
-#ST.PROJECT_ROOT = os.environ.get("PROJECT_ROOT", "") # for using other script
+# ST.RESIZE_METHOD = staticmethod(cocos_min_strategy)
+ST.THRESHOLD = 0.7  # [0, 1]图像识别的阈值
+ST.THRESHOLD_STRICT = 0.7  # [0, 1]这是一个更加严格的阈值设定，只用于assert_exists(图片)接口。
+ST.OPDELAY = 0.1  # 即每一步操作后等待0.1秒
+ST.FIND_TIMEOUT = 3  # 设置寻找元素的等待时间,默认为20  默认是find_timeout = ST.FIND_TIMEOUT
+ST.FIND_TIMEOUT_TMP = 3  ##设置寻找元素的等待时间,默认为3   默认是find_timeout = ST.FIND_TIMEOUT
+# ST.PROJECT_ROOT = os.environ.get("PROJECT_ROOT", "") # for using other script
+
 class Base(ABC):
     '''
     base operation in workwechat.
@@ -34,6 +39,7 @@ class Base(ABC):
         log = Logger(level='debug')
         self.log = log.logger
         self.copy_tag = None
+
 
     # example
     def click_search_frame(self):
@@ -247,7 +253,8 @@ class Base(ABC):
                 pid_dic = pid_temp.as_dict(attrs=['pid', 'name'])
                 if pid_dic['name'] == 'WXWork.exe':
                     self.log.info('找到企微pid')
-                    return True
+                    pid_num = pid_dic ['pid']
+                    return pid_num
                 else:
                     continue
             return False
@@ -288,12 +295,12 @@ class Base(ABC):
                 self.log.info('企微窗口启动失败'+str(e))
                 return False
     
-    def get_WXWork_handle(self):
+    def get_WXWork_handle(self,title='企业微信'):
 
         win32gui.EnumWindows(self.get_all_hwnd, 0)
         for h, t in self.hwnd_title.items():
-            if t == '企业微信':
-                return True
+            if t == title:
+                return h
             else:
                 pass
         return False
@@ -361,8 +368,33 @@ class Base(ABC):
                     continue
                 else:
                     return self.open_WXWork_window()
+    def H5_page_get_element(self,title='回执',page='SOP消息',type='Text',click=False):
+        '''
+        寻找h5页面的元素,如果找到返回坐标信息,但是类型是pywinauto的类型
+        :param title: 需要链接的企业微信下的页面元素名
+        :param page: 需要链接企业微信下的页面title
+        :param type: 需要寻找的元素类型
+        :param click: 默认为False不进行点击操作,True则进行点击操作
+        :return: True:执行成功/False:执行失败
+        '''
+        try:
+            self.app = Application(backend='uia')
+            self.app.connect(process=self.get_WXWork_pid())
+            self.win = self.app[page]   #.print_control_identifiers()
+            res = self.win.child_window(title=title,control_type=type)
+            position = res.rectangle()
+            if click==True:
+                mouse.click(button='left', coords=(position.left + 10, position.top + 10))
+                return True
+            elif click == False:
+                return True
+        except Exception as e:
+            self.log.error('寻找元素时出错'+str(e))
+            return False
+        # mouse.click(button='left', coords=(position.left + 10, position.top + 10))
 
-    
+        # return res
+
 
 def touch_ui(photo_name='',**kwargs):
     '''
@@ -449,8 +481,5 @@ def show_ui(photo_name=''):
 
 if __name__ == '__main__':
     a = Base()
+
     print(a.connect_to_workwechat())
-    # print(a.start_WXWork())
-    # print(a.get_WXWork_pid())
-    # print(a.open_WXWork_window())
-    # a.connect_to_special_panel('企业微信')
