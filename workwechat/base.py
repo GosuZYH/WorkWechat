@@ -2,6 +2,7 @@
 __author__ = "zyh"
 import os
 import time
+import re
 
 import win32gui
 import win32con
@@ -22,6 +23,7 @@ from pywinauto import Application, mouse
 
 from init_airtest import AirConn
 from setup_log import Logger
+from baidu_OCR import SMROCR
 
 # ST.RESIZE_METHOD = staticmethod(cocos_min_strategy)
 ST.THRESHOLD = 0.5  # [0, 1]图像识别的阈值
@@ -240,6 +242,32 @@ class Base(ABC):
             if rst_cnt[0] == self.copy_tag:
                 touch_pos = rst_cnt[1]
         return touch_pos
+    
+    def use_ocr(self,file_name=''):
+        '''
+        Using baidu outline Ocr-SDK.
+        '''
+        ocr = SMROCR()
+        if file_name:
+            return ocr.request_ocr(file_name=file_name)
+        else:
+            return ''
+
+    def get_tag_position(self,copy_text,file_name):
+        p = re.compile('(-|_|——| |)')
+        copy_text = p.sub('', copy_text)
+        results = self.use_ocr(file_name=file_name)
+        for result in results:
+            word = result.get('result')
+            if copy_text == word:
+                x1 = result.get('x1')
+                x4 = result.get('x4')
+                y3 = result.get('y3')
+                y4 = result.get('y4')
+                posx = (x1 + x4) // 2
+                posy = (y3 + y4) // 2
+                return posx,posy
+        return False
 
     def get_WXWork_pid(self):
         '''

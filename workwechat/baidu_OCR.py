@@ -1,5 +1,7 @@
 import base64
+import json
 import requests
+import re
 from airtest.aircv import *
 
 class CodeDemo:
@@ -32,37 +34,21 @@ class CodeDemo:
 
 
 class SMROCR:
-    def __init__(self,img_path) :
+    def __init__(self) :
         self.code_url='http://192.168.200.90:7000/ocr'
-        self.img_path=img_path
 
-    def getCode(self):
-        header = {
-            "Content-Type": "application/x-www-form-urlencoded"
-        }
-        def read_img():
-            with open(self.img_path, "rb")as f:
-                return base64.b64encode(f.read()).decode()
-
-        image = read_img()
-        response=requests.post(url=self.code_url,data={"image":image},headers=header)
-        return response.json()
-
-    def request_ocr(self):
+    def request_ocr(self,file_name):
         '''
         request POST to outline SDK.
         '''
-        f = open(self.img_path, "rb")
-
-        file = {'file':('不限标签.png',open(self.img_path,'rb'),'image/png')}
-        header={'Content-Type': 'application/json; charset=UTF-8'}
-        response=requests.post(url=self.code_url,headers=header,files=file)
-        content = response.json()
-        print(content)
-
+        img_path="photos\\%s.png" %file_name
+        file = {'img_file':(file_name,open(img_path,'rb'),'png/jpg')}
+        response = requests.post(url=self.code_url, files=file)
+        resjson = response.json()
+        print(resjson)
+        return resjson
 
 if __name__ == '__main__':
-    img_path=r"photos\\不限标签.png" # image path
     # local = aircv.imread(filename=img_path)
     # show_origin_size(img = local)
 
@@ -76,5 +62,7 @@ if __name__ == '__main__':
     # print('——res——:',words_result)
     # print('——list——:',words_list)
     # print('——string——:',words_str)
-    ocr = SMROCR(img_path)
-    ocr.request_ocr()
+
+    ocr = SMROCR()
+    name = 'test3'
+    ocr.request_ocr(file_name=name)
