@@ -1,5 +1,5 @@
 # -*- encoding=utf8 -*-
-import poco
+import os
 from airtest.core.api import *
 import win32clipboard
 from base import Base,exists_ui,touch_ui,find_ui,shot,show_ui,find_all_ui,touch_ui1
@@ -103,6 +103,35 @@ class EveryWeekTask(Base):
             self.log.info(e)
             return False
 
+    def check_for_extra_windows(self,title=None):
+        '''
+        点击1v1任务之前确保无其他多余窗口存在
+        有则杀死并返回True
+        :return:
+        '''
+        try:
+            while True:
+                if title is None:
+                    self.log.info('清除多余窗口')
+                    for i in WINDOW_LIST:
+                        while self.check_window_exists(title=i):
+                            self.connect_to_special_panel(i)
+                            self.log.info(f'检测到额外的窗口{i},将要关掉她')
+                            self.send_keys('%{F4}')
+                    self.log.info(f'检测完成')
+                    return True
+                else:
+                    if self.check_window_exists(title=title):
+                        self.connect_to_special_panel(title)
+                        self.log.info(f'检测到额外的窗口{title},将要关掉她')
+                        self.send_keys('%{F4}')
+                        return True
+                    else:
+                        return True
+        except Exception as e:
+            self.log.error('清除多余窗口的过程中出错'+str(e))
+            return False
+
     def second(self):
         try:
             if self.click_customer_contact_in_chat_list() or self.search_the_customer_contact():
@@ -170,6 +199,16 @@ class EveryWeekTask(Base):
             self.log.info('到达消息最上方的过程中出错')
             return False
 
+    def get_last_time_page(self):
+        while True:
+            if self.connect_to_special_panel('企业微信'):
+                if exists(Template(r"photos\tpl1637147760867.png",threshold=0.8,rgb=True)):
+                    return True
+                else:
+                    keyevent('{PGUP}')
+                    continue
+                    # pass
+
     def do_every_week_task(self):
         '''
         True:继续做任务
@@ -179,8 +218,8 @@ class EveryWeekTask(Base):
         try:
             while True:
                 if self.third() == True:
-                    pass
-                    continue
+                    return True
+                    #continue
                 elif self.third() == 'stop':
                     return 'stop'
                 else:
@@ -193,25 +232,16 @@ class EveryWeekTask(Base):
         '''
         test
         '''
-        a = self.do_every_week_task()
+        # a = self.do_every_week_task()
         # a = self.first()
         # a = self.second()
         # a = self.third()
         # a = self.fourth()
         # a = self.fifth()
         # a = self.sixth()
-        # a = self.click_luoshu_SMR_in_chat_list()
-        # a = self.search_the_SMR()
-        # a = self.swip_sop1v1_windows()
-        # a = self.screenshot_of_contrast()
-        # a = self.is_in_chat_list()
-        # a = self.check_for_extra_windows()
-        # a = self.get_sop_1v1_task_status()
-        # a = self.delete_sop_1v1_task()
-        # a = self.select_the_customer()
-        # a = self.search_target_tag()
+        a = self.get_last_time_page()
         print(a)
-
+        print(os.getcwd())
     def run_task(self):
         '''
         '''

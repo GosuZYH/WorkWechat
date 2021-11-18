@@ -396,14 +396,14 @@ class Base(ABC):
         # return res
 
 
-def touch_ui(photo_name='',**kwargs):
+def touch_ui(photo_name='',threshold=ST.THRESHOLD,rgb=False,**kwargs):
     '''
     touch the ui in photo.
     * if have kwargs: will touch the central point coordinate offset.
     '''
     if kwargs:
         try:
-            pos = find_all(Template('photos\%s.png' %photo_name))
+            pos = find_all(Template('photos\%s.png' %photo_name,threshold=threshold,rgb=rgb))
             if pos is not None:
                 offset_x = 0 if kwargs.get('x') is None else kwargs.get('x')
                 offset_y = 0 if kwargs.get('y') is None else kwargs.get('y')
@@ -418,7 +418,7 @@ def touch_ui(photo_name='',**kwargs):
             return False
     else:
         try:
-            touch(Template('photos\%s.png' %photo_name))
+            touch(Template('photos\%s.png' %photo_name,threshold=threshold,rgb=rgb))
             return True
         except Exception as e:
             print(f'\n\t ***some error occured when touch target ui:{e}***')
@@ -435,12 +435,12 @@ def touch_ui1(photo_name=''):
         print(f'\n\t ***some error occured when touch target ui:{e}***')
         return False
 
-def exists_ui(photo_name=''):
+def exists_ui(photo_name='',threshold=ST.THRESHOLD,rgb=False):
     '''
     judge if the ui exists.
     '''
     try:
-        res = exists(Template('photos\%s.png' %photo_name))
+        res = exists(Template('photos\%s.png' %photo_name,threshold=threshold,rgb=rgb))
         if res:
             return True
         else:

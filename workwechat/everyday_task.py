@@ -858,8 +858,8 @@ class EveryDayTask(Base):
         # while not self.send_message_to_customer():
         #     self.select_all_customer()
         # 联调测试洛书
-        # a = self.do_sop1v1_task()
-        # print(a)
+        a = self.do_sop1v1_task()
+        print(a)
         # a = self.first()
         # a = self.second()
         # a = self.third()
