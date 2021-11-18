@@ -261,7 +261,7 @@ class EveryDayTask(Base):
                 if self.third() == 'success':
                     self.log.info('当前在最顶端,准备删除任务')
                     if self.is_in_chat_list():
-                        touch(find_all_ui('任务类型1v1')[0],right_click=True)
+                        touch(find_all_ui('洛书SOP')[0],right_click=True)
                         self.send_keys('{DOWN 6}')
                         self.send_keys('{ENTER}')
                         self.connect_to_special_panel('提示')
@@ -277,7 +277,8 @@ class EveryDayTask(Base):
         try:
             self.kill_target_windows(target_title=WINDOW_LIST)
             self.connect_to_workwechat()
-            if touch(find_all_ui('任务类型1v1')[0]):
+            print()
+            if touch(find_all_ui('洛书SOP')[0]):
                 sleep(2)
                 if self.connect_to_special_panel('SOP消息'):
                     self.log.info('识别sop话术任务状态')
@@ -760,6 +761,8 @@ class EveryDayTask(Base):
     def run_task(self):
         '''
         '''
+        # self.connect_to_special_panel('企业微信')
+        # touch_ui('洛书SOP')
         res = self.test()
 
 if __name__ == '__main__':

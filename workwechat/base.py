@@ -24,7 +24,7 @@ from init_airtest import AirConn
 from setup_log import Logger
 
 # ST.RESIZE_METHOD = staticmethod(cocos_min_strategy)
-ST.THRESHOLD = 0.7  # [0, 1]图像识别的阈值
+ST.THRESHOLD = 0.5  # [0, 1]图像识别的阈值
 ST.THRESHOLD_STRICT = 0.7  # [0, 1]这是一个更加严格的阈值设定，只用于assert_exists(图片)接口。
 ST.OPDELAY = 0.1  # 即每一步操作后等待0.1秒
 ST.FIND_TIMEOUT = 3  # 设置寻找元素的等待时间,默认为20  默认是find_timeout = ST.FIND_TIMEOUT
@@ -472,12 +472,12 @@ def find_ui(photo_name=''):
     else:
         return False
 
-def find_all_ui(photo_name=''):
+def find_all_ui(photo_name='',threshold=ST.THRESHOLD, rgb=False):
     '''
     find all exists ui in panel.
     '''
     list = []
-    res = find_all(Template(r'photos\%s.png' % photo_name))
+    res = find_all(Template(r'photos\%s.png' % photo_name,threshold=threshold, rgb=rgb))
     if res is not None:
         for i in res:
             list.append(i.get('result'))
