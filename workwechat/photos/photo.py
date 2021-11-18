@@ -10,6 +10,8 @@ if not cli_setup():
 
 # script content
 print("start...")
+touch(Template(r"tpl1637225292346.png", record_pos=(0.026, -0.142), resolution=(854, 652)))
+
 
 
 # generate html report

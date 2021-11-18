@@ -1,0 +1,38 @@
+2021-11-14 14:49:45,458 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:368] - INFO: 
+	 —— Target panel exists. ——
+2021-11-14 14:49:48,336 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:386] - INFO: 
+	 —— Target panel exists. ——
+2021-11-14 14:49:49,736 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:389] - INFO: 
+	 —— touch the sending-helper button ——
+2021-11-14 14:49:50,162 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:400] - INFO: 
+	 —— Target panel exists. ——
+2021-11-14 14:49:51,987 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:404] - INFO: 
+	 —— touch the select customer button ——
+2021-11-14 14:49:52,100 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:414] - INFO: 
+	 —— Target panel exists. ——
+2021-11-14 14:49:53,895 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:418] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-14 14:49:54,007 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:428] - INFO: 
+	 —— Target panel exists. ——
+2021-11-14 14:50:49,025 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:368] - INFO: 
+	 —— Target panel exists. ——
+2021-11-14 14:50:51,443 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:386] - INFO: 
+	 —— Target panel exists. ——
+2021-11-14 14:50:52,827 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:389] - INFO: 
+	 —— touch the sending-helper button ——
+2021-11-14 14:50:53,251 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:400] - INFO: 
+	 —— Target panel exists. ——
+2021-11-14 14:50:54,810 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:404] - INFO: 
+	 —— touch the select customer button ——
+2021-11-14 14:50:54,920 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:414] - INFO: 
+	 —— Target panel exists. ——
+2021-11-14 14:50:57,021 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:418] - INFO: 
+	 —— touch the tag mini-menu ——
+2021-11-14 14:50:57,131 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:428] - INFO: 
+	 —— Target panel exists. ——
+2021-11-14 14:51:23,976 - e:/Git/daqinjia/WorkWechat/RPA/workwechat/everyday_task.py[line:440] - INFO: 
+	 —— can not find target tag in this page. ——
+2021-11-14 14:51:24,242 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:103] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-14 14:51:24,671 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:103] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-14 14:51:25,092 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:103] - INFO: mouse scroll at (712,480) with wheel dist -1
+2021-11-14 14:51:25,505 - e:\Git\daqinjia\WorkWechat\RPA\workwechat\base.py[line:103] - INFO: mouse scroll at (712,480) with wheel dist -1

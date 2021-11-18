@@ -30,18 +30,51 @@ class CodeDemo:
         response=requests.post(url=self.code_url,data={"image":image,"access_token":self.access_token},headers=header)
         return response.json()
 
+
+class SMROCR:
+    def __init__(self,img_path) :
+        self.code_url='http://192.168.200.90:7000/ocr'
+        self.img_path=img_path
+
+    def getCode(self):
+        header = {
+            "Content-Type": "application/x-www-form-urlencoded"
+        }
+        def read_img():
+            with open(self.img_path, "rb")as f:
+                return base64.b64encode(f.read()).decode()
+
+        image = read_img()
+        response=requests.post(url=self.code_url,data={"image":image},headers=header)
+        return response.json()
+
+    def request_ocr(self):
+        '''
+        request POST to outline SDK.
+        '''
+        f = open(self.img_path, "rb")
+
+        file = {'file':('不限标签.png',open(self.img_path,'rb'),'image/png')}
+        header={'Content-Type': 'application/json; charset=UTF-8'}
+        response=requests.post(url=self.code_url,headers=header,files=file)
+        content = response.json()
+        print(content)
+
+
 if __name__ == '__main__':
-    img_path=r"photos\\余庆.png" # image path
+    img_path=r"photos\\不限标签.png" # image path
     # local = aircv.imread(filename=img_path)
     # show_origin_size(img = local)
 
-    code_obj=CodeDemo(img_path=img_path)
-    res=code_obj.getCode()
-    words_result=res.get("words_result")
-    words_list = [words.get('words') for words in words_result]
-    words_str = str(words_list)
+    # code_obj=CodeDemo(img_path=img_path)
+    # res=code_obj.getCode()
+    # words_result=res.get("words_result")
+    # words_list = [words.get('words') for words in words_result]
+    # words_str = str(words_list)
 
-    print('——response——:',res)
-    print('——res——:',words_result)
-    print('——list——:',words_list)
-    print('——string——:',words_str)
+    # print('——response——:',res)
+    # print('——res——:',words_result)
+    # print('——list——:',words_list)
+    # print('——string——:',words_str)
+    ocr = SMROCR(img_path)
+    ocr.request_ocr()

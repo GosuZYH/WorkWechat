@@ -1,7 +1,8 @@
 # -*- encoding=utf8 -*-
-import poco
 from airtest.core.api import *
+from numpy.lib.function_base import delete
 import win32clipboard
+import win32gui
 from base import Base,exists_ui,touch_ui,find_ui,shot,show_ui,find_all_ui,touch_ui1
 from airtest.aircv import *
 from airtest.core.api import Template, exists, touch, auto_setup, connect_device,snapshot,assert_equal
@@ -105,19 +106,17 @@ class EveryDayTask(Base):
 
     def second(self):
         try:
+            if self.is_in_chat_list():
+                return True
             if self.click_luoshu_SMR_in_chat_list() or self.search_the_SMR():
                 return True
             while True:
-                self.check_for_extra_windows(title='洛书SMR-test')
+                self.kill_target_windows(target_title=['洛书SMR-test'])
                 if self.first() == True:
                     if self.click_luoshu_SMR_in_chat_list() or self.search_the_SMR() == True:
                         return True
-                    else:
-                        self.log.info('second执行第二步的时候出错')
-                        continue
-                else:
-                    self.log.info('second执行第一步的时候出错')
-                    continue
+                    self.log.info('second执行第二步的时候出错')
+                self.log.info('second执行第一步的时候出错')
         except Exception as e:
             self.log.error('\n\tsecond函数出错'+str(e))
             return False
@@ -167,7 +166,6 @@ class EveryDayTask(Base):
                         return True
                     else:
                         self.log.info('前后对比结果不一致,继续翻页对比')
-                        continue
             else:
                 if exists_ui('洛书SMR-test聊天窗口') or exists_ui('洛书SMR-test聊天窗口1'):
                     return 'stop'
@@ -178,34 +176,27 @@ class EveryDayTask(Base):
             self.log.error('消息页置顶任务--对比翻页前后截图出错'+str(e))
             return False
 
-    def check_for_extra_windows(self,title=None):
-        '''
-        点击1v1任务之前确保无其他多余窗口存在
-        有则杀死并返回True
-        :return:
-        '''
-        try:
-            while True:
-                if title is None:
-                    self.log.info('清除多余窗口')
-                    for i in WINDOW_LIST:
-                        while self.check_window_exists(title=i):
-                            self.connect_to_special_panel(i)
-                            self.log.info(f'检测到额外的窗口{i},将要关掉她')
-                            self.send_keys('%{F4}')
-                    self.log.info(f'检测完成')
-                    return True
-                else:
-                    if self.check_window_exists(title=title):
-                        self.connect_to_special_panel(title)
-                        self.log.info(f'检测到额外的窗口{title},将要关掉她')
-                        self.send_keys('%{F4}')
-                        return True
-                    else:
-                        return True
-        except Exception as e:
-            self.log.error('清除多余窗口的过程中出错'+str(e))
-            return False
+    # def check_for_extra_windows(self,title=None):
+    #     '''
+    #     点击1v1任务之前确保无其他多余窗口存在
+    #     有则杀死并返回True
+    #     :return:
+    #     '''
+    #     try:
+    #         while True:
+    #             if title is None:
+    #                 self.kill_target_windows(target_title=WINDOW_LIST)
+    #             else:
+    #                 if self.check_window_exists(title=title):
+    #                     self.connect_to_special_panel(title)
+    #                     self.log.info(f'检测到额外的窗口{title},将要关掉她')
+    #                     self.send_keys('%{F4}')
+    #                     return True
+    #                 else:
+    #                     return True
+    #     except Exception as e:
+    #         self.log.error('清除多余窗口的过程中出错'+str(e))
+    #         return False
 
     def third(self):
         '''
@@ -218,19 +209,10 @@ class EveryDayTask(Base):
                 if self.second() == True:
                     if self.is_in_chat_list() == True:
                         if self.screenshot_of_contrast() == True:
-                            return True
+                            return 'success'
                         elif self.screenshot_of_contrast() == 'stop':
                             self.log.info('没有任务,停止执行')
                             return 'stop'
-                        else:
-                            self.log.info('third执行第三步的时候出错')
-                            continue
-                    else:
-                        self.log.info('third执行第二步的时候出错')
-                        continue
-                else:
-                    self.log.info('third执行第一步的时候出错')
-                    continue
         except Exception as e:
             self.log.error('到达消息最上方的过程中出错'+str(e))
             return False
@@ -276,7 +258,7 @@ class EveryDayTask(Base):
         '''
         try:
             while True:
-                if self.third():
+                if self.third() == 'success':
                     self.log.info('当前在最顶端,准备删除任务')
                     if self.is_in_chat_list():
                         touch(find_all_ui('任务类型1v1')[0],right_click=True)
@@ -285,65 +267,49 @@ class EveryDayTask(Base):
                         self.connect_to_special_panel('提示')
                         self.send_keys('{ENTER}')
                         return True
-                    else:
-                        continue
-                else:
-                    continue
         except Exception as e:
             self.log.error('删除任务的过程中出错'+str(e))
-            return False
 
     def click_sop_1v1_task(self):
         '''
         :return:True False
         '''
         try:
-            self.check_for_extra_windows()
+            self.kill_target_windows(target_title=WINDOW_LIST)
             self.connect_to_workwechat()
             if touch(find_all_ui('任务类型1v1')[0]):
                 sleep(2)
                 if self.connect_to_special_panel('SOP消息'):
                     self.log.info('识别sop话术任务状态')
                     return True
-                else:
-                    self.log.info('链接窗口失败')
-                    # 这里可能是断网,现在是跳过
-                    # 之后可以做ping百度的操作,如果ping不同就做一个程序意外停止的弹框
-                    return False
-            else:
-                return False
+                self.log.info('链接窗口失败')
+                # 这里可能是断网,现在是跳过
+                # 之后可以做ping百度的操作,如果ping不同就做一个程序意外停止的弹框
+            return False
         except Exception as e:
             self.log.error('点击聊天页面最顶端元素的过程中出错')
             return False
 
     def fourth(self):
         try:
-
             while True:
-                # self.check_for_extra_windows()
-                if self.third() == True:
-                    # self.check_for_extra_windows()
+                if self.third() == 'success':
                     if self.click_sop_1v1_task() == True:
                         if self.get_sop_1v1_task_status() == 'delete':
                             self.log.info('检测到当前任务已经做好,删除它')
                             if self.delete_sop_1v1_task():
                                 self.log.info('删除已执行消息消息')
-                                continue
                         elif self.get_sop_1v1_task_status() == True:
                             return True
-                        else:
-                            self.log.info('fourth获取任务状态时时候出错')
-                            if self.check_for_extra_windows():
-                                continue
+                        self.log.info('fourth获取任务状态时时候出错')
+                        self.kill_target_windows(target_title=WINDOW_LIST)
                     else:
                         self.log.info('点击聊天任务出错')
-                        if self.check_for_extra_windows():
-                            continue
+                        self.kill_target_windows(target_title=WINDOW_LIST)
                 elif self.third() == 'stop':
                     return 'stop'
-                else:
-                    self.log.info('fourth执行第一步时候出错')
-                    continue
+                self.log.info('fourth执行第一步时候出错')
+
         except Exception as e:
             self.log.error(''+str(e))
             return False
@@ -369,17 +335,13 @@ class EveryDayTask(Base):
         try:
             if self.connect_to_special_panel('SOP消息'):
                 if self.H5_page_get_element(title='点击复制',click=True):
-                    self.log.info('\n\t点击复制')
-                    if self.connect_to_special_panel('SOP消息'):
-                        return True
-                    self.log.info('\n\t点击复制完链接窗口失败')
-                    return False
-                self.log.info('\n\t点击复制失败')
-                return False
+                    return True
             self.log.info('\n\t点击复制前链接"SOP消息"窗口失败')
             return False
         except Exception as e:
-            self.log.error('\n\t做点击复制的时候出错')
+            self.log.error(f'\n\t做点击复制的时候出错,detail info:{e}')
+            return False
+
 
     def click_group_sending_helper(self):
         '''
@@ -451,7 +413,7 @@ class EveryDayTask(Base):
                 '''
                 if self.connect_to_special_panel(title='提示'):
                     if exists_ui('新建'):
-                        self.check_for_extra_windows(title='提示')
+                        self.kill_target_windows(target_title=['提示'])
 
             while self.check_window_exists(title='选择客户'):
                 '''
@@ -459,7 +421,7 @@ class EveryDayTask(Base):
                 '''
                 if self.connect_to_special_panel(title='选择客户'):
                     if exists_ui('选择标签'):
-                        self.check_for_extra_windows(title='选择客户')
+                        self.kill_target_windows(target_title=['选择客户'])
             if self.check_window_exists(title='向我的客户发消息'):
                 self.log.info('\n\t —— Target panel exists. ——')
                 if self.connect_to_special_panel(title='向我的客户发消息'):
@@ -507,9 +469,6 @@ class EveryDayTask(Base):
         try:
             if self.check_window_exists(title='选择客户'):
                 self.log.info('\n\t —— Target panel exists. ——')
-                if exists_ui('选择标签'):
-                    self.connect_to_special_panel('选择客户')
-                    return True
                 if self.connect_to_special_panel(title='选择客户'):
                     if touch_ui('不限标签'):
                         sleep(0.5)
@@ -517,12 +476,10 @@ class EveryDayTask(Base):
                         return True
                     self.log.info('\n\t *** can not find select tag mini-menu! ***')
                     return False
-                self.log.info('\n\t链接"选择客户"窗口时出错')
-                return False
-            self.log.info('\n\t"选择客户"窗口不存在')
+            self.log.info('\n\t链接"选择客户"窗口时出错')
             return False
         except Exception as e:
-            self.log.error('\n\t点击选择标签的过程中出错'+str(e))
+            self.log.error(f'\n\t点击选择标签的过程中出错:{e}')
             return False
 
     def search_target_tag(self):
@@ -531,43 +488,35 @@ class EveryDayTask(Base):
         '''
         try:
             while True:
-                if not self.check_window_exists(title='选择客户'):
-                    self.log.error('\n\t链接选择客户窗口的过程中出错')
-                    return False
-                self.connect_to_special_panel('选择客户')
-                self.connect_to_desktop()
-                pos = self.get_target_tag_position()
-                # print('这是pos的结果'+type(pos))
-                if pos:
-                    self.log.info('\n\t —— Find target! Touch the Target tag. ——')
-                    touch(pos)
-                    sleep(0.5)
-                    return True
+                if self.check_window_exists(title='选择客户'):
+                    if self.connect_to_special_panel('选择客户'):
+                        self.connect_to_desktop()
+                        pos = self.get_target_tag_position()
+                    if pos:
+                        self.log.info('\n\t —— Find target! Touch the Target tag. ——')
+                        touch(pos)
+                        sleep(0.5)
+                        return True
+                    else:
+                        self.log.info('\n\t —— can not find target tag in this page. ——')
+                        shot('test1')
+                        sleep(0.2)
+                        if self.scroll_the_tag_panel():
+                            sleep(0.2)
+                            shot('test2')
+                            sleep(0.2)
+                            with open('photos\\test1.png', 'rb') as test1:
+                                res1 = test1.read()
+                            with open('photos\\test2.png', 'rb') as test2:
+                                res2 = test2.read()
+                            if res1 == res2:
+                                self.log.info('\n\t—— 没有找到符合的标签 退出 ——')
+                                return False
                 else:
-                    shot('test1')
-                    sleep(0.3)
-                    self.log.info('\n\t —— can not find target tag in this page. ——')
-                    self.connect_to_special_panel('选择客户')
-                    if self.scroll_the_tag_panel():
-                        sleep(0.3)
-                        shot('test2')
-                        with open('photos\\test1.png', 'rb') as test1:
-                            res1 = test1.read()
-                        with open('photos\\test2.png', 'rb') as test2:
-                            res2 = test2.read()
-                        sleep(0.3)
-                        if res1 == res2:
-                            self.log.info('\n\t没有找到符合的标签,准备返回删除')
-                            if exists_ui('选择标签页'):
-                                return 'delete'
-                            self.log.info('\n\t对比结果之后发现当前没有选择标签页,重新对比')
-                            continue
-                        self.log.info('两次对比图片不一致,返回')
-                        continue
-                    self.log.info('\n\t鼠标滚轮出现问题')
+                    self.log.info('\n\窗口连接不到')
                     return False
         except Exception as e:
-            self.log.error('\n\t翻找标签页的过程中出错'+str(e))
+            self.log.error(f'\n\t翻找标签页的过程中出错:{e}')
             return False
 
     def seventh(self):
@@ -627,7 +576,6 @@ class EveryDayTask(Base):
         '''
         select all customer.
         '''
-
         try:
             if self.connect_to_special_panel('选择客户'):
                 if touch_ui('确定'):
@@ -677,27 +625,40 @@ class EveryDayTask(Base):
         try:
             if self.connect_to_special_panel('选择客户'):
                 if self.connect_to_desktop():
-                    if  find_all_ui('选择标签'):
-                        pos = find_all_ui('选择标签')[0]
+                    pos = find_all_ui('选择标签')
+                    if pos:
+                        pos = pos[0]
                         print(pos)
                         for i in range(4):
-                            self.mouse_scroll(x=pos[0],y=pos[1]+100,wheel_dist=-1)
-                            self.mouse_scroll(x=0,y=0,wheel_dist=-1)
-                            sleep(0.1)
-                        if self.connect_to_special_panel('选择客户'):
-                            self.log.info('\n\t鼠标滚动完成')
-                            return True
-                        else:
-                            self.log.info('\n\t鼠标滚动完成,但是没有找到"选择客户的页面"')
-                            return False
-                    self.log.info('\n\t没有找到选择标签元素')
-                    return False
-                self.log.info('\n\t链接桌面失败')
-                return False
+                            self.mouse_scroll(x=pos[0]-50,y=pos[1]-150,wheel_dist=-1)
+                        return True
             self.log.info('\n\t链接"选择客户页面失败"')
             return False
         except Exception as e:
-            self.log.error('\n\t鼠标滚轮出错'+str(e))
+            self.log.error(f'\n\t鼠标滚轮出错:{e}')
+            return False
+
+    def cancel_all_window(self):
+        '''
+        can not find the target tag and close the customer-sop panel.
+        '''
+        try:
+            if self.connect_to_special_panel('选择客户'):
+                    self.connect_to_desktop()
+                    touch_ui('取消1',x=35)
+                    if self.connect_to_special_panel('选择客户'):
+                        touch_ui('取消2',x=35)
+                        if self.check_window_exists(title='向我的客户发消息'):
+                            self.log.info('\n\t —— Target panel exists. ——')
+                            if self.connect_to_special_panel(title='向我的客户发消息'):
+                                touch_ui('关闭1',x=29,y=-20)
+                                if self.check_window_exists(title='SOP消息'):
+                                    self.log.info('\n\t —— Target panel exists. ——')
+                                    if self.connect_to_special_panel(title='SOP消息'):
+                                        touch_ui('关闭2',x=21,y=-24)
+                                        return True
+        except Exception as e:
+            self.log.error(f'some error occured when close all panel,detil info:{e}')
             return False
 
     def click_finish(self):
@@ -724,7 +685,6 @@ class EveryDayTask(Base):
             return False
 
     def execute_sop_task(self):
-
         while not self.copy_sop_tag():
             sleep(1)
 
@@ -738,21 +698,12 @@ class EveryDayTask(Base):
             self.select_the_customer()
 
         if not self.search_target_tag():
-            if self.connect_to_special_panel('选择客户'):
-                self.connect_to_desktop()
-                touch_ui('取消1')
-                if self.connect_to_special_panel('选择客户'):
-                    touch_ui('取消2')
-                    if self.check_window_exists(title='向我的客户发消息'):
-                        self.log.info('\n\t —— Target panel exists. ——')
-                        if self.connect_to_special_panel(title='向我的客户发消息'):
-                            touch_ui('关闭1')
-                            if self.check_window_exists(title='SOP消息'):
-                                self.log.info('\n\t —— Target panel exists. ——')
-                                if self.connect_to_special_panel(title='SOP消息'):
-                                    touch_ui('关闭2')
-                                    return True
-
+            self.kill_target_windows(target_title=WINDOW_LIST)
+            return 'delete'
+            # if self.cancel_all_window():
+            #     return
+            # else:
+                # self.kill_target_windows()
 
         while not self.select_all_customer():
             self.search_target_tag()
@@ -760,9 +711,10 @@ class EveryDayTask(Base):
         while not self.send_message_to_customer():
             self.select_all_customer()
 
-        while not self.send_message_to_customer():
-            if self.click_finish():
-                return True
+        while not self.click_finish():
+            self.send_message_to_customer()
+
+        return 'success'
 
     def protect_workchat(self):
         while True:
@@ -774,7 +726,6 @@ class EveryDayTask(Base):
                 self.connect_to_special_panel('企业微信')
                 return True
 
-
     def do_sop1v1_task(self):
         '''
         True:继续做任务
@@ -782,7 +733,6 @@ class EveryDayTask(Base):
         :return:
         '''
         try:
-
             while True:
                 if self.connect_to_workwechat():
                     if self.fourth() == True:
@@ -793,20 +743,10 @@ class EveryDayTask(Base):
                             可以直接调:self.delete_sop_1v1_task() -->删除最顶端的任务
                             之后无论返回什么:都continue跳过当前循环就好
                         '''
-                        if self.eighth() == True:
-                            if self.delete_sop_1v1_task():
-                                continue
-                        elif self.eighth() == 'delete':
-                            if self.delete_sop_1v1_task():
-                                continue
-                        else:
-                            continue
+                        if self.execute_sop_task()=='delete' or 'success':
+                            self.delete_sop_1v1_task()
                     elif self.fourth() == 'stop':
                         return 'stop'
-                    else:
-                        return False
-                else:
-                    continue
         except Exception as e:
             self.log.info('做任务之前的任务出错' + str(e))
             return False
@@ -815,149 +755,11 @@ class EveryDayTask(Base):
         '''
         test
         '''
-        # while True:
-        # self.copy_sop_tag()
-        #         print(1)
-        #     else:
-        #         break
-        # print('跳出了循环')
-        #
-        # while not self.copy_sop_tag():
-        #     sleep(1)
-        #
-        # while not self.click_group_sending_helper():
-        #     self.copy_sop_tag()
-        #
-        # while not self.select_the_customer():
-        #     self.click_group_sending_helper()
-        #
-        # while not self.select_customer_tag():
-        #     self.select_the_customer()
-        #
-        # while not self.sixth():
-        #     sleep(1)
-        # if not self.search_target_tag():
-        #     if self.connect_to_special_panel('选择客户'):
-        #             self.connect_to_desktop()
-        #             touch_ui('取消1')
-        #             if self.connect_to_special_panel('选择客户'):
-        #                 touch_ui('取消2')
-        #                 if self.check_window_exists(title='向我的客户发消息'):
-        #                     self.log.info('\n\t —— Target panel exists. ——')
-        #                     if self.connect_to_special_panel(title='向我的客户发消息'):
-        #                         touch_ui('关闭1')
-        #                         if self.check_window_exists(title='SOP消息'):
-        #                             self.log.info('\n\t —— Target panel exists. ——')
-        #                             if self.connect_to_special_panel(title='SOP消息'):
-        #                                 touch_ui('关闭2')
-        #     return '该客户缺少标签'
-        #
-        # while not self.select_all_customer():
-        #     self.search_target_tag()
-        #
-        # while not self.send_message_to_customer():
-        #     self.select_all_customer()
-        # 联调测试洛书
-        a = self.do_sop1v1_task()
-        print(a)
-        # a = self.first()
-        # a = self.second()
-        # a = self.third()
-        # a = self.fourth()
-        # a = self.fifth()
-        # a = self.sixth()
-        # a = self.seventh()
-        # a = self.eighth()
-        ## 点击消息
-        # a = self.find_the_chat()
-        # print(a)
-
-        ## 在列表中点击目标
-        # a = self.click_luoshu_SMR_in_chat_list()
-        # print(a)
-
-        ## 搜索目标
-        # a = self.search_the_SMR()
-        # print(a)
-
-        ## 对比截图
-        # a = self.screenshot_of_contrast()
-        # print(a)
-
-        ## 是否在聊天页中
-        # a = self.is_in_chat_list()
-        # print(a)
-
-        ## 检测并清除多余窗口,title为空时,检查content中列出的所有窗口,title值不空时,只检测title的窗口
-        # a = self.check_for_extra_windows()
-        # print(a)
-
-        ## 获取sop1v1任务的状态,未做的返回True  已经做的返回 'delete'  没有任务返回  'stop'
-        # a = self.get_sop_1v1_task_status()
-        # print(a)
-
-        ##删除最顶部的消息,删除成功返回True
-        # a = self.delete_sop_1v1_task()
-
-        ## 点击复制
-        # a = self.copy_sop_tag()
-        # print(a)
-
-        # 点击跳转群发助手
-        # a = self.click_group_sending_helper()
-        # print(a)
-
-        ## 在向我的客户发消息页面点击选择客户
-        # a = self.select_the_customer()
-        # print(a)
-
-        # 在选择客户页面点击不限标签
-        # a = self.select_customer_tag()
-        # print(a)
-
-        # ## 开始在下拉菜单中寻找目标
-        # a = self.search_target_tag()
-        # print(a)
-
-        # 在选择客户页面点击全选并点击确认
-        # a = self.select_all_customer()
-        # print(a)
-
-        # 点击发送确认
-        # a = self.send_message_to_customer()
-        # print(a)
-
-        #鼠标混轮在选择标签页滚动
-        # a = self.scroll_the_tag_panel()
-        # print(a)
-
-        #做完任务点击回执按钮
-        # a = self.click_finish()
-        # print(a)
-
-        # a = self.protect_workchat()
-        # print(a)
-
-        # a = self.scroll_the_tag_panel()
-
-        # a = self.select_customer_tag()
-        # a = self.search_target_tag()
-        # a = self.click_finish()
-        # self.connect_to_special_panel('企业微信')
-        # try:
-        #     touch((2632,483))
-        # except:洛书SMR-test
-        #     sleep(20)
-        # print(a)
-        # self.connect_to_special_panel('企业微信')
-        # print(exists_ui('选择标签'))
-
-
-
+        self.do_sop1v1_task()
+        
     def run_task(self):
         '''
         '''
-
         res = self.test()
 
 if __name__ == '__main__':

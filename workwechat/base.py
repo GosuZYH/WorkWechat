@@ -3,8 +3,8 @@ __author__ = "zyh"
 import os
 import time
 
-import poco as poco
 import win32gui
+import win32con
 import logging
 import winreg
 
@@ -384,6 +384,7 @@ class Base(ABC):
             res = self.win.child_window(title=title,control_type=type)
             position = res.rectangle()
             if click==True:
+                self.log.info('\n\t点击复制')
                 mouse.click(button='left', coords=(position.left + 10, position.top + 10))
                 return True
             elif click == False:
@@ -395,6 +396,18 @@ class Base(ABC):
 
         # return res
 
+    def kill_target_windows(self,target_title=[]):
+        '''
+        kill all unuseful panel by handle
+        '''
+        handlers = []
+        win32gui.EnumWindows(lambda handle, param: param.append(handle), handlers)
+        time.sleep(0.1)
+        for handler in handlers:
+            title = win32gui.GetWindowText(handler)
+            if title in target_title:
+                self.log.info(f'kill window {title}')
+                win32gui.PostMessage(handler,win32con.WM_CLOSE,0,0)
 
 def touch_ui(photo_name='',threshold=ST.THRESHOLD,rgb=False,**kwargs):
     '''
@@ -482,4 +495,4 @@ def show_ui(photo_name=''):
 if __name__ == '__main__':
     a = Base()
 
-    print(a.connect_to_workwechat())
+
