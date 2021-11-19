@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1a7ae64-ca19-4062-a958-4ea143973c21" name="更改" comment="fix:组合了宇航我们两个的流程">
+    <list default="true" id="e1a7ae64-ca19-4062-a958-4ea143973c21" name="更改" comment="fix:每周任务流程完成">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task.log" beforeDir="false" afterPath="$PROJECT_DIR$/task.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workwechat/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workwechat/everyday_task.py" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/everyday_task.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workwechat/everyweek_task.py" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/everyweek_task.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workwechat/log/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/log/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workwechat/photos/screen_select_custom_panel.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/screen_select_custom_panel.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workwechat/photos/test1.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/test1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workwechat/photos/test2.png" beforeDir="false" afterPath="$PROJECT_DIR$/workwechat/photos/test2.png" afterDir="false" />
     </list>
@@ -15,6 +13,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Merge.Settings">
     <option name="BRANCH" value="develop" />
@@ -37,7 +42,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/workwechat/photos/every_week_task" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/洛书测试脚本" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -48,8 +54,34 @@
       <recent name="F:\git\WorkWechat\workwechat\photos\every_week_task" />
       <recent name="F:\git\WorkWechat\workwechat" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\git\WorkWechat\workwechat\photos\every_week_task" />
+      <recent name="F:\git\WorkWechat\workwechat\photos" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.everyday_task">
+  <component name="RunManager" selected="Python.BASE">
+    <configuration name="BASE" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="洛书测试脚本" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop/洛书测试脚本" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/洛书测试脚本/BASE.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="base" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="WorkWechat" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,7 +126,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="poco" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="everyweek_task" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="WorkWechat" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -102,12 +134,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/.virtualenvs/Yookia233-EHAECxpD/Lib/site-packages/poco" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/workwechat" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/.virtualenvs/Yookia233-EHAECxpD/Lib/site-packages/poco/poco.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/workwechat/everyweek_task.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,28 +170,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_case.MyTestCase.test_case01 的 Unittest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="WorkWechat" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/workwechat" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_case.MyTestCase.test_case01&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.everyday_task" />
-        <item itemvalue="Python.poco" />
-        <item itemvalue="Python.base" />
-        <item itemvalue="Python 测试.test_case.MyTestCase.test_case01 的 Unittest" />
+        <item itemvalue="Python.BASE" />
+        <item itemvalue="Python.everyweek_task" />
         <item itemvalue="Python.test_case" />
+        <item itemvalue="Python.base" />
+        <item itemvalue="Python.everyday_task" />
       </list>
     </recent_temporary>
   </component>
@@ -171,6 +188,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636602968767</updated>
+      <workItem from="1637240013463" duration="20464000" />
     </task>
     <task id="LOCAL-00001" summary="fix:optimize some logic.">
       <created>1636618498546</created>
@@ -200,8 +218,32 @@
       <option name="project" value="LOCAL" />
       <updated>1636973285815</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix:更改了图片识别信任度">
+      <created>1637234519264</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1637234519265</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix:每日任务流程完成">
+      <created>1637243804772</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1637243804772</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix:每周任务流程完成">
+      <created>1637303600885</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1637303600885</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -220,25 +262,28 @@
     <MESSAGE value="fix:finished the task." />
     <MESSAGE value="fix:优化了一些每日sop1v1任务的流程,新增了每周任务开始做任务之前的流程" />
     <MESSAGE value="fix:组合了宇航我们两个的流程" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix:组合了宇航我们两个的流程" />
+    <MESSAGE value="fix:更改了图片识别信任度" />
+    <MESSAGE value="fix:每日任务流程完成" />
+    <MESSAGE value="fix:每周任务流程完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:每周任务流程完成" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/WorkWechat$contents.coverage" NAME="contents 覆盖结果" MODIFIED="1637133346145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/洛书测试脚本" />
     <SUITE FILE_PATH="coverage/WorkWechat$init_airtest.coverage" NAME="init_airtest 覆盖结果" MODIFIED="1636510703388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test.air" />
-    <SUITE FILE_PATH="coverage/WorkWechat$everyweek_task.coverage" NAME="everyweek_task 覆盖结果" MODIFIED="1637227722105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workwechat" />
+    <SUITE FILE_PATH="coverage/WorkWechat$everyweek_task.coverage" NAME="everyweek_task 覆盖结果" MODIFIED="1637305703819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workwechat" />
     <SUITE FILE_PATH="coverage/WorkWechat$cyjtest.coverage" NAME="cyjtest 覆盖结果" MODIFIED="1637131282535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workwechat/photos" />
     <SUITE FILE_PATH="coverage/WorkWechat$everyday_task__1_.coverage" NAME="everyday_task (1) 覆盖结果" MODIFIED="1636971082141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workwechat" />
     <SUITE FILE_PATH="coverage/WorkWechat$test_case_MyTestCase_test_case01__Unittest.coverage" NAME="test_case.MyTestCase.test_case01 的 Unittest 覆盖结果" MODIFIED="1636867542816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workwechat" />
-    <SUITE FILE_PATH="coverage/WorkWechat$BASE.coverage" NAME="BASE 覆盖结果" MODIFIED="1637232615434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/洛书测试脚本" />
-    <SUITE FILE_PATH="coverage/WorkWechat$test_case.coverage" NAME="test_case 覆盖结果" MODIFIED="1636878200800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workwechat" />
+    <SUITE FILE_PATH="coverage/WorkWechat$BASE.coverage" NAME="BASE 覆盖结果" MODIFIED="1637306250609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/洛书测试脚本" />
+    <SUITE FILE_PATH="coverage/WorkWechat$test_case.coverage" NAME="test_case 覆盖结果" MODIFIED="1637299844127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workwechat" />
     <SUITE FILE_PATH="coverage/WorkWechat$BASE__1_.coverage" NAME="BASE (1) 覆盖结果" MODIFIED="1637230489622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/洛书测试脚本" />
-    <SUITE FILE_PATH="coverage/WorkWechat$base.coverage" NAME="base 覆盖结果" MODIFIED="1637143185346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workwechat" />
+    <SUITE FILE_PATH="coverage/WorkWechat$base.coverage" NAME="base 覆盖结果" MODIFIED="1637287437396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workwechat" />
     <SUITE FILE_PATH="coverage/WorkWechat$base__1_.coverage" NAME="base (1) 覆盖结果" MODIFIED="1637201204978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/洛书测试脚本" />
     <SUITE FILE_PATH="coverage/WorkWechat$id.coverage" NAME="获取桌面运行的进程id 覆盖结果" MODIFIED="1636704176333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/OneDrive/pyhton脚本收集/Windows" />
     <SUITE FILE_PATH="coverage/WorkWechat$any_wechat.coverage" NAME="any_wechat 覆盖结果" MODIFIED="1636561925871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/pictures" />
     <SUITE FILE_PATH="coverage/WorkWechat$poco.coverage" NAME="poco 覆盖结果" MODIFIED="1637120490115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/.virtualenvs/Yookia233-EHAECxpD/Lib/site-packages/poco" />
     <SUITE FILE_PATH="coverage/WorkWechat$test.coverage" NAME="test 覆盖结果" MODIFIED="1636422201610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test.air" />
     <SUITE FILE_PATH="coverage/WorkWechat$test_windowhandle.coverage" NAME="test_windowhandle 覆盖结果" MODIFIED="1636634911333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workwechat" />
-    <SUITE FILE_PATH="coverage/WorkWechat$everyday_task.coverage" NAME="everyday_task 覆盖结果" MODIFIED="1637233905128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workwechat" />
+    <SUITE FILE_PATH="coverage/WorkWechat$everyday_task.coverage" NAME="everyday_task 覆盖结果" MODIFIED="1637234229315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workwechat" />
   </component>
 </project>
