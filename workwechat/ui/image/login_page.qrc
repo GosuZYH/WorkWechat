@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="登录页面">
+    <file>user_avatar.png</file>
+    <file>account_ico.png</file>
+    <file>pw_ico.png</file>
+    <file>minimize.png</file>
+    <file>close.png</file>
+    <file>drop_down.png</file>
+    <file>企业微信登录.png</file>
+    <file>login_page.png</file>
+    <file>logo.png</file>
+    <file>login_page.png</file>
+    <file>icon.png</file>
+  </qresource>
+</RCC>
